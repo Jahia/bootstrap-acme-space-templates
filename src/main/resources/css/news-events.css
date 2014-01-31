@@ -1,0 +1,120 @@
+/*media-list*/
+/*media-small*/
+li.media-small .media-photo {
+  height: 60px;
+  width: 60px;
+  float: left;
+  margin: 0 5px 5px 0;
+}
+li.media-small .media-photo img {
+  height: 60px;
+  width: 60px;
+}
+.media-body {
+  padding-left: 15px;
+}
+.media-body h1 {
+  margin-top: 0;
+}
+.media-body-border-left {
+  border-left: 1px solid #eaeaea;
+}
+.media-body-marginleft150 {
+  margin-left: 150px;
+}
+.media-body-marginleft75 {
+  margin-left: 75px;
+}
+li.media-small .media-body-no-photo {
+  margin-left: 65px;
+}
+li.media-small .media-heading {
+  margin: 0;
+}
+li.media-small h3 {
+  font-size: 18px;
+  line-height: 20px;
+}
+.media-heading a {
+  color: #000;
+  text-decoration: none;
+}
+.media-heading a:hover,
+.media-heading a:focus {
+  color: #6600cc;
+  text-decoration: none;
+}
+li.media-small,
+li.media-medium {
+  border-bottom: 1px solid #eaeaea;
+  margin-bottom: 25px;
+  overflow: hidden;
+}
+li.media-small:last-child,
+li.media-medium:last-child {
+  border-bottom: none;
+}
+li.media-medium .media-photo {
+  height: 60px;
+  width: 60px;
+  float: left;
+  margin: 0 15px 15px 0px;
+}
+li.media-medium .media-photo img {
+  height: 60px;
+  width: 60px;
+}
+li.media-medium .media-photo-margintop {
+  margin-top: 75px;
+}
+.media-photo-big {
+  height: 120px;
+  width: 120px;
+  float: left;
+  margin: 0 15px 15px 0px;
+}
+.media-text-big {
+  clear: both;
+}
+.news figure,
+.events figure {
+  margin: 14px 0 28px;
+  max-height: 400px;
+  overflow: hidden;
+  clear: both;
+}
+div.media-date {
+  height: 60px;
+  min-width: 60px;
+  float: left;
+  margin: 0 5px 5px 0;
+  background: #6600cc;
+  text-align: center;
+}
+div.media-date-big-end {
+  background: #f60;
+}
+div.media-date-big {
+  margin: 0 15px 15px 0;
+}
+div.media-date-big-margintop {
+  margin-top: 75px;
+}
+div.media-date .month {
+  color: #fff;
+  display: block;
+  font-size: 11px;
+}
+div.media-date .day {
+  color: #fff;
+  display: block;
+  font-size: 22px;
+  font-weight: bold;
+}
+div.media-date .year {
+  color: #fff;
+  display: block;
+  font-size: 11px;
+}
+
+

@@ -1,0 +1,210 @@
+.clearfix {
+    *zoom: 1;
+}
+.clearfix:before,
+.clearfix:after {
+    display: table;
+    content: "";
+    line-height: 0;
+}
+.clearfix:after {
+    clear: both;
+}
+.hide-text {
+    font: 0/0 a;
+    color: transparent;
+    text-shadow: none;
+    background-color: transparent;
+    border: 0;
+}
+.input-block-level {
+    display: block;
+    width: 100%;
+    min-height: 30px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+/* = Utils
+ -------------------------------------------------------------- */
+.clear {
+    clear: both;
+}
+.btn-group > .btn-large {
+    font-size: 17px;
+}
+.icon-margin-right {
+    margin-right: 5px;
+}
+.table .btn {
+    margin-bottom: 0;
+}
+.container-fluid .container-fluid {
+    padding-left: 0;
+    padding-right: 0;
+}
+/* = User
+ -------------------------------------------------------------- */
+.navbar .user-box {
+    float: right;
+    line-height: 30px;
+    margin: 3px 30px 0 30px;
+}
+.navbar .user-box a.dropdown-toggle {
+  color: #fff;
+  text-decoration: none;
+}
+.navbar .user-box a.dropdown-toggle:hover,
+.navbar .user-box a.dropdown-toggle:focus {
+  color: #fff;
+  text-decoration: underline;
+}
+
+/* = Utils
+ -------------------------------------------------------------- */
+.navbar .brand {
+    display: block;
+    float: left;
+    margin-left: -20px;
+    padding: 0px 20px 0px 20px;
+    background: url("@{logoPath}") no-repeat top left;
+    height: 100px;
+    width: 200px;
+    margin-top: -5px;
+    margin-bottom: -56px;
+    line-height: 0;
+    text-indent: -9999px;
+}
+/* = Wrapper
+-------------------------------------------------------------- */
+.wrapper {
+    background-attachment: scroll !important;
+    background-color: #fff;
+    background-image: none;
+    background-position: center top !important;
+    background-repeat: repeat !important;
+    border-radius: 0 0 0 0;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+    margin: 0 auto;
+    width: 1200px;
+    padding: 20px 0 0 0 ;
+    min-width: 320px;
+    margin-top: 84px;
+}
+/* = Navbar
+-------------------------------------------------------------- */
+.navbar {
+    border-top: 4px solid #6600cc!important;
+}
+.navbar-inverse .brand span {
+    display:none;
+}
+/* = Separator
+ -------------------------------------------------------------- */
+
+/* = Section
+-------------------------------------------------------------- */
+.section,
+.content-section,
+.slider-section {
+    border-bottom: 1px solid #eaeaea;
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+}
+.illustration-section {
+    border-bottom: 1px solid #EAEAEA;
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    margin-top: -20px;
+    padding-top: 20px;
+}
+
+/* = Copyright
+-------------------------------------------------------------- */
+.copyright {
+    background-color: #000;
+    color: #fff;
+    font-weight: 300;
+    padding: 15px 0;
+    font-size: 12px;
+    margin-top: 20px;
+}
+.copyright p {
+    margin: 0;
+}
+.copyright a {
+    color: #73b9ff;
+    text-decoration: none;
+}
+.copyright a:hover,
+.copyright a:focus {
+    color: #fff;
+    text-decoration: underline;
+}
+.copyright-links {
+    text-align: right;
+}
+
+/* Sitemap */
+
+ul.sitemap{margin:15px;padding:15px;list-style:none}
+ul.sitemap ul{list-style:none;margin-bottom:15px}
+ul.sitemap ul ul{margin-bottom:0}
+ul.sitemap li{padding-left:10px}
+ul.sitemap li li li{display:inline-block;*display:inline}
+
+@media (max-width: 1200px) {
+    .wrapper {
+        width: 100%;
+    }
+}
+/* =Responsive: Desktop
+ -------------------------------------------------------------- */
+@media (min-width: 980px) and (max-width: 1199px) {
+
+}
+/* =Responsive: Less 979px
+-------------------------------------------------------------- */
+@media (max-width: 979px) {
+    .wrapper {
+        margin-top: 0;
+    }
+    .navbar .brand {
+        display: block;
+        float: left;
+        margin-left: 0;
+        padding: 0px 20px 0px 20px;
+        background: url("@{logoSmallPath}") no-repeat top left;
+        height: 50px;
+        width: 168px;
+        margin-top: 0;
+        margin-bottom:0;
+        line-height: 0;
+        text-indent: -9999px;
+    }
+}
+/* =Responsive: Less 768px
+-------------------------------------------------------------- */
+@media (max-width: 768px) {
+
+}
+/* =Responsive: Less 479px
+-------------------------------------------------------------- */
+@media (max-width: 479px) {
+
+}
+/* =Responsive: Tablet to desktop
+ -------------------------------------------------------------- */
+@media (min-width: 768px) and (max-width: 979px) {
+
+}
+/* =Responsive: Landscape Phone to Tablet
+ -------------------------------------------------------------- */
+@media only screen and (max-width: 767px) {
+
+}
+/* =Responsive: Portrait Phone
+ -------------------------------------------------------------- */
+@media only screen and (max-width: 479px) {
+
+}

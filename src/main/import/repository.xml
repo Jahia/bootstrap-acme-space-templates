@@ -1,0 +1,499 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<content xmlns:j="http://www.jahia.org/jahia/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0">
+    <modules jcr:primaryType="jnt:modules">
+        <bootstrap-acme-space-templates j:dependencies="bootstrap bootstrap-components contact default event facets search teasers"
+                             j:installedModules="bootstrap-acme-space-templates"
+                             j:moduleType="templatesSet"
+                             j:title="Bootstrap ACME Space Templates"
+                                  jcr:mixinTypes="jmix:hasExternalProviderExtension"
+                             jcr:primaryType="jnt:module">
+                
+                <templates j:defaultView="bootstrap" jcr:primaryType="jnt:templatesFolder">
+                    <files jcr:primaryType="jnt:folder"/>
+                    <contents jcr:primaryType="jnt:contentFolder"/>
+                    <base j:view="bootstrap" jcr:primaryType="jnt:template">
+                        <single-news j:applyOn="jnt:news"
+                            j:defaultTemplate="true"
+                            j:hiddenTemplate="true"
+                            j:priority="100"
+                            j:view="default"
+                            jcr:primaryType="jnt:contentTemplate">
+                            <j:translation_en jcr:language="en"
+                                    jcr:mixinTypes="mix:title"
+                                    jcr:primaryType="jnt:translation"
+                                    jcr:title="single-news"/>
+                            <pagecontent jcr:primaryType="jnt:contentList">
+                                <bootstrap-container fluid="false" jcr:primaryType="jnt:bootstrapContainer">
+                                    <bootstrap-container jcr:primaryType="jnt:contentList">
+                                        <bootstrap-row fluid="false" jcr:primaryType="jnt:bootstrapRow">
+                                            <bootstrap-column jcr:primaryType="jnt:bootstrapColumn" offset="1" span="9">
+                                                <bootstrap-column jcr:primaryType="jnt:contentList">
+                                                    <bootstrap-breadcrumb displayCurrentPage="true"
+                                                          displayHome="true"
+                                                          displayLinkOnCurrentPage="false"
+                                                          displayOnFirstLevel="false"
+                                                          divider="/"
+                                                          jcr:primaryType="jnt:bootstrapBreadcrumb"/>
+                                                </bootstrap-column>
+                                            </bootstrap-column>
+                                        </bootstrap-row>
+                                        <bootstrap-row-1 fluid="false" jcr:primaryType="jnt:bootstrapRow">
+                                            <bootstrap-column jcr:primaryType="jnt:bootstrapColumn" offset="0" span="13">
+                                                <bootstrap-column jcr:primaryType="jnt:contentList">
+                                                    <main-resource-display j:mainResourceView="bootstrap"
+                                                           jcr:primaryType="jnt:mainResourceDisplay"/>
+                                                </bootstrap-column>
+                                            </bootstrap-column>
+                                        </bootstrap-row-1>
+                                    </bootstrap-container>
+                                </bootstrap-container>
+                            </pagecontent>
+                        </single-news>
+                        <header jcr:primaryType="jnt:contentList">
+                            <home inverse="true"
+                        jcr:primaryType="jnt:bootstrapNavBar"
+                        option="navbar-fixed-top"
+                        responsive="true">
+                                <j:translation_en jcr:language="en"
+                                       jcr:mixinTypes="mix:title"
+                                       jcr:primaryType="jnt:translation"/>
+                                <bootstrap-navigation-menu j:maxDepth="2"
+                                                j:menuItemView="menuElement"
+                                                j:startLevel="0"
+                                                jcr:primaryType="jnt:bootstrapNavMenu"/>
+                                <bootstrapmenusimplesearchform jcr:primaryType="jnt:bootstrapMenuSimpleSearchForm"
+                                                    position="left"
+                                                    result="/modules/bootstrap-acme-space-templates/search-results"/>
+                                <bootstrapmenuloginform j:view="menu"
+                                             jcr:mixinTypes="jmix:renderable"
+                                             jcr:primaryType="jnt:bootstrapMenuLoginForm"
+                                             position="right"/>
+                                <bootstrapmenulanguageswitcher jcr:primaryType="jnt:bootstrapMenuLanguageSwitcher"
+                                                    position="right"
+                                                    typeOfDisplay="isoLocaleCountryCode"/>
+                            </home>
+                        </header>
+                        <footer jcr:primaryType="jnt:contentList">
+                            <footer-container jcr:mixinTypes="jmix:bootstrapFullComponentRowPredefined"
+                                    jcr:primaryType="jnt:bootstrapFullComponent"
+                                    layout="12"
+                                    rowType="predefined">
+                                <footer-container jcr:primaryType="jnt:contentList">
+                                    <rich-text jcr:primaryType="jnt:bigText">
+                                        <j:translation_en jcr:language="en"
+                                             jcr:primaryType="jnt:translation"
+                                             text="&lt;p&gt;&amp;copy; 2002 - 2014 Jahia Solutions Group SA tous droits r&amp;eacute;serv&amp;eacute;s&lt;/p&gt;&#xA;"/>
+                                    </rich-text>
+                                </footer-container>
+                            </footer-container>
+                        </footer>
+                        <content-template j:applyOn="jnt:content"
+                                 j:hiddenTemplate="true"
+                                 j:priority="1"
+                                 jcr:primaryType="jnt:contentTemplate">
+                            <pagecontent jcr:primaryType="jnt:contentList">
+                                <main-resource-display j:mainResourceView="default" jcr:primaryType="jnt:mainResourceDisplay"/>
+                            </pagecontent>
+                        </content-template>
+                        <home j:hiddenTemplate="false" jcr:primaryType="jnt:pageTemplate">
+                            <j:translation_en jcr:language="en"
+                                    jcr:mixinTypes="mix:title"
+                                    jcr:primaryType="jnt:translation"
+                                    jcr:title="Home"/>
+                            <pagecontent jcr:primaryType="jnt:contentList">
+                                <slider j:allowedTypes="jnt:spaceCarousel"
+                               j:numberOfItems="1"
+                               jcr:primaryType="jnt:area"/>
+                                <teasers containerType="fluid"
+                              jcr:mixinTypes="jmix:bootstrapFullComponentAdvancedProps jmix:bootstrapFullComponentRowPredefined"
+                              jcr:primaryType="jnt:bootstrapFullComponent"
+                              layout="3_3_3_3"
+                              rowType="predefined"
+                              sectionCssClass="teasers-section"
+                              sectionElement="section">
+                                    <teasers jcr:primaryType="jnt:contentList">
+                                        <teaser-1 j:allowedTypes="jnt:teaser" jcr:primaryType="jnt:area"/>
+                                </teasers>
+                                    <teasers-side1 jcr:primaryType="jnt:contentList">
+                                        <teaser-2 j:allowedTypes="jnt:teaser" jcr:primaryType="jnt:area"/>
+                                    </teasers-side1>
+                                    <teasers-side2 jcr:primaryType="jnt:contentList">
+                                        <teaser-3 j:allowedTypes="jnt:teaser" jcr:primaryType="jnt:area"/>
+                                    </teasers-side2>
+                                    <teasers-side3 jcr:primaryType="jnt:contentList">
+                                        <teaser-4 j:allowedTypes="jnt:teaser" jcr:primaryType="jnt:area"/>
+                                    </teasers-side3>
+                                </teasers>
+                                <content containerType="fluid"
+                              jcr:mixinTypes="jmix:bootstrapFullComponentAdvancedProps jmix:bootstrapFullComponentRowPredefined"
+                              jcr:primaryType="jnt:bootstrapFullComponent"
+                              layout="8_4"
+                              rowType="predefined"
+                              sectionCssClass="content-section"
+                              sectionElement="section">
+                                    <content-side1 jcr:primaryType="jnt:contentList">
+                                        <side j:allowedTypes="" jcr:primaryType="jnt:area"/>
+                                    </content-side1>
+                                    <content jcr:primaryType="jnt:contentList">
+                                        <main j:allowedTypes="" jcr:primaryType="jnt:area"/>
+                                </content>
+                                </content>
+                            </pagecontent>
+                        </home>
+                        <two-cols j:hiddenTemplate="false" jcr:primaryType="jnt:pageTemplate">
+                            <j:translation_en jcr:language="en"
+                                    jcr:mixinTypes="mix:title"
+                                    jcr:primaryType="jnt:translation"
+                                    jcr:title="2 cols"/>
+                            <pagecontent jcr:primaryType="jnt:contentList">
+                                <content containerType="fluid"
+                              jcr:mixinTypes="jmix:bootstrapFullComponentAdvancedProps jmix:bootstrapFullComponentRowPredefined"
+                              jcr:primaryType="jnt:bootstrapFullComponent"
+                              layout="3_9"
+                              rowType="predefined"
+                              sectionCssClass="content-section"
+                              sectionElement="section">
+                                    <content-side1 jcr:primaryType="jnt:contentList">
+                                        <side-menu jcr:primaryType="jnt:navside"/>
+                                        <aside cssClassName="aside-wrapper"
+                                  jcr:primaryType="jnt:section"
+                                  sectionElement="div">
+                                            <aside jcr:primaryType="jnt:contentList">
+                                                <side j:allowedTypes="" j:level="1" jcr:primaryType="jnt:absoluteArea"/>
+                                        </aside>
+                                        </aside>
+                                        <contextual-side j:allowedTypes="" jcr:primaryType="jnt:area"/>
+                                    </content-side1>
+                                    <content jcr:primaryType="jnt:contentList">
+                                        <breadcrumb displayCurrentPage="true"
+                                       displayHome="true"
+                                       displayLinkOnCurrentPage="false"
+                                       displayOnFirstLevel="false"
+                                       jcr:primaryType="jnt:bootstrapBreadcrumb"/>
+                                        <page-title jcr:primaryType="jnt:fullTitle"/>
+                                        <main j:allowedTypes="" jcr:primaryType="jnt:area"/>
+                                </content>
+                                </content>
+                            </pagecontent>
+                        </two-cols>
+                        <two-cols-with-banner j:hiddenTemplate="false" jcr:primaryType="jnt:pageTemplate">
+                            <j:translation_en jcr:language="en"
+                                    jcr:mixinTypes="mix:title"
+                                    jcr:primaryType="jnt:translation"
+                                    jcr:title="2 cols with banner"/>
+                            <pagecontent jcr:primaryType="jnt:contentList">
+                                <banner-area j:allowedTypes="jnt:pageBanner"
+                                  j:level="1"
+                                  jcr:primaryType="jnt:absoluteArea"/>
+                                <content containerType="fluid"
+                              jcr:mixinTypes="jmix:bootstrapFullComponentAdvancedProps jmix:bootstrapFullComponentRowPredefined"
+                              jcr:primaryType="jnt:bootstrapFullComponent"
+                              layout="3_9"
+                              rowType="predefined"
+                              sectionCssClass="content-section"
+                              sectionElement="section">
+                                    <content-side1 jcr:primaryType="jnt:contentList">
+                                        <side-menu jcr:primaryType="jnt:navside"/>
+                                            <aside cssClassName="aside-wrapper"
+                                     jcr:primaryType="jnt:section"
+                                     sectionElement="div">
+                                                <aside jcr:primaryType="jnt:contentList">
+                                                    <side j:allowedTypes="" j:level="1" jcr:primaryType="jnt:absoluteArea"/>
+                                                </aside>
+                                            </aside>
+                                            <contextual-side j:allowedTypes="" jcr:primaryType="jnt:area"/>
+                                        </content-side1>
+                                    <content jcr:primaryType="jnt:contentList">
+                                        <breadcrumb displayCurrentPage="true"
+                                       displayHome="true"
+                                       displayLinkOnCurrentPage="true"
+                                       displayOnFirstLevel="false"
+                                       jcr:primaryType="jnt:bootstrapBreadcrumb"/>
+                                        <page-title-1 jcr:primaryType="jnt:fullTitle"/>
+                                        <main j:allowedTypes="" jcr:primaryType="jnt:area"/>
+                                </content>
+                                </content>
+                            </pagecontent>
+                        </two-cols-with-banner>
+                    </base>
+                </templates>
+                
+                <portlets jcr:primaryType="jnt:portletFolder"/>
+                <files jcr:primaryType="jnt:folder">
+                    <bootstrap jcr:primaryType="jnt:folder">
+                        <css jcr:primaryType="jnt:folder">
+                            <bootstrap.css jcr:primaryType="jnt:file">
+                                <jcr:content jcr:mimeType="text/css" jcr:primaryType="jnt:resource"/>
+                            </bootstrap.css>
+                        </css>
+                        <img jcr:primaryType="jnt:folder">
+                            <glyphicons-halflings.png j:height="159"
+                                            j:width="469"
+                                            jcr:mixinTypes="jmix:image"
+                                            jcr:primaryType="jnt:file">
+                                <jcr:content jcr:mimeType="image/png" jcr:primaryType="jnt:resource"/>
+                                <thumbnail jcr:mimeType="image/png" jcr:primaryType="jnt:resource"/>
+                                <thumbnail2 jcr:mimeType="image/png" jcr:primaryType="jnt:resource"/>
+                            </glyphicons-halflings.png>
+                            <body-bg.png j:height="178"
+                               j:width="188"
+                               jcr:mixinTypes="jmix:image"
+                               jcr:primaryType="jnt:file">
+                                <jcr:content jcr:mimeType="image/png" jcr:primaryType="jnt:resource"/>
+                                <thumbnail jcr:mimeType="image/png" jcr:primaryType="jnt:resource"/>
+                                <thumbnail2 jcr:mimeType="image/png" jcr:primaryType="jnt:resource"/>
+                            </body-bg.png>
+                            <glyphicons-halflings-white.png j:height="159"
+                                                  j:width="469"
+                                                  jcr:mixinTypes="jmix:image"
+                                                  jcr:primaryType="jnt:file">
+                                <jcr:content jcr:mimeType="image/png" jcr:primaryType="jnt:resource"/>
+                                <thumbnail jcr:mimeType="image/png" jcr:primaryType="jnt:resource"/>
+                                <thumbnail2 jcr:mimeType="image/png" jcr:primaryType="jnt:resource"/>
+                            </glyphicons-halflings-white.png>
+                            <logo.png j:height="100"
+                            j:width="200"
+                            jcr:mixinTypes="jmix:image"
+                            jcr:primaryType="jnt:file">
+                                <jcr:content jcr:mimeType="image/png" jcr:primaryType="jnt:resource"/>
+                                <thumbnail jcr:mimeType="image/png" jcr:primaryType="jnt:resource"/>
+                                <thumbnail2 jcr:mimeType="image/png" jcr:primaryType="jnt:resource"/>
+                            </logo.png>
+                            <logo-small.png j:height="50"
+                                  j:width="168"
+                                  jcr:mixinTypes="jmix:image"
+                                  jcr:primaryType="jnt:file">
+                                <jcr:content jcr:mimeType="image/png" jcr:primaryType="jnt:resource"/>
+                                <thumbnail jcr:mimeType="image/png" jcr:primaryType="jnt:resource"/>
+                                <thumbnail2 jcr:mimeType="image/png" jcr:primaryType="jnt:resource"/>
+                            </logo-small.png>
+                        </img>
+                    </bootstrap>
+                    <less jcr:primaryType="jnt:folder">
+                        <dropdowns.less jcr:primaryType="jnt:file">
+                            <jcr:content jcr:mimeType="application/binary" jcr:primaryType="jnt:resource"/>
+                        </dropdowns.less>
+                        <forms.less jcr:primaryType="jnt:file">
+                            <jcr:content jcr:mimeType="application/binary" jcr:primaryType="jnt:resource"/>
+                        </forms.less>
+                        <grid.less jcr:primaryType="jnt:file">
+                            <jcr:content jcr:mimeType="application/binary" jcr:primaryType="jnt:resource"/>
+                        </grid.less>
+                        <hero-unit.less jcr:primaryType="jnt:file">
+                            <jcr:content jcr:mimeType="application/binary" jcr:primaryType="jnt:resource"/>
+                        </hero-unit.less>
+                        <labels-badges.less jcr:primaryType="jnt:file">
+                            <jcr:content jcr:mimeType="application/binary" jcr:primaryType="jnt:resource"/>
+                        </labels-badges.less>
+                        <layouts.less jcr:primaryType="jnt:file">
+                            <jcr:content jcr:mimeType="application/binary" jcr:primaryType="jnt:resource"/>
+                        </layouts.less>
+                        <media.less jcr:primaryType="jnt:file">
+                            <jcr:content jcr:mimeType="application/binary" jcr:primaryType="jnt:resource"/>
+                        </media.less>
+                        <mixins.less jcr:primaryType="jnt:file">
+                            <jcr:content jcr:mimeType="application/binary" jcr:primaryType="jnt:resource"/>
+                        </mixins.less>
+                        <modals.less jcr:primaryType="jnt:file">
+                            <jcr:content jcr:mimeType="application/binary" jcr:primaryType="jnt:resource"/>
+                        </modals.less>
+                        <navbar.less jcr:primaryType="jnt:file">
+                            <jcr:content jcr:mimeType="application/binary" jcr:primaryType="jnt:resource"/>
+                        </navbar.less>
+                        <navs.less jcr:primaryType="jnt:file">
+                            <jcr:content jcr:mimeType="application/binary" jcr:primaryType="jnt:resource"/>
+                        </navs.less>
+                        <pager.less jcr:primaryType="jnt:file">
+                            <jcr:content jcr:mimeType="application/binary" jcr:primaryType="jnt:resource"/>
+                        </pager.less>
+                        <pagination.less jcr:primaryType="jnt:file">
+                            <jcr:content jcr:mimeType="application/binary" jcr:primaryType="jnt:resource"/>
+                        </pagination.less>
+                        <popovers.less jcr:primaryType="jnt:file">
+                            <jcr:content jcr:mimeType="application/binary" jcr:primaryType="jnt:resource"/>
+                        </popovers.less>
+                        <progress-bars.less jcr:primaryType="jnt:file">
+                            <jcr:content jcr:mimeType="application/binary" jcr:primaryType="jnt:resource"/>
+                        </progress-bars.less>
+                        <reset.less jcr:primaryType="jnt:file">
+                            <jcr:content jcr:mimeType="application/binary" jcr:primaryType="jnt:resource"/>
+                        </reset.less>
+                        <responsive.less jcr:primaryType="jnt:file">
+                            <jcr:content jcr:mimeType="application/binary" jcr:primaryType="jnt:resource"/>
+                        </responsive.less>
+                        <responsive-767px-max.less jcr:primaryType="jnt:file">
+                            <jcr:content jcr:mimeType="application/binary" jcr:primaryType="jnt:resource"/>
+                        </responsive-767px-max.less>
+                        <responsive-768px-979px.less jcr:primaryType="jnt:file">
+                            <jcr:content jcr:mimeType="application/binary" jcr:primaryType="jnt:resource"/>
+                        </responsive-768px-979px.less>
+                        <responsive-1200px-min.less jcr:primaryType="jnt:file">
+                            <jcr:content jcr:mimeType="application/binary" jcr:primaryType="jnt:resource"/>
+                        </responsive-1200px-min.less>
+                        <responsive-navbar.less jcr:primaryType="jnt:file">
+                            <jcr:content jcr:mimeType="application/binary" jcr:primaryType="jnt:resource"/>
+                        </responsive-navbar.less>
+                        <responsive-utilities.less jcr:primaryType="jnt:file">
+                            <jcr:content jcr:mimeType="application/binary" jcr:primaryType="jnt:resource"/>
+                        </responsive-utilities.less>
+                        <scaffolding.less jcr:primaryType="jnt:file">
+                            <jcr:content jcr:mimeType="application/binary" jcr:primaryType="jnt:resource"/>
+                        </scaffolding.less>
+                        <sprites.less jcr:primaryType="jnt:file">
+                            <jcr:content jcr:mimeType="application/binary" jcr:primaryType="jnt:resource"/>
+                        </sprites.less>
+                        <tables.less jcr:primaryType="jnt:file">
+                            <jcr:content jcr:mimeType="application/binary" jcr:primaryType="jnt:resource"/>
+                        </tables.less>
+                        <thumbnails.less jcr:primaryType="jnt:file">
+                            <jcr:content jcr:mimeType="application/binary" jcr:primaryType="jnt:resource"/>
+                        </thumbnails.less>
+                        <tooltip.less jcr:primaryType="jnt:file">
+                            <jcr:content jcr:mimeType="application/binary" jcr:primaryType="jnt:resource"/>
+                        </tooltip.less>
+                        <type.less jcr:primaryType="jnt:file">
+                            <jcr:content jcr:mimeType="application/binary" jcr:primaryType="jnt:resource"/>
+                        </type.less>
+                        <utilities.less jcr:primaryType="jnt:file">
+                            <jcr:content jcr:mimeType="application/binary" jcr:primaryType="jnt:resource"/>
+                        </utilities.less>
+                        <variables.less jcr:primaryType="jnt:file">
+                            <jcr:content jcr:mimeType="application/binary" jcr:primaryType="jnt:resource"/>
+                        </variables.less>
+                        <wells.less jcr:primaryType="jnt:file">
+                            <jcr:content jcr:mimeType="application/binary" jcr:primaryType="jnt:resource"/>
+                        </wells.less>
+                        <accordion.less jcr:primaryType="jnt:file">
+                            <jcr:content jcr:mimeType="application/binary" jcr:primaryType="jnt:resource"/>
+                        </accordion.less>
+                        <alerts.less jcr:primaryType="jnt:file">
+                            <jcr:content jcr:mimeType="application/binary" jcr:primaryType="jnt:resource"/>
+                        </alerts.less>
+                        <bootstrap.less jcr:primaryType="jnt:file">
+                            <jcr:content jcr:mimeType="application/binary" jcr:primaryType="jnt:resource"/>
+                        </bootstrap.less>
+                        <breadcrumbs.less jcr:primaryType="jnt:file">
+                            <jcr:content jcr:mimeType="application/binary" jcr:primaryType="jnt:resource"/>
+                        </breadcrumbs.less>
+                        <button-groups.less jcr:primaryType="jnt:file">
+                            <jcr:content jcr:mimeType="application/binary" jcr:primaryType="jnt:resource"/>
+                        </button-groups.less>
+                        <buttons.less jcr:primaryType="jnt:file">
+                            <jcr:content jcr:mimeType="application/binary" jcr:primaryType="jnt:resource"/>
+                        </buttons.less>
+                        <carousel.less jcr:primaryType="jnt:file">
+                            <jcr:content jcr:mimeType="application/binary" jcr:primaryType="jnt:resource"/>
+                        </carousel.less>
+                        <close.less jcr:primaryType="jnt:file">
+                            <jcr:content jcr:mimeType="application/binary" jcr:primaryType="jnt:resource"/>
+                        </close.less>
+                        <code.less jcr:primaryType="jnt:file">
+                            <jcr:content jcr:mimeType="application/binary" jcr:primaryType="jnt:resource"/>
+                        </code.less>
+                        <component-animations.less jcr:primaryType="jnt:file">
+                            <jcr:content jcr:mimeType="application/binary" jcr:primaryType="jnt:resource"/>
+                        </component-animations.less>
+                        <jahia.less jcr:primaryType="jnt:file">
+                            <jcr:content jcr:mimeType="application/binary" jcr:primaryType="jnt:resource"/>
+                        </jahia.less>
+                    </less>
+                </files>
+                <contents jcr:primaryType="jnt:contentFolder"/>
+            <home j:isHomePage="true"
+               j:templateName="home"
+                  jcr:primaryType="jnt:page">
+                <j:translation_en jcr:language="en"
+                                  jcr:mixinTypes="mix:title"
+                                  jcr:primaryType="jnt:translation"
+                                  jcr:title="Home"/>
+                    <bootstrap-column jcr:primaryType="jnt:contentList"/>
+            </home>
+                <search-results j:templateName="two-cols" jcr:primaryType="jnt:page">
+                    <j:translation_en jcr:language="en"
+                              jcr:mixinTypes="mix:title"
+                              jcr:primaryType="jnt:translation"
+                              jcr:title="Search results"/>
+                    <pagecontent jcr:primaryType="jnt:contentList">
+                        <advanced-search-form jcr:primaryType="jnt:advancedSearchForm"/>
+                        <search-results autoSuggest="true"
+                               autoSuggestHitCount="2"
+                               autoSuggestMaxTermCount="1"
+                               autoSuggestMinimumHitCount="2"
+                               jcr:primaryType="jnt:searchResults"/>
+                    </pagecontent>
+                    <main jcr:primaryType="jnt:contentList">
+                        <advanced-search-form j:view="bootstrap"
+                                     jcr:mixinTypes="jmix:renderable"
+                                     jcr:primaryType="jnt:advancedSearchForm"/>
+                        <search-results autoSuggest="true"
+                               autoSuggestHitCount="2"
+                               autoSuggestMaxTermCount="1"
+                               autoSuggestMinimumHitCount="2"
+                               jcr:primaryType="jnt:searchResults"/>
+                    </main>
+                </search-results>
+                <sources j:extendedType="jnt:moduleVersionFolder"
+                  j:externalNodeIdentifier="fffffff1-34b5-41ba-887f-37816d4eaabc"
+                  j:isExternalProviderRoot="true"
+                  jcr:mixinTypes="jmix:externalProviderExtension"
+                  jcr:primaryType="jnt:externalProviderExtension">
+                    <src j:extendedType="jnt:folder"
+                 j:externalNodeIdentifier="fffffff1-1972-47ad-b6ad-3c52333815a4"
+                 j:isExternalProviderRoot="false"
+                 jcr:mixinTypes="jmix:externalProviderExtension"
+                 jcr:primaryType="jnt:externalProviderExtension">
+                        <main j:extendedType="jnt:folder"
+                     j:externalNodeIdentifier="fffffff1-62a1-4da2-8f80-6c71aabcaaa7"
+                     j:isExternalProviderRoot="false"
+                     jcr:mixinTypes="jmix:externalProviderExtension"
+                     jcr:primaryType="jnt:externalProviderExtension">
+                            <resources j:extendedType="jnt:folder"
+                             j:externalNodeIdentifier="fffffff1-4927-44d5-8171-8137dbdca2d4"
+                             j:isExternalProviderRoot="false"
+                             jcr:mixinTypes="jmix:externalProviderExtension"
+                             jcr:primaryType="jnt:externalProviderExtension">
+                                <css j:extendedType="jnt:cssFolder"
+                          j:externalNodeIdentifier="fffffff1-2640-43cd-9a2f-84d1e63efefb"
+                          j:isExternalProviderRoot="false"
+                          jcr:mixinTypes="jmix:externalProviderExtension"
+                          jcr:primaryType="jnt:externalProviderExtension">
+                                    <jahia-old.css j:extendedType="jnt:cssFile"
+                                       j:externalNodeIdentifier="fffffff1-b113-413c-9831-462a7566074e"
+                                       j:isExternalProviderRoot="false"
+                                       jcr:mixinTypes="jmix:externalProviderExtension"
+                                       jcr:primaryType="jnt:externalProviderExtension"/>
+                                    <news-events.css j:extendedType="jnt:cssFile"
+                                         j:externalNodeIdentifier="fffffff1-3c86-4409-bee6-aa37a4f105eb"
+                                         j:isExternalProviderRoot="false"
+                                         jcr:mixinTypes="jmix:externalProviderExtension"
+                                         jcr:primaryType="jnt:externalProviderExtension"/>
+                                    <edit.css j:extendedType="jnt:cssFile"
+                                  j:externalNodeIdentifier="fffffff1-1226-4197-bc32-dcc91a5867dd"
+                                  j:isExternalProviderRoot="false"
+                                  jcr:mixinTypes="jmix:externalProviderExtension"
+                                  jcr:primaryType="jnt:externalProviderExtension"/>
+                                </css>
+                                <jnt_template j:extendedType="jnt:nodeTypeFolder"
+                                   j:externalNodeIdentifier="fffffff1-aab6-4f62-8cd7-4cbdf19a47cd"
+                                   j:isExternalProviderRoot="false"
+                                   jcr:mixinTypes="jmix:externalProviderExtension"
+                                   jcr:primaryType="jnt:externalProviderExtension">
+                                    <html j:extendedType="jnt:templateTypeFolder"
+                              j:externalNodeIdentifier="fffffff1-c945-4be7-9812-78ab754e10b0"
+                              j:isExternalProviderRoot="false"
+                              jcr:mixinTypes="jmix:externalProviderExtension"
+                              jcr:primaryType="jnt:externalProviderExtension">
+                                        <template.bootstrap.jsp j:extendedType="jnt:viewFile"
+                                                   j:externalNodeIdentifier="fffffff1-61f7-40e3-8192-20916822306b"
+                                                   j:isExternalProviderRoot="false"
+                                                   jcr:mixinTypes="jmix:externalProviderExtension"
+                                                   jcr:primaryType="jnt:externalProviderExtension"/>
+                                    </html>
+                                </jnt_template>
+                            </resources>
+                        </main>
+                    </src>
+                </sources>
+        </bootstrap-acme-space-templates>
+    </modules>
+</content>

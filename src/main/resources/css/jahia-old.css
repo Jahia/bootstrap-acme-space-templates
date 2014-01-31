@@ -1,0 +1,951 @@
+
+/******************************************************************************
+* old styles
+******************************************************************************/
+.wrapper div.intro{
+    color: #000000;
+    font-size: 21px;
+    font-weight: 200;
+    line-height: 30px;
+    margin-bottom: 20px
+}
+.wrapper div.intro p{
+    color: #000000;
+    font-size: 21px;
+    font-weight: 200;
+    line-height: 30px;
+    margin-bottom: 20px
+}
+.wrapper p.intro {
+    color: #000000;
+    font-size: 21px;
+    font-weight: 200;
+    line-height: 30px;
+    margin-bottom: 20px
+}
+
+.wrapper p.nomargin {
+    margin: 0;
+}
+.container_16 .container_16 {
+    width: auto;
+}
+.aligncenter {
+    text-align: center;
+}
+.alignright {
+    text-align: right;
+}
+.alignleft {
+    text-align: right;
+}
+
+/******************************************************************************
+* 960 grid system row into row
+******************************************************************************/
+.container_16 .container_16 {
+    width: auto;
+}
+/******************************************************************************
+* HTML5 tags
+******************************************************************************/
+.wrapper header,.wrapper section,.wrapper footer,
+.wrapper aside,.wrapper nav,.wrapper article,.wrapper figure {
+	display: block;
+}
+
+/******************************************************************************
+* Utils
+******************************************************************************/
+.wrapper  .collapsible {
+	display:none;
+}
+.wrapper .clear {
+	clear:both;
+    background: 0;
+    border: 0;
+    clear: both;
+    display: block;
+    float: none;
+    font-size: 0;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    visibility: hidden;
+    width: 0;
+    height: 0;
+}
+.wrapper .clearitem 	{
+	clear:both;
+}
+.wrapper br.clear {
+	clear:both;
+	font-family: Arial, Helvetica, sans-serif;
+	line-height:0px;	/* no height ! */
+	font-size:0px;
+}
+.wrapper .hide, .wrapper .hidden {
+	display:none;
+}
+
+.wrapper .floatright {
+	float:right;
+	position:relative;
+	margin: 5px;
+}
+.wrapper .floatleft {
+	float:left;
+	position:relative;
+	margin: 5px;
+}
+
+.wrapper .leftside{
+	float:left;
+	position:relative;
+}
+.wrapper .rightside{
+	float: right;
+	position:relative;
+}
+.wrapper .clearMaringPadding{
+	padding:0;
+	margin:0;
+}
+.wrapper .relative{
+	position:relative;
+}
+
+/******************************************************************************
+*  Float Right List for ordered or unordered links list
+******************************************************************************/
+.wrapper .FloatRightList ul {
+	text-align:right;
+	list-style:none;
+	margin:0;
+	padding:0;
+}
+.wrapper .FloatRightList li {
+	list-style:none;
+	padding-left:1em;
+	display:inline;
+	line-height:125%
+}
+/******************************************************************************
+*  Float Left List for unordered links list
+******************************************************************************/
+.wrapper .FloatLeftList ul {
+    text-align:left;
+    list-style:none;
+    margin:0;
+    margin-bottom:0.8em;
+    padding:0;
+}
+
+.wrapper .FloatLeftList li {
+    list-style:none;
+    padding-right:0.5em;
+    display:inline;
+}
+/******************************************************************************
+* list Arrow
+******************************************************************************/
+.wrapper ul.arrowList, .arrowList ul {
+	margin:5px 0;
+	position:relative;
+	list-style:none;
+}
+.wrapper .arrowList li {
+	background: url(../img/arrow.png) no-repeat 0 2px;
+	padding:0 0 0 12px;
+	clear:left;
+	list-style:none;
+}
+/******************************************************************************
+*  Hilight List
+******************************************************************************/
+
+.wrapper .hilightList ul {
+	list-style-image:none;
+	list-style-position:outside;
+	list-style-type:none;
+	margin:0;
+	padding:0;
+	border-bottom:none;
+}
+.wrapper .hilightList li {
+	list-style-type:none;
+	margin:0;
+	border-bottom:1px solid #eaeaea;
+	padding:0.2em 0;
+}
+.wrapper .hilightList li a, .wrapper .hilightList li a:link, .wrapper .hilightList li a:visited {
+	padding:0 0.5em;
+	text-decoration:none;
+	color:#333;
+    display: block;
+}
+.wrapper .hilightList li a:hover, .wrapper .hilightList li a:active {
+	text-decoration:none;
+	color:#0073e5;
+	background-color:#EAEAEA;
+}
+/******************************************************************************
+*  HR List
+******************************************************************************/
+.wrapper .hr-list ul {
+    margin: 0;
+    padding: 0;
+}
+.wrapper .hr-list li {
+    margin: 0;
+    padding:0;
+    list-style: none;
+    margin-bottom:1.6em;
+    padding-bottom:1.6em;
+    border-bottom:4px solid #ccc;
+}
+.wrapper .hr-list li:last-child {
+    margin-bottom: 0;
+    background-image:none;
+}
+.wrapper .hr-list ul ul {
+    list-style: outside disc;
+    margin: 1em 0 2em 2em;
+}
+.wrapper .hr-list ul ul li {
+    margin: 0;
+    padding:0;
+    list-style: none;
+    background:none;
+    list-style: outside disc;
+}
+/******************************************************************************
+*  Images
+******************************************************************************/
+.wrapper .imagefloatright {
+    float:right;
+    margin-bottom:20px;
+    padding-left:20px;
+}
+.wrapper .imagefloatleft {
+    float:left;
+    margin-bottom:20px;
+    padding-right:20px;
+}
+.wrapper .imagefloatright {
+    float:right;
+    margin-bottom:20px;
+    padding-left:20px;
+}
+
+.wrapper .itemImage {
+    background-color:#F4F4F4;
+    border:1px solid #eaeaea;
+    position:relative;
+    padding:1px;
+    margin-bottom:10px;
+}
+.wrapper .imagefloatleft .itemImage  {
+    margin-bottom:0px;
+}
+.wrapper .imagefloatright .itemImage  {
+    margin-bottom:0px;
+}
+.wrapper div.itemImageRight {
+    float:right;
+}
+.wrapper div.itemImageLeft {
+    float:left;
+}
+.wrapper .itemImage img {
+    background-color:#e1e1e1;
+    display: block;
+    padding:9px;
+}
+.wrapper .itemImagewhite img{
+    background-color:#fff;
+    display: block;
+}
+/******************************************************************************
+*  list checkmarks
+******************************************************************************/
+
+.wrapper ul.list-checkmarks {
+	list-style-image:none;
+	list-style-position:outside;
+	list-style-type:none;
+	margin:0;
+	padding:0;
+	border-bottom:none;
+	margin-bottom:1em;
+}
+.wrapper .list-checkmarks li {
+	list-style-type:none;
+	margin:0;
+	padding:0.2em 0;
+	line-height:40px;
+	padding-left:30px;
+	background:transparent url(../img/checkmark.png) no-repeat 2px 12px;
+}
+/******************************************************************************
+*  list arrows
+******************************************************************************/
+
+.wrapper ul.list-arrows {
+	list-style-image:none;
+	list-style-position:outside;
+	list-style-type:none;
+	margin:0;
+	padding:0;
+	border-bottom:none;
+	margin-bottom:1em;
+}
+.wrapper .list-arrows li {
+	list-style-type:none;
+	margin:0;
+	padding:0.2em 0;
+	line-height:40px;
+	padding-left:30px;
+	background:transparent url(../img/arrow.png) no-repeat 2px 12px;
+}
+
+
+
+/******************************************************************************
+*  Float Right Links List ordered or unordered
+******************************************************************************/
+.wrapper ul.FloatRightList {
+	text-align:right;
+	list-style:none;
+	margin:0;
+	padding:0;
+}
+.wrapper .FloatRightList li {
+	list-style:none;
+	padding-left:1em;
+	display:inline;
+	line-height:125%
+}
+/******************************************************************************
+*  Images
+******************************************************************************/
+.wrapper .imagefloatright {
+	float:right;
+	margin-bottom:20px;
+	padding-left:20px;
+}
+.wrapper .imagefloatleft {
+	float:left;
+	margin-bottom:20px;
+	padding-right:20px;
+}
+.wrapper .imagefloatright {
+	float:right;
+	margin-bottom:20px;
+	padding-left:20px;
+}
+.wrapper .itemImage {
+	position:relative;
+	padding:1px;
+	margin-bottom:10px;
+}
+.wrapper .imagefloatleft .itemImage {
+	margin-bottom:0px;
+}
+.wrapper .imagefloatright .itemImage {
+	margin-bottom:0px;
+}
+.wrapper div.itemImageRight {
+	float:right;
+}
+.wrapper div.itemImageLeft {
+	float:left;
+}
+.wrapper .itemImage img {
+	display: block;
+	padding:9px;
+}
+.wrapper .itemImagewhite img {
+	background-color:#fff;
+	display: block;
+}
+/******************************************************************************
+*  Pagination
+******************************************************************************/
+.pagination {
+	height:1%;
+	overflow:hidden;
+	margin:1em 0;
+}
+.pagination:first-child {
+	margin-top: 0;
+}
+.wrapper div.pagination label {
+    display: inline;
+}
+.wrapper div.pagination select {
+	padding:2px;
+    width: auto;
+    height: auto;
+    margin-bottom: 0;
+}
+.wrapper .paginationPosition {
+	float:left;
+	color:#36393d;
+	padding:0;
+}
+.wrapper .paginationNavigation {
+	float:right;
+}
+.wrapper .paginationNavigation a:link, .wrapper .paginationNavigation a:visited, .wrapper .paginationNavigation a:hover, .wrapper .paginationNavigation a:active {
+	text-decoration:none;
+	padding:0.2em 0.5em;
+}
+.wrapper .paginationNavigation a:hover {
+	background:#6600cc;
+	color:#fff;
+}
+.wrapper .paginationNavigation .currentPage {
+	background:#6600cc;
+	color:#fff;
+	padding:0.2em 0.5em;
+}
+.wrapper .paginationNavigation span {
+	text-decoration:none;
+	color:#666;
+	padding:0;
+}
+/******************************************************************************
+*  AlphabeticalMenu
+******************************************************************************/
+.wrapper div.alphabeticalMenu {
+	height:1%;
+	overflow:hidden;
+	text-transform:uppercase;
+	padding:0.2em 0.5em;
+	margin:0.5em 0;
+	background-color:#EAEAEA;
+}
+.wrapper .alphabeticalLabel {
+	float:left;
+	font-weight:bold;
+	color:#333;
+}
+.wrapper .alphabeticalNavigation {
+	float:left;
+}
+.wrapper .alphabeticalNavigation a:link, .wrapper .alphabeticalNavigation a:visited, .wrapper .alphabeticalNavigation a:hover, .wrapper .alphabeticalNavigation a:active {
+	height:28px;
+	line-height:28px;
+	border:1px solid #eaeaea;
+	background:#eaeaea;
+	padding: 2px 4px;
+	text-decoration:none;
+}
+.wrapper .alphabeticalNavigation a:hover {
+	background:#6600cc;
+	color:#fff;
+}
+.wrapper .alphabeticalNavigation a.current {
+	height:28px;
+	line-height:28px;
+	border:1px solid #eaeaea;
+	background:#6600cc;
+	color:#fff;
+	padding: 2px 4px;
+	text-decoration:none;
+}
+.wrapper .alphabeticalNavigation span {
+	text-decoration:none;
+	color:#666;
+	padding:0;
+}
+
+/******************************************************************************
+*  Button
+******************************************************************************/
+.wrapper .divButton {
+	text-align:center;
+	margin:0 0 10px 0;	
+	overflow:hidden;
+}
+.wrapper .divButtonRight {
+	text-align:right;
+	overflow:hidden;
+}
+.wrapper input.button {
+	margin-right:0.5em;
+}
+.wrapper input.button {
+	display: inline-block;
+ 	*display: inline;
+  	/* IE7 inline-block hack */
+
+  	*zoom: 1;
+
+	padding: 5px 14px;
+	margin-bottom: 0;
+	font-size: 14px;
+	line-height: 20px;
+ 	*line-height: 20px;
+	text-align: center;
+	vertical-align: middle;
+	cursor: pointer;
+	color: #fff;
+	background-color: #6600cc;
+	border:0;
+ 	*background-color: #6600cc;
+ 	 /* Darken IE7 buttons by default so they stand out more given they won't have borders */
+ 	*border: 0;
+
+ 	*margin-left: .3em;
+    -webkit-border-radius:3px;
+    -moz-border-radius:3px;
+    border-radius:3px
+}
+
+.wrapper input.button:hover {
+	color: #FFF;
+	text-decoration: none;
+	background-color: #0073E5;
+    *background-color: #0073E5;
+	/* Buttons in IE7 don't get borders, so darken on hover */
+
+}
+.wrapper input.button:focus {
+	outline: thin dotted #333;
+	outline: 5px auto -webkit-focus-ring-color;
+	outline-offset: -2px;
+}
+/******************************************************************************
+*  <A> Button
+******************************************************************************/
+
+.wrapper a.aButton, .wrapper a.aButton:link, .wrapper a.aButton:visited {
+	background-color:#6600cc;
+	color:#fff;
+	border:none;
+	text-align:center;
+	padding:6px 6px;
+	display:inline-block;
+    -webkit-border-radius:3px;
+    -moz-border-radius:3px;
+    border-radius:3px
+}
+.wrapper a.aButton:hover, .wrapper a.aButton:hover {
+	cursor: pointer;
+	color:#fff;
+	background-color:#5500aa;
+	text-decoration:none;
+}
+.wrapper a.aButtonMarginBottom {
+	margin-bottom:1.5em;
+}
+.wrapper a.aButtonRight, .wrapper a.aButtonRight:link, .wrapper a.aButtonRight:visited {
+	float: right;
+}
+/******************************************************************************
+*  Anchor
+******************************************************************************/
+.wrapper div.bottomanchor {
+	padding:0.2em;
+	margin: 1em 0;
+	clear:both
+}
+.wrapper .bottomanchor a, .wrapper .bottomanchor a:link, .wrapper .bottomanchor a:visited {
+	float:right;
+	margin:0;
+	text-transform:uppercase
+}
+.wrapper .bottomanchor a:hover, .wrapper .bottomanchor a:active {
+	cursor: pointer;
+	text-decoration: underline;
+}
+/******************************************************************************
+*  Thumbnails
+******************************************************************************/
+.wrapper div.thumbnail {
+	float:left;
+	position:relative;
+	margin-right:20px;
+}
+.wrapper div.thumbnailRight {
+	float:right;
+	position:relative;
+	margin-left:20px;
+}
+.wrapper div.thumbnail img {
+	position:relative
+}
+
+/******************************************************************************
+*  Summary
+******************************************************************************/
+.wrapper ul.summary, .wrapper .summary {
+	margin:10px 0;
+	line-height:130%;
+	padding: 10px;
+	background-color:#eee;
+	border:1px solid #ccc;
+	margin:0;
+	list-style:none;
+}
+.wrapper .summary a, .wrapper .summary a:link, .wrapper .summary a:visited {
+	text-decoration:none;
+}
+.wrapper .summary a:hover, .wrapper .summary a:active {
+	text-decoration:underline;
+}
+.wrapper .summary ul {
+	margin:0;
+	padding:0 0 0 2em;
+	list-style:none;
+}
+.wrapper .summary li {
+	padding:0;
+	margin-bottom:10px
+}
+/******************************************************************************
+* Form
+******************************************************************************/
+.wrapper .Form p {
+	clear:both;
+	margin:0.4em 0;
+	padding:0px
+}
+.wrapper .Form {
+	margin:1em 0 0 0;
+	overflow:hidden;
+}
+.wrapper .formMarginLeft {
+	margin:0 0 0 25%;
+	padding:0 1em 0 2.3em;
+}
+.wrapper .Form label.left {
+	float:left;
+	width:25%;
+	margin:0 1em 0 1em;
+	padding:2px;
+	text-align:right;
+}
+.wrapper .divButton {
+	text-align:center;
+	margin:0.5em 0;
+}
+/******************************************************************************
+*  error and messages
+******************************************************************************/
+.wrapper .error {
+    border:1px solid #cc3300;
+    background-color:#ffebe8;
+}
+.wrapper label.error {
+    margin: 0 10px;
+    padding:10px !important;
+    padding-left:35px !important;
+    border:1px solid #cc3300;
+    background:#ffebe8 url(../img/error-messages.png) no-repeat 5px 50%;
+}
+.wrapper .FormBuilder label.error{
+    background:none;
+    white-space:nowrap;
+}
+.wrapper .error-message {
+    padding:10px !important;
+    padding-left:35px !important;
+    border:1px solid #cc3300;
+    background:#ffebe8 url(../img/error-messages.png) no-repeat 5px 50%;
+}
+
+/******************************************************************************
+* Links
+******************************************************************************/
+.wrapper div.more {
+    float: right;
+    display: block;
+}
+.wrapper div.more {
+    float: right;
+    display: block;
+}
+.wrapper a.more,
+.wrapper a.more:link,
+.wrapper a.more:visited{
+    background-color:#6600cc;
+    color:#fff;
+    border:none;
+    text-align:center;
+    padding:6px 6px;
+    display:inline-block;
+
+}
+.wrapper a.more:hover,
+.wrapper a.more:active {
+    cursor: pointer;
+    color:#fff;
+    background-color:#5500aa;
+    text-decoration:none;
+}
+
+.wrapper a.more2,
+.wrapper a.more2:link,
+.wrapper a.more2:visited {
+    background-color:#6600cc;
+    color:#fff;
+    border:none;
+    text-align:center;
+    padding:6px 6px;
+    display:inline-block;
+}
+.wrapper a.more2:hover,
+.wrapper a.more2:active {
+    cursor: pointer;
+    color:#fff;
+    background-color:#5500aa;
+    text-decoration:none;
+}
+
+.wrapper a.returnLink,
+.wrapper a.returnLink a:link,
+.wrapper a.returnLink:visited{
+    background-color:#6600cc;
+    color:#fff;
+    border:none;
+    text-align:center;
+    padding:6px 6px;
+    display:inline-block;
+    -webkit-border-radius:3px;
+    -moz-border-radius:3px;
+    border-radius:3px
+}
+.wrapper a.returnLink:hover,
+.wrapper a.returnLink:active {
+    cursor: pointer;
+    color:#fff;
+    background-color:#5500aa;
+    text-decoration:none;
+}
+.wrapper .divReturnLink{
+    margin:0.5em 0;
+}
+
+/******************************************************************************
+* Mod tabular List
+******************************************************************************/
+.wrapper .tabularlistitem {
+	background-color:#FFF;
+	overflow:hidden;
+	padding:0.2em;
+	border-top:none;
+	margin:1em 0;
+	border:1px solid #EAEAEA;
+    clear: both;
+}
+.wrapper ul.idTabs {
+	background-image:none;
+	margin:0;
+	margin-bottom:1em;
+	border:none;
+	margin-bottom:0;
+	padding:0.2em;
+	padding-bottom:0;
+	background-color:#eee;
+	overflow:hidden;
+}
+.wrapper .idTabs li {
+	list-style: none;
+    *display: inline;
+    /* IE7 inline-block hack */
+
+}
+.wrapper .tabContainer {
+	background-color:#FFF;
+	overflow:hidden;
+	padding:20px;
+	border-top:none;
+	margin-bottom:1em;
+}
+.wrapper .idTabs li a {
+	background:none;
+	display:inline;
+	float:left;
+	height:auto;
+	line-height:2em;
+	padding-left:1px;
+	text-decoration:none;
+	margin-right:2px;
+	font-weight:bold;
+}
+.wrapper .idTabs li a.selected, .wrapper .idTabs li a:hover, .wrapper .idTabs li a.selected {
+	text-decoration:none;
+	color: #6600cc;
+}
+.wrapper .idTabs li a span {
+	background:none;
+	color:#666;
+	cursor:pointer;
+	display:inline;
+	float:left;
+	height:auto;
+	line-height:3em;
+	padding:0 10px;
+	text-decoration:none;
+    -webkit-border-top-radius:4px 4px 0 0;
+    -moz-border-radius:4px 4px 0 0;
+    border-radius:4px 4px 0 0;
+}
+.wrapper .idTabs li a.selected span, .wrapper .idTabs li a:hover span, .wrapper .idTabs li a.idTabs span {
+	text-decoration:none;
+	background-color:#FFF;
+	color: #6600cc;
+}
+/******************************************************************************
+* Forum
+******************************************************************************/
+.wrapper #forum-body  .forum-box {
+    background:none;
+    border:1px solid #e5e5e5;
+    -webkit-border-radius:0;
+    -moz-border-radius:0;
+    border-radius:0;
+    -webkit-box-shadow: none;
+    -moz-box-shadow:none;
+    box-shadow:none;
+}
+/* box style 1
+----------------------------------------*/
+.wrapper #forum-body  .forum-box-style1 {
+    background:none;
+    background-color:#f5f5f5;
+}
+/* box style 2
+----------------------------------------*/
+.wrapper #forum-body  .forum-box-style2 {
+    background:none;
+    background-color:#fff;
+}
+
+.wrapper #forum-body  .forum-buttons a,
+.wrapper #forum-body  .forum-buttons a:link,
+.wrapper #forum-body  .forum-buttons a:visited{
+    background:none;
+    background-color:#6600cc;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+
+    -moz-box-shadow:none;
+    -webkit-box-shadow:none;
+    box-shadow: none;
+    padding-left: 10px;
+
+    -webkit-transition:none;
+    -moz-transition: none;
+    -o-transition:none;
+    transition: none;
+    text-shadow:none;
+    filter: dropshadow(none);
+}
+.wrapper #forum-body .forum-buttons a:hover,
+.wrapper #forum-body .forum-buttons a:active {
+    text-decoration:none;
+    color: #fff;
+    background:none;
+    background-color:#6600cc;
+}
+.wrapper #forum-body .breadcrumb {
+    list-style: none outside none;
+    margin: 0;
+    padding: 0 5px 5px;
+}
+.wrapper #forum-body .breadcrumb > li {
+    display: inline-block;
+    text-shadow: none;
+    padding-right: 10px;
+}
+.wrapper #forum-body .breadcrumb > .active {
+    color: #999999;
+}
+/* blog
+----------------------------------------*/
+.wrapper .post-date {
+    background: none;
+    background-color: #6600cc;
+    color: #FFF;
+    float: left;
+    font-size: 1.6em;
+    font-weight: bold;
+    height: 50px;
+    line-height: 140%;
+    margin: 0 5px 0 0;
+    padding: 0 2px 0 0;
+    text-align: center;
+    width: 45px;
+}
+.wrapper .post-date span {
+    color: #FFFFFF;
+    display: block;
+    font: 10px Arial,Helvetica,sans-serif;
+    height: 16px;
+    padding-top: 4px;
+    text-align: center;
+}
+.wrapper a.atopblog {
+    background-image:url(../img/arrow.png);
+    background-position: 0.2em 0;
+}
+.wrapper a.atopblogcontents {
+    background-image:url(../img/post.png);
+}
+.wrapper a.atopblogcomments,
+.wrapper .post-info-links a.comment_count {
+    background-image:url(../img/comment.png);
+}
+.wrapper .post-tags li {
+    background-image:url(../img/tag.png);
+}
+.wrapper a.postedit, .wrapper a.pageedit {
+    background-image: url("../img/postedit.png");
+}
+.wrapper a.postdelete, .wrapper a.pagedelete {
+    background-image: url("../img/delete.png");
+}
+.wrapper .post-info-links a,.wrapper .post-tags li {
+    padding-right: 22px;
+}
+.wrapper .addArticle a, .wrapper .addArticle a:link {
+    background: url("../img/addarticle.png") no-repeat scroll 2% 50% #6600cc;
+    border-radius: 3px;
+    color: #fff;
+    display: block;
+    font-size: 1.4em;
+    font-weight: bold;
+    line-height: 1.4em;
+    padding: 5px 5px 5px 35px;
+    text-shadow: none;
+}
+.wrapper .addArticle a:hover, .wrapper .addArticle a:focus {
+    background-color: #333333;
+    color: #FFFFFF;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out 0s;
+}
+.wrapper .fc-event-skin {
+    background-color: #6600cc;
+    border-color: #6600cc;
+    color: #FFFFFF;
+}
+/* wiki
+----------------------------------------*/
+.wrapper h4.boxwiki-title {
+    background: none;
+    background-color: #333;
+    border: 1px solid #333;
+}
+.wrapper .textareawiki     {
+    width: 94%;
+}
+.wrapper a.wikipagedelete {
+    background-image: url("../img/delete.png");
+}
