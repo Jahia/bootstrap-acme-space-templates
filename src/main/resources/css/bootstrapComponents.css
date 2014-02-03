@@ -1,0 +1,226 @@
+/*media-list*/
+/*media-small*/
+.media-photo-small {
+    height: 60px;
+    width: 60px;
+    float: left;
+    margin: 0 5px 5px 0;
+}
+.media-photo-small img {
+    height: 60px;
+    width: 60px;
+}
+.media-body {
+    padding-left: 15px;
+}
+.media-body h1 {
+    margin-top: 0;
+}
+.media-body-border-left {
+    border-left: 1px solid #eaeaea;
+}
+.media-body-marginleft150 {
+    margin-left: 150px;
+}
+.media-body-marginleft75 {
+    margin-left: 75px;
+}
+.media-body-no-photo-small {
+    margin-left: 65px;
+}
+.media-heading-small {
+    margin: 0;
+}
+h3.media-heading-small{
+    font-size: 18px;
+    line-height: 20px;
+}
+.media-heading a, .media-heading-small a {
+    color: #000;
+    text-decoration: none;
+}
+.media-heading a:hover, .media-heading-small a:hover,
+.media-heading a:focus, .media-heading-small a:focus {
+    color: #6600CC;
+    text-decoration: none;
+}
+li.media-small,
+li.media-medium {
+    border-bottom: 1px solid #eaeaea;
+    margin-bottom: 25px;
+    overflow: hidden;
+}
+li.media-small:last-child,
+li.media-medium:last-child {
+    border-bottom: none;
+}
+.media-photo-medium {
+    height: 60px;
+    width: 60px;
+    float: left;
+    margin: 0 15px 15px 0px;
+}
+.media-photo-medium img {
+    height: 60px;
+    width: 60px;
+}
+.media-photo-margintop-medium {
+    margin-top: 75px;
+}
+.media-photo-big {
+    height: 120px;
+    width: 120px;
+    float: left;
+    margin: 0 15px 15px 0px;
+}
+.media-text-big {
+    clear: both;
+}
+.news figure,
+.events figure {
+    margin: 14px 0 28px;
+    max-height: 400px;
+    overflow: hidden;
+    clear: both;
+}
+div.media-date {
+    height: 60px;
+    min-width: 60px;
+    float: left;
+    margin: 0 5px 5px 0;
+    background: #6600CC;
+    text-align: center;
+}
+div.media-date-big-end {
+    background: #f60;
+}
+div.media-date-big {
+    margin: 0 15px 15px 0;
+}
+div.media-date-big-margintop {
+    margin-top: 75px;
+}
+div.media-date .month {
+    color: #fff;
+    display: block;
+    font-size: 11px;
+}
+div.media-date .day {
+    color: #fff;
+    display: block;
+    font-size: 22px;
+    font-weight: bold;
+}
+div.media-date .year {
+    color: #fff;
+    display: block;
+    font-size: 11px;
+}
+
+/*mini teasers*/
+.mini-teaser {
+    text-align: center;
+}
+.mini-teaser h3 {
+    text-transform: uppercase;
+}
+.icon-mini-teaser {
+    font-size: 100px;
+    display: block;
+}
+.mini-teaser {
+    text-align: center;
+}
+/*teasers*/
+.teaser .teaser-text {
+    margin: 15px auto 0;
+    width: 90%;
+}
+.teaser-view2 {
+    text-align: center;
+    position: relative;
+}
+.teaser-view2 .flag {
+    margin-bottom: 3px;
+}
+.teaser .teaser-text h3 {
+    margin: 0;
+}
+.teaser .img-wrapper {
+    position: relative;
+    margin: 0 auto;
+    text-align: center;
+}
+.teaser .img-wrapper img {
+    position: relative;
+}
+.teaser span.circle {
+    background: rgba(98, 196, 98, 0.8);
+    width: 48px;
+    height: 48px;
+    display: none;
+    text-align: center;
+    position: absolute;
+    top: 37%;
+    left: 43%;
+    border-radius: 100%;
+}
+.teaser span.circle span.plus {
+    display: inline-block;
+    margin-top: 13px;
+    font-weight: bold;
+    color: white;
+    font-size: 32px;
+}
+.teaser:hover span.circle {
+    display: block;
+}
+.teasers-section{
+    border-bottom: 1px solid #eaeaea;
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+}
+
+/* = login - user shortcuts
+ -------------------------------------------------------------- */
+.login {
+    float: right;
+    font-size: 12px;
+    margin: 0 10px;
+    padding: 4px;
+}
+.login i {
+    margin-right: 0px;
+    font-size: 16px;
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    text-align: center;
+    position: relative;
+    left: 0px;
+    top: 2px;
+    text-decoration: none;
+}
+.user-box {
+    float: right;
+    margin: 0 10px;
+    line-height: 30px;
+}
+.user-box .dropdown-menu {
+    font-size: 14px;
+}
+.user-box .user-photo {
+    border-radius: 500px 500px 500px 500px;
+    margin: 0 5px 0 0;
+    width: 32px !important;
+}
+.user-box .dropdown-menu {
+    right: 0;
+    left: auto;
+}
+.user-box .caret {
+    border-bottom-color: #FFFFFF;
+    border-top-color: #FFFFFF;
+    margin-top: 14px;
+    margin-left: 2px;
+}

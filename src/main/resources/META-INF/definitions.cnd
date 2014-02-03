@@ -1,55 +1,56 @@
-<jnt = 'http://www.jahia.org/jahia/nt/1.0'>
 <jmix = 'http://www.jahia.org/jahia/mix/1.0'>
-
-[jmix:internalLink] > jmix:templateMixin  mixin
-   extends=jmix:alink
-   - linkTitle (string) i18n
-   - internalLink (weakreference, picker[type='page']) < jnt:page
-
-[jmix:externalLink] > jmix:templateMixin  mixin
-   extends=jmix:alink
-   - linkTitle (string) i18n
-   - externalLink (string) = 'http://' i18n
+<jnt = 'http://www.jahia.org/jahia/nt/1.0'>
+<mix = 'http://www.jcp.org/jcr/mix/1.0'>
 
 [jmix:alink] mixin
  - linkType (string, choicelist[linkInitializer,resourceBundle]) = 'internal' autocreated < 'internal', 'external'
 
-[jnt:spaceCarousel] > jnt:content, jmix:multimediaContent
- - bgimage (weakreference, picker[type='image']) i18n mandatory < jnt:file
-+ * (jnt:spaceCarouselItem)
-
-[jnt:spaceCarouselItem] > jnt:content, mix:title, jmix:alink
- - lead (string) i18n mandatory
- - image (weakreference, picker[type='image']) i18n < jnt:file
-
 [jnt:bootstrapBigText] > jnt:bigText
- - text (string, richtext[ckeditor.customConfig='$context/modules/bootstrap-acme-space-templates/javascript/ckconfig.js']) i18n
+ - text (string, richtext[ckeditor.customConfig='$context/modules/bootstrap-acme-space-templates/javascript/ckconfig.js']) internationalized
 
 [jnt:bootstrapMainContent] > jnt:mainContent
- - body (string, richtext[ckeditor.customConfig='$context/modules/bootstrap-acme-space-templates/javascript/ckconfig.js']) i18n
+ - body (string, richtext[ckeditor.customConfig='$context/modules/bootstrap-acme-space-templates/javascript/ckconfig.js']) internationalized
 
 [jmix:intro] mixin
- extends=jmix:navMenuItem
- itemtype=content
- - intro (string, richtext[ckeditor.customConfig='$context/modules/bootstrap-acme-space-templates/javascript/ckconfig.js']) i18n
+ extends = jmix:navMenuItem
+ itemtype = content
+ - intro (string, richtext[ckeditor.customConfig='$context/modules/bootstrap-acme-space-templates/javascript/ckconfig.js']) internationalized
 
 [jmix:alternateTitle] mixin
- extends=jmix:navMenuItem
- itemtype=content
-- alternateTitle (string) i18n
+ extends = jmix:navMenuItem
+ itemtype = content
+ - alternateTitle (string) internationalized
 
-[jnt:section] > jnt:content, jmix:layoutComponentContent
- orderable
-  - sectionElement (string, choicelist[resourceBundle]) = 'section' autocreated < 'section', 'article', 'header', 'footer', 'aside', 'nav','div'
-  - cssClassName (string)
-  - sectionId (string)
- + * (jmix:droppableContent) = jmix:droppableContent version
+[jnt:section] > jnt:content, jmix:layoutComponentContent orderable
+ - sectionElement (string, choicelist[resourceBundle]) = 'section' autocreated < 'section', 'article', 'header', 'footer', 'aside', 'nav', 'div'
+ - cssClassName (string)
+ - sectionId (string)
+ + * (jmix:droppableContent) = jmix:droppableContent
 
-[jnt:navside]  > jnt:content, jmix:layoutComponentContent, jmix:studioOnly, jmix:navMenuComponent
+[jnt:navside] > jnt:content, jmix:layoutComponentContent, jmix:studioOnly, jmix:navMenuComponent
 
-[jnt:fullTitle]  > jnt:content, jmix:layoutComponentContent
+[jnt:fullTitle] > jnt:content, jmix:layoutComponentContent
 
-[jnt:pageBanner] > jnt:content, jmix:multimediaContent,jmix:alink
- - text  (string, richtext[ckeditor.customConfig='$context/modules/bootstrap-acme-space-templates/javascript/ckconfig.js']) i18n
- - image (weakreference, picker[type='image']) i18n mandatory < jnt:file
- - bgimage (weakreference, picker[type='image']) i18n mandatory < jnt:file
+[jnt:pageBanner] > jnt:content, jmix:multimediaContent, jmix:alink
+ - text (string, richtext[ckeditor.customConfig='$context/modules/bootstrap-acme-space-templates/javascript/ckconfig.js']) internationalized
+ - image (weakreference, picker[type='image']) mandatory internationalized < 'jnt:file'
+ - bgimage (weakreference, picker[type='image']) mandatory internationalized < 'jnt:file'
+
+[jmix:externalLink] > jmix:templateMixin mixin
+ extends = jmix:alink
+ - linkTitle (string) internationalized
+ - externalLink (string) = 'http://' internationalized
+
+[jmix:internalLink] > jmix:templateMixin mixin
+ extends = jmix:alink
+ - linkTitle (string) internationalized
+ - internalLink (weakreference, picker[type='page']) < 'jnt:page'
+
+[jnt:spaceCarousel] > jnt:content, jmix:multimediaContent
+ - bgimage (weakreference, picker[type='image']) mandatory internationalized < 'jnt:file'
+ + * (jnt:spaceCarouselItem)
+
+[jnt:spaceCarouselItem] > jnt:content, mix:title, jmix:alink
+ - lead (string) mandatory internationalized
+ - image (weakreference, picker[type='image']) internationalized < 'jnt:file'
+
