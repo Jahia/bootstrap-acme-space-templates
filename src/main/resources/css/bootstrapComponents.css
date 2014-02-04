@@ -155,7 +155,7 @@ div.media-date .year {
     position: relative;
 }
 .teaser span.circle {
-    background: rgba(98, 196, 98, 0.8);
+    background: rgba(102, 0, 204, 0.8);
     width: 48px;
     height: 48px;
     display: none;
