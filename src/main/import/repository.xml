@@ -82,7 +82,22 @@
                                     <rich-text jcr:primaryType="jnt:bigText">
                                         <j:translation_en jcr:language="en"
                                              jcr:primaryType="jnt:translation"
-                                             text="&lt;p&gt;&amp;copy; 2002 - 2014 ACME Space Corp&amp;nbsp;- All rights reserved.&lt;/p&gt;&#xA;"/>
+                                             text="&lt;p style=&#34;text-align: right;&#34;&gt;&lt;strong&gt;&amp;copy; 2002 - 2014 ACME Space Corp&amp;nbsp;- All rights reserved.&lt;/strong&gt;&lt;/p&gt;&#xA;"/>
+                                        <j:translation_de jcr:language="de"
+                                             jcr:primaryType="jnt:translation"
+                                             text="&lt;h2&gt;&amp;copy; 2002 - 2014 ACME Space Corp&amp;nbsp;- All rights reserved.&lt;/h2&gt;&#xA;"/>
+                                        <j:translation_it jcr:language="it"
+                                             jcr:primaryType="jnt:translation"
+                                             text="&lt;h2&gt;&amp;copy; 2002 - 2014 ACME Space Corp&amp;nbsp;- All rights reserved.&lt;/h2&gt;&#xA;"/>
+                                        <j:translation_pt jcr:language="pt"
+                                             jcr:primaryType="jnt:translation"
+                                             text="&lt;h2&gt;&amp;copy; 2002 - 2014 ACME Space Corp&amp;nbsp;- All rights reserved.&lt;/h2&gt;&#xA;"/>
+                                        <j:translation_fr jcr:language="fr"
+                                             jcr:primaryType="jnt:translation"
+                                             text="&lt;h2&gt;&amp;copy; 2002 - 2014 ACME Space Corp&amp;nbsp;- All rights reserved.&lt;/h2&gt;&#xA;"/>
+                                        <j:translation_es jcr:language="es"
+                                             jcr:primaryType="jnt:translation"
+                                             text="&lt;h2&gt;&amp;copy; 2002 - 2014 ACME Space Corp&amp;nbsp;- All rights reserved.&lt;/h2&gt;&#xA;"/>
                                     </rich-text>
                                 </footer-container>
                             </footer-container>
@@ -436,78 +451,6 @@
                                jcr:primaryType="jnt:searchResults"/>
                     </main>
                 </search-results>
-                <sources j:extendedType="jnt:moduleVersionFolder"
-                  j:externalNodeIdentifier="fffffff1-34b5-41ba-887f-37816d4eaabc"
-                  j:isExternalProviderRoot="true"
-                  jcr:mixinTypes="jmix:externalProviderExtension"
-                  jcr:primaryType="jnt:externalProviderExtension">
-                    <src j:extendedType="jnt:folder"
-                 j:externalNodeIdentifier="fffffff1-1972-47ad-b6ad-3c52333815a4"
-                 j:isExternalProviderRoot="false"
-                 jcr:mixinTypes="jmix:externalProviderExtension"
-                 jcr:primaryType="jnt:externalProviderExtension">
-                        <main j:extendedType="jnt:folder"
-                     j:externalNodeIdentifier="fffffff1-62a1-4da2-8f80-6c71aabcaaa7"
-                     j:isExternalProviderRoot="false"
-                     jcr:mixinTypes="jmix:externalProviderExtension"
-                     jcr:primaryType="jnt:externalProviderExtension">
-                            <resources j:extendedType="jnt:folder"
-                             j:externalNodeIdentifier="fffffff1-4927-44d5-8171-8137dbdca2d4"
-                             j:isExternalProviderRoot="false"
-                             jcr:mixinTypes="jmix:externalProviderExtension"
-                             jcr:primaryType="jnt:externalProviderExtension">
-                                <css j:extendedType="jnt:cssFolder"
-                          j:externalNodeIdentifier="fffffff1-2640-43cd-9a2f-84d1e63efefb"
-                          j:isExternalProviderRoot="false"
-                          jcr:mixinTypes="jmix:externalProviderExtension"
-                          jcr:primaryType="jnt:externalProviderExtension">
-                                    <jahia-old.css j:extendedType="jnt:cssFile"
-                                       j:externalNodeIdentifier="fffffff1-b113-413c-9831-462a7566074e"
-                                       j:isExternalProviderRoot="false"
-                                       jcr:mixinTypes="jmix:externalProviderExtension"
-                                       jcr:primaryType="jnt:externalProviderExtension"/>
-                                    <news-events.css j:extendedType="jnt:cssFile"
-                                         j:externalNodeIdentifier="fffffff1-3c86-4409-bee6-aa37a4f105eb"
-                                         j:isExternalProviderRoot="false"
-                                         jcr:mixinTypes="jmix:externalProviderExtension"
-                                         jcr:primaryType="jnt:externalProviderExtension"/>
-                                    <edit.css j:extendedType="jnt:cssFile"
-                                  j:externalNodeIdentifier="fffffff1-1226-4197-bc32-dcc91a5867dd"
-                                  j:isExternalProviderRoot="false"
-                                  jcr:mixinTypes="jmix:externalProviderExtension"
-                                  jcr:primaryType="jnt:externalProviderExtension"/>
-                                    <flexslider.css j:extendedType="jnt:cssFile"
-                                        j:externalNodeIdentifier="fffffff1-687d-423b-925d-b9625f2f674d"
-                                        j:isExternalProviderRoot="false"
-                                        jcr:mixinTypes="jmix:externalProviderExtension"
-                                        jcr:primaryType="jnt:externalProviderExtension"/>
-                                    <bootstrapComponents.css j:extendedType="jnt:cssFile"
-                                                 j:externalNodeIdentifier="fffffff1-480c-4ea8-9fd3-a323c0018096"
-                                                 j:isExternalProviderRoot="false"
-                                                 jcr:mixinTypes="jmix:externalProviderExtension"
-                                                 jcr:primaryType="jnt:externalProviderExtension"/>
-                                </css>
-                                <jnt_template j:extendedType="jnt:nodeTypeFolder"
-                                   j:externalNodeIdentifier="fffffff1-aab6-4f62-8cd7-4cbdf19a47cd"
-                                   j:isExternalProviderRoot="false"
-                                   jcr:mixinTypes="jmix:externalProviderExtension"
-                                   jcr:primaryType="jnt:externalProviderExtension">
-                                    <html j:extendedType="jnt:templateTypeFolder"
-                              j:externalNodeIdentifier="fffffff1-c945-4be7-9812-78ab754e10b0"
-                              j:isExternalProviderRoot="false"
-                              jcr:mixinTypes="jmix:externalProviderExtension"
-                              jcr:primaryType="jnt:externalProviderExtension">
-                                        <template.bootstrap.jsp j:extendedType="jnt:viewFile"
-                                                   j:externalNodeIdentifier="fffffff1-61f7-40e3-8192-20916822306b"
-                                                   j:isExternalProviderRoot="false"
-                                                   jcr:mixinTypes="jmix:externalProviderExtension"
-                                                   jcr:primaryType="jnt:externalProviderExtension"/>
-                                    </html>
-                                </jnt_template>
-                            </resources>
-                        </main>
-                    </src>
-                </sources>
         </bootstrap-acme-space-templates>
     </modules>
 </content>
