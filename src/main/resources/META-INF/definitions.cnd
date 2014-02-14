@@ -54,3 +54,11 @@
  - lead (string) mandatory internationalized
  - image (weakreference, picker[type='image']) internationalized < 'jnt:file'
 
+[jnt:newNodeType] > mix:referenceable
+
+[jmix:imageOptions] mixin
+ extends = jnt:imageReference, jnt:imageReferenceLink
+ itemtype = content
+ - align (string, choicelist) < 'left', 'center', 'right'
+ - effect (string, choicelist) < 'img-rounded', 'img-rounded img-polaroid', 'img-circle', 'img-polaroid', 'img-circle img-polaroid'
+
