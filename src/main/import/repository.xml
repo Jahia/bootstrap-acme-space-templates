@@ -424,13 +424,16 @@
                                j:width="1920"
                                j:xresolution="36/5000 dots per (no unit)"
                                j:yresolution="36/5000 dots per (no unit)"
+                               jcr:description="Japan city lights. Elements of this image furnished by NASA"
                                jcr:mixinTypes="jmix:document jmix:exif jmix:image jmix:keywords"
-                               jcr:primaryType="jnt:file">
+                               jcr:primaryType="jnt:file"
+                               jcr:title="Japan city lights">
                                 <jcr:content jcr:mimeType="image/jpeg" jcr:primaryType="jnt:resource"/>
                                 <thumbnail jcr:mimeType="image/jpeg" jcr:primaryType="jnt:resource"/>
                                 <thumbnail2 jcr:mimeType="image/jpeg" jcr:primaryType="jnt:resource"/>
                                 <j:translation_en jcr:description="Japan city lights. Elements of this image furnished by NASA"
                                        jcr:language="en"
+                                       jcr:mixinTypes="mix:title"
                                        jcr:primaryType="jnt:translation"
                                        jcr:title="Japan city lights"/>
                             </body-bg.jpg>
@@ -564,9 +567,6 @@
                             <jcr:content jcr:mimeType="application/binary" jcr:primaryType="jnt:resource"/>
                         </jahia.less>
                     </less>
-                    <_x002e_DS_Store jcr:primaryType="jnt:file">
-                        <jcr:content jcr:mimeType="application/binary" jcr:primaryType="jnt:resource"/>
-                    </_x002e_DS_Store>
                 </files>
                 <contents jcr:primaryType="jnt:contentFolder"/>
             <home j:isHomePage="true"

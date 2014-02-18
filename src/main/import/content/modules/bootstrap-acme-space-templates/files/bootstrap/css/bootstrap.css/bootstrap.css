@@ -213,7 +213,7 @@ body {
   background-image: url("../img/body-bg.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-position: top center;
+  background-position: 50% 50%;
 }
 a {
   color: #6600cc;
