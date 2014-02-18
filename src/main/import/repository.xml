@@ -413,6 +413,21 @@
                                 <thumbnail jcr:mimeType="image/png" jcr:primaryType="jnt:resource"/>
                                 <thumbnail2 jcr:mimeType="image/png" jcr:primaryType="jnt:resource"/>
                             </logo-small.png>
+                            <body-bg.jpg j:dateTime="2014-02-18T10:46:31+01:00"
+                               j:exifVersion="2.20"
+                               j:height="1199"
+                               j:orientation="Top, left side (Horizontal / normal)"
+                               j:resolutionUnit="(No unit)"
+                               j:software="Adobe Photoshop CC (Macintosh)"
+                               j:width="1920"
+                               j:xresolution="36/5000 dots per (no unit)"
+                               j:yresolution="36/5000 dots per (no unit)"
+                               jcr:mixinTypes="jmix:exif jmix:image"
+                               jcr:primaryType="jnt:file">
+                                <jcr:content jcr:mimeType="image/jpeg" jcr:primaryType="jnt:resource"/>
+                                <thumbnail jcr:mimeType="image/jpeg" jcr:primaryType="jnt:resource"/>
+                                <thumbnail2 jcr:mimeType="image/jpeg" jcr:primaryType="jnt:resource"/>
+                            </body-bg.jpg>
                         </img>
                     </bootstrap>
                     <less jcr:primaryType="jnt:folder">
@@ -483,7 +498,7 @@
                             <jcr:content jcr:mimeType="application/binary" jcr:primaryType="jnt:resource"/>
                         </responsive-utilities.less>
                         <scaffolding.less jcr:primaryType="jnt:file">
-                            <jcr:content jcr:mimeType="application/binary" jcr:primaryType="jnt:resource"/>
+                            <jcr:content jcr:mimeType="application/octet-stream" jcr:primaryType="jnt:resource"/>
                         </scaffolding.less>
                         <sprites.less jcr:primaryType="jnt:file">
                             <jcr:content jcr:mimeType="application/binary" jcr:primaryType="jnt:resource"/>
@@ -504,7 +519,7 @@
                             <jcr:content jcr:mimeType="application/binary" jcr:primaryType="jnt:resource"/>
                         </utilities.less>
                         <variables.less jcr:primaryType="jnt:file">
-                            <jcr:content jcr:mimeType="application/binary" jcr:primaryType="jnt:resource"/>
+                            <jcr:content jcr:mimeType="application/octet-stream" jcr:primaryType="jnt:resource"/>
                         </variables.less>
                         <wells.less jcr:primaryType="jnt:file">
                             <jcr:content jcr:mimeType="application/binary" jcr:primaryType="jnt:resource"/>
