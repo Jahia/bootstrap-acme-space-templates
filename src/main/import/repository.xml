@@ -576,7 +576,6 @@
                                   jcr:mixinTypes="mix:title"
                                   jcr:primaryType="jnt:translation"
                                   jcr:title="Home"/>
-                    <bootstrap-column jcr:primaryType="jnt:contentList"/>
             </home>
                 <search-results j:templateName="two-cols" jcr:primaryType="jnt:page">
                     <j:translation_en jcr:language="en"
