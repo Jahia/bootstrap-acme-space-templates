@@ -72,6 +72,7 @@
                                                     position="right"
                                                     typeOfDisplay="isoLocaleCountryCode"/>
                             </home>
+                            <topslider j:allowedTypes="" jcr:primaryType="jnt:area"/>
                         </header>
                         <footer jcr:primaryType="jnt:contentList">
                             <footer-container jcr:mixinTypes="jmix:bootstrapFullComponentRowPredefined"
@@ -116,9 +117,6 @@
                                     jcr:primaryType="jnt:translation"
                                     jcr:title="Home"/>
                             <pagecontent jcr:primaryType="jnt:contentList">
-                                <slider-1 j:allowedTypes="jnt:spaceCarousel"
-                               j:numberOfItems="1"
-                               jcr:primaryType="jnt:area"/>
                                 <teasers containerType="fluid"
                               jcr:mixinTypes="jmix:bootstrapFullComponentAdvancedProps jmix:bootstrapFullComponentRowPredefined"
                               jcr:primaryType="jnt:bootstrapFullComponent"
@@ -158,6 +156,11 @@
                                            layout="12"
                                            rowType="predefined"/>
                             </pagecontent>
+                            <topslider jcr:primaryType="jnt:contentList">
+                                <slider-1 j:allowedTypes="jnt:spaceCarousel"
+                               j:numberOfItems="1"
+                               jcr:primaryType="jnt:area"/>
+                            </topslider>
                         </home>
                         <two-cols j:hiddenTemplate="false" jcr:primaryType="jnt:pageTemplate">
                             <j:translation_en jcr:language="en"
