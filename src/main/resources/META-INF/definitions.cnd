@@ -47,7 +47,7 @@
  - internalLink (weakreference, picker[type='page']) < 'jnt:page'
 
 [jnt:spaceCarousel] > jnt:content, jmix:multimediaContent
- - bgimage (weakreference, picker[type='image']) mandatory internationalized < 'jnt:file'
+ - bgimage (weakreference, picker[type='image']) internationalized < 'jnt:file'
  + * (jnt:spaceCarouselItem)
 
 [jnt:spaceCarouselItem] > jnt:content, mix:title, jmix:alink
