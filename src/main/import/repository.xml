@@ -531,7 +531,7 @@
                             <jcr:content jcr:mimeType="application/binary" jcr:primaryType="jnt:resource"/>
                         </utilities.less>
                         <variables.less jcr:primaryType="jnt:file">
-                            <jcr:content jcr:mimeType="application/octet-stream" jcr:primaryType="jnt:resource"/>
+                            <jcr:content jcr:mimeType="application/binary" jcr:primaryType="jnt:resource"/>
                         </variables.less>
                         <wells.less jcr:primaryType="jnt:file">
                             <jcr:content jcr:mimeType="application/binary" jcr:primaryType="jnt:resource"/>

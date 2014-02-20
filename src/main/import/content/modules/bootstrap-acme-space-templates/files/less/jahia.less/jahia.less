@@ -78,6 +78,7 @@
 /* = Wrapper
 -------------------------------------------------------------- */
 .wrapper {
+  	border-top: 4px solid #6600cc!important;
     background-attachment: scroll !important;
     background-color: #fff;
     background-image: none;
@@ -91,6 +92,7 @@
     min-width: 320px;
     margin-top: 84px;
 }
+
 /* = Navbar
 -------------------------------------------------------------- */
 .navbar {
@@ -112,10 +114,9 @@
     padding-bottom: 15px;
 }
 .illustration-section {
-    border-bottom: 1px solid #EAEAEA;
-    margin-bottom: 15px;
+    margin-bottom: -84px;
     padding-bottom: 15px;
-    margin-top: -20px;
+    margin-top: 84px;
     padding-top: 20px;
 }
 
@@ -165,9 +166,10 @@ ul.sitemap li li li{display:inline-block;*display:inline}
 }
 /* =Responsive: Less 979px
 -------------------------------------------------------------- */
-@media (max-width: 979px) {
-    .wrapper {
+@media (max-width: 1199px) {
+    .wrapper,.illustration-section {
         margin-top: 0;
+    	margin-bottom: 0;
     }
     .navbar .brand {
         display: block;
