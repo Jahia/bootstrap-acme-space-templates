@@ -224,7 +224,11 @@ div.media-date .year {
     margin-top: 14px;
     margin-left: 2px;
 }
-
+/* = nav bar correction
+-------------------------------------------------------------- */
 .navbar .user-box {
     margin: 3px 10px;
+}
+.navbar .nav > li > a {
+    padding: 10px;
 }
