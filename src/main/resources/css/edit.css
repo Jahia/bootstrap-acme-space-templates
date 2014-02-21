@@ -3,3 +3,6 @@
     clear: both;
   	color: #fff !important;
 }
+.navbar-fixed-top, .navbar-fixed-bottom {
+    position: relative !important;
+}
