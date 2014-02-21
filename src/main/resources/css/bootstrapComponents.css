@@ -232,3 +232,10 @@ div.media-date .year {
 .navbar .nav > li > a {
     padding: 10px;
 }
+/* =Responsive: Less 979px
+-------------------------------------------------------------- */
+@media (max-width: 1199px) {
+    .navbar .user-box {
+       float: none;
+    }
+}
