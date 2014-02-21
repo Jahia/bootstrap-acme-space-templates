@@ -193,7 +193,11 @@
                                        displayOnFirstLevel="false"
                                        jcr:primaryType="jnt:bootstrapBreadcrumb"/>
                                         <page-title jcr:primaryType="jnt:fullTitle"/>
-                                        <main j:allowedTypes="" jcr:primaryType="jnt:area"/>
+                                        <main j:allowedTypes=""
+                                 j:contributeTypes="jnt:bigText jnt:fileI18nReference jnt:fileReference jnt:imageI18nReference jnt:imageReferenceLink jnt:mainContent jnt:text"
+                                 j:editableInContribution="true"
+                                 jcr:mixinTypes="jmix:contributeMode"
+                                 jcr:primaryType="jnt:area"/>
                                 </content>
                                 </content>
                             </pagecontent>
@@ -354,6 +358,7 @@
                                         <page-title jcr:primaryType="jnt:fullTitle"/>
                                         <main j:allowedTypes="" jcr:primaryType="jnt:area"/>
                                         <events j:allowedTypes="jnt:event"
+                                   j:areaView="bootsrapMediaNewsEvents"
                                    j:canDeleteInContribution="true"
                                    j:canOrderInContribution="true"
                                    j:contributeTypes="jnt:event"
@@ -567,7 +572,7 @@
                             <jcr:content jcr:mimeType="application/binary" jcr:primaryType="jnt:resource"/>
                         </component-animations.less>
                         <jahia.less jcr:primaryType="jnt:file">
-                            <jcr:content jcr:mimeType="application/binary" jcr:primaryType="jnt:resource"/>
+                            <jcr:content jcr:mimeType="application/octet-stream" jcr:primaryType="jnt:resource"/>
                         </jahia.less>
                     </less>
                 </files>
