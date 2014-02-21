@@ -62,3 +62,9 @@
  - align (string, choicelist) < 'left', 'center', 'right'
  - effect (string, choicelist) < 'img-rounded', 'img-rounded img-polaroid', 'img-circle', 'img-polaroid', 'img-circle img-polaroid'
 
+ [jmix:acmestyle] > jmix:templateMixin mixin
+  extends = jmix:list
+  itemtype = layout
+  - j:style (string, choicelist) = 'white' nofulltext < 'white','grey','blue','mushroom','orange','black','red','green','purple','yellow'
+
+
