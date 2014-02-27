@@ -7,7 +7,211 @@
                              j:title="Bootstrap ACME Space Templates"
                                   jcr:mixinTypes="jmix:hasExternalProviderExtension"
                              jcr:primaryType="jnt:module">
-                
+                <portlets jcr:primaryType="jnt:portletFolder"/>
+                <files jcr:primaryType="jnt:folder">
+                    <bootstrap jcr:primaryType="jnt:folder">
+                        <css jcr:primaryType="jnt:folder">
+                            <bootstrap.css jcr:primaryType="jnt:file">
+                                <jcr:content jcr:mimeType="text/css" jcr:primaryType="jnt:resource"/>
+                            </bootstrap.css>
+                        </css>
+                        <img jcr:primaryType="jnt:folder">
+                            <glyphicons-halflings.png j:height="159"
+                                            j:width="469"
+                                            jcr:mixinTypes="jmix:image"
+                                            jcr:primaryType="jnt:file">
+                                <jcr:content jcr:mimeType="image/png" jcr:primaryType="jnt:resource"/>
+                                <thumbnail jcr:mimeType="image/png" jcr:primaryType="jnt:resource"/>
+                                <thumbnail2 jcr:mimeType="image/png" jcr:primaryType="jnt:resource"/>
+                            </glyphicons-halflings.png>
+                            <body-bg.png j:height="178"
+                               j:width="188"
+                               jcr:mixinTypes="jmix:image"
+                               jcr:primaryType="jnt:file">
+                                <jcr:content jcr:mimeType="image/png" jcr:primaryType="jnt:resource"/>
+                                <thumbnail jcr:mimeType="image/png" jcr:primaryType="jnt:resource"/>
+                                <thumbnail2 jcr:mimeType="image/png" jcr:primaryType="jnt:resource"/>
+                            </body-bg.png>
+                            <glyphicons-halflings-white.png j:height="159"
+                                                  j:width="469"
+                                                  jcr:mixinTypes="jmix:image"
+                                                  jcr:primaryType="jnt:file">
+                                <jcr:content jcr:mimeType="image/png" jcr:primaryType="jnt:resource"/>
+                                <thumbnail jcr:mimeType="image/png" jcr:primaryType="jnt:resource"/>
+                                <thumbnail2 jcr:mimeType="image/png" jcr:primaryType="jnt:resource"/>
+                            </glyphicons-halflings-white.png>
+                            <logo.png j:height="100"
+                            j:width="200"
+                            jcr:mixinTypes="jmix:image"
+                            jcr:primaryType="jnt:file">
+                                <jcr:content jcr:mimeType="image/png" jcr:primaryType="jnt:resource"/>
+                                <thumbnail jcr:mimeType="image/png" jcr:primaryType="jnt:resource"/>
+                                <thumbnail2 jcr:mimeType="image/png" jcr:primaryType="jnt:resource"/>
+                            </logo.png>
+                            <logo-small.png j:height="50"
+                                  j:width="168"
+                                  jcr:mixinTypes="jmix:image"
+                                  jcr:primaryType="jnt:file">
+                                <jcr:content jcr:mimeType="image/png" jcr:primaryType="jnt:resource"/>
+                                <thumbnail jcr:mimeType="image/png" jcr:primaryType="jnt:resource"/>
+                                <thumbnail2 jcr:mimeType="image/png" jcr:primaryType="jnt:resource"/>
+                            </logo-small.png>
+                            <body-bg.jpg j:dateTime="2014-02-18T10:46:31+01:00"
+                               j:exifVersion="2.20"
+                               j:height="1440"
+                               j:keywords="japan"
+                               j:orientation="Top, left side (Horizontal / normal)"
+                               j:resolutionUnit="(No unit)"
+                               j:software="Adobe Photoshop CC (Macintosh)"
+                               j:subject="japan"
+                               j:width="1920"
+                               j:xresolution="36/5000 dots per (no unit)"
+                               j:yresolution="36/5000 dots per (no unit)"
+                               jcr:description="Japan city lights. Elements of this image furnished by NASA"
+                               jcr:mixinTypes="jmix:document jmix:exif jmix:image jmix:keywords"
+                               jcr:primaryType="jnt:file"
+                               jcr:title="Japan city lights">
+                                <jcr:content jcr:mimeType="image/jpeg" jcr:primaryType="jnt:resource"/>
+                                <thumbnail jcr:mimeType="image/jpeg" jcr:primaryType="jnt:resource"/>
+                                <thumbnail2 jcr:mimeType="image/jpeg" jcr:primaryType="jnt:resource"/>
+                                <j:translation_en jcr:description="Japan city lights. Elements of this image furnished by NASA"
+                                       jcr:language="en"
+                                       jcr:mixinTypes="mix:title"
+                                       jcr:primaryType="jnt:translation"
+                                       jcr:title="Japan city lights"/>
+                            </body-bg.jpg>
+                        </img>
+                    </bootstrap>
+                    <less jcr:primaryType="jnt:folder">
+                        <dropdowns.less jcr:primaryType="jnt:file">
+                            <jcr:content jcr:mimeType="application/binary" jcr:primaryType="jnt:resource"/>
+                        </dropdowns.less>
+                        <forms.less jcr:primaryType="jnt:file">
+                            <jcr:content jcr:mimeType="application/binary" jcr:primaryType="jnt:resource"/>
+                        </forms.less>
+                        <grid.less jcr:primaryType="jnt:file">
+                            <jcr:content jcr:mimeType="application/binary" jcr:primaryType="jnt:resource"/>
+                        </grid.less>
+                        <hero-unit.less jcr:primaryType="jnt:file">
+                            <jcr:content jcr:mimeType="application/binary" jcr:primaryType="jnt:resource"/>
+                        </hero-unit.less>
+                        <labels-badges.less jcr:primaryType="jnt:file">
+                            <jcr:content jcr:mimeType="application/binary" jcr:primaryType="jnt:resource"/>
+                        </labels-badges.less>
+                        <layouts.less jcr:primaryType="jnt:file">
+                            <jcr:content jcr:mimeType="application/binary" jcr:primaryType="jnt:resource"/>
+                        </layouts.less>
+                        <media.less jcr:primaryType="jnt:file">
+                            <jcr:content jcr:mimeType="application/binary" jcr:primaryType="jnt:resource"/>
+                        </media.less>
+                        <mixins.less jcr:primaryType="jnt:file">
+                            <jcr:content jcr:mimeType="application/binary" jcr:primaryType="jnt:resource"/>
+                        </mixins.less>
+                        <modals.less jcr:primaryType="jnt:file">
+                            <jcr:content jcr:mimeType="application/binary" jcr:primaryType="jnt:resource"/>
+                        </modals.less>
+                        <navbar.less jcr:primaryType="jnt:file">
+                            <jcr:content jcr:mimeType="application/binary" jcr:primaryType="jnt:resource"/>
+                        </navbar.less>
+                        <navs.less jcr:primaryType="jnt:file">
+                            <jcr:content jcr:mimeType="application/binary" jcr:primaryType="jnt:resource"/>
+                        </navs.less>
+                        <pager.less jcr:primaryType="jnt:file">
+                            <jcr:content jcr:mimeType="application/binary" jcr:primaryType="jnt:resource"/>
+                        </pager.less>
+                        <pagination.less jcr:primaryType="jnt:file">
+                            <jcr:content jcr:mimeType="application/binary" jcr:primaryType="jnt:resource"/>
+                        </pagination.less>
+                        <popovers.less jcr:primaryType="jnt:file">
+                            <jcr:content jcr:mimeType="application/binary" jcr:primaryType="jnt:resource"/>
+                        </popovers.less>
+                        <progress-bars.less jcr:primaryType="jnt:file">
+                            <jcr:content jcr:mimeType="application/binary" jcr:primaryType="jnt:resource"/>
+                        </progress-bars.less>
+                        <reset.less jcr:primaryType="jnt:file">
+                            <jcr:content jcr:mimeType="application/binary" jcr:primaryType="jnt:resource"/>
+                        </reset.less>
+                        <responsive.less jcr:primaryType="jnt:file">
+                            <jcr:content jcr:mimeType="application/binary" jcr:primaryType="jnt:resource"/>
+                        </responsive.less>
+                        <responsive-767px-max.less jcr:primaryType="jnt:file">
+                            <jcr:content jcr:mimeType="application/binary" jcr:primaryType="jnt:resource"/>
+                        </responsive-767px-max.less>
+                        <responsive-768px-979px.less jcr:primaryType="jnt:file">
+                            <jcr:content jcr:mimeType="application/binary" jcr:primaryType="jnt:resource"/>
+                        </responsive-768px-979px.less>
+                        <responsive-1200px-min.less jcr:primaryType="jnt:file">
+                            <jcr:content jcr:mimeType="application/binary" jcr:primaryType="jnt:resource"/>
+                        </responsive-1200px-min.less>
+                        <responsive-navbar.less jcr:primaryType="jnt:file">
+                            <jcr:content jcr:mimeType="application/binary" jcr:primaryType="jnt:resource"/>
+                        </responsive-navbar.less>
+                        <responsive-utilities.less jcr:primaryType="jnt:file">
+                            <jcr:content jcr:mimeType="application/binary" jcr:primaryType="jnt:resource"/>
+                        </responsive-utilities.less>
+                        <scaffolding.less jcr:primaryType="jnt:file">
+                            <jcr:content jcr:mimeType="application/binary" jcr:primaryType="jnt:resource"/>
+                        </scaffolding.less>
+                        <sprites.less jcr:primaryType="jnt:file">
+                            <jcr:content jcr:mimeType="application/binary" jcr:primaryType="jnt:resource"/>
+                        </sprites.less>
+                        <tables.less jcr:primaryType="jnt:file">
+                            <jcr:content jcr:mimeType="application/binary" jcr:primaryType="jnt:resource"/>
+                        </tables.less>
+                        <thumbnails.less jcr:primaryType="jnt:file">
+                            <jcr:content jcr:mimeType="application/binary" jcr:primaryType="jnt:resource"/>
+                        </thumbnails.less>
+                        <tooltip.less jcr:primaryType="jnt:file">
+                            <jcr:content jcr:mimeType="application/binary" jcr:primaryType="jnt:resource"/>
+                        </tooltip.less>
+                        <type.less jcr:primaryType="jnt:file">
+                            <jcr:content jcr:mimeType="application/binary" jcr:primaryType="jnt:resource"/>
+                        </type.less>
+                        <utilities.less jcr:primaryType="jnt:file">
+                            <jcr:content jcr:mimeType="application/binary" jcr:primaryType="jnt:resource"/>
+                        </utilities.less>
+                        <variables.less jcr:primaryType="jnt:file">
+                            <jcr:content jcr:mimeType="application/binary" jcr:primaryType="jnt:resource"/>
+                        </variables.less>
+                        <wells.less jcr:primaryType="jnt:file">
+                            <jcr:content jcr:mimeType="application/binary" jcr:primaryType="jnt:resource"/>
+                        </wells.less>
+                        <accordion.less jcr:primaryType="jnt:file">
+                            <jcr:content jcr:mimeType="application/binary" jcr:primaryType="jnt:resource"/>
+                        </accordion.less>
+                        <alerts.less jcr:primaryType="jnt:file">
+                            <jcr:content jcr:mimeType="application/binary" jcr:primaryType="jnt:resource"/>
+                        </alerts.less>
+                        <bootstrap.less jcr:primaryType="jnt:file">
+                            <jcr:content jcr:mimeType="application/binary" jcr:primaryType="jnt:resource"/>
+                        </bootstrap.less>
+                        <breadcrumbs.less jcr:primaryType="jnt:file">
+                            <jcr:content jcr:mimeType="application/binary" jcr:primaryType="jnt:resource"/>
+                        </breadcrumbs.less>
+                        <button-groups.less jcr:primaryType="jnt:file">
+                            <jcr:content jcr:mimeType="application/binary" jcr:primaryType="jnt:resource"/>
+                        </button-groups.less>
+                        <buttons.less jcr:primaryType="jnt:file">
+                            <jcr:content jcr:mimeType="application/binary" jcr:primaryType="jnt:resource"/>
+                        </buttons.less>
+                        <carousel.less jcr:primaryType="jnt:file">
+                            <jcr:content jcr:mimeType="application/binary" jcr:primaryType="jnt:resource"/>
+                        </carousel.less>
+                        <close.less jcr:primaryType="jnt:file">
+                            <jcr:content jcr:mimeType="application/binary" jcr:primaryType="jnt:resource"/>
+                        </close.less>
+                        <code.less jcr:primaryType="jnt:file">
+                            <jcr:content jcr:mimeType="application/binary" jcr:primaryType="jnt:resource"/>
+                        </code.less>
+                        <component-animations.less jcr:primaryType="jnt:file">
+                            <jcr:content jcr:mimeType="application/binary" jcr:primaryType="jnt:resource"/>
+                        </component-animations.less>
+                        <jahia.less jcr:primaryType="jnt:file">
+                            <jcr:content jcr:mimeType="application/octet-stream" jcr:primaryType="jnt:resource"/>
+                        </jahia.less>
+                    </less>
+                </files>
+                <contents jcr:primaryType="jnt:contentFolder"/>
                 <templates j:defaultView="bootstrap" jcr:primaryType="jnt:templatesFolder">
                     <files jcr:primaryType="jnt:folder"/>
                     <contents jcr:primaryType="jnt:contentFolder"/>
@@ -86,19 +290,19 @@
                                              text="&lt;p style=&#34;text-align: right;&#34;&gt;&lt;strong&gt;&amp;copy; 2002 - 2014 ACME Space Corp&amp;nbsp;- All rights reserved.&lt;/strong&gt;&lt;/p&gt;&#xA;"/>
                                         <j:translation_de jcr:language="de"
                                              jcr:primaryType="jnt:translation"
-                                             text="&lt;h2&gt;&amp;copy; 2002 - 2014 ACME Space Corp&amp;nbsp;- All rights reserved.&lt;/h2&gt;&#xA;"/>
+                                             text="&lt;p style=&#34;text-align: right;&#34;&gt;&lt;strong&gt;&amp;copy; 2002 - 2014 ACME Space Corp&amp;nbsp;- All rights reserved.&lt;/strong&gt;&lt;/p&gt;&#xA;"/>
                                         <j:translation_it jcr:language="it"
                                              jcr:primaryType="jnt:translation"
-                                             text="&lt;h2&gt;&amp;copy; 2002 - 2014 ACME Space Corp&amp;nbsp;- All rights reserved.&lt;/h2&gt;&#xA;"/>
+                                             text="&lt;p style=&#34;text-align: right;&#34;&gt;&lt;strong&gt;&amp;copy; 2002 - 2014 ACME Space Corp&amp;nbsp;- All rights reserved.&lt;/strong&gt;&lt;/p&gt;&#xA;"/>
                                         <j:translation_pt jcr:language="pt"
                                              jcr:primaryType="jnt:translation"
-                                             text="&lt;h2&gt;&amp;copy; 2002 - 2014 ACME Space Corp&amp;nbsp;- All rights reserved.&lt;/h2&gt;&#xA;"/>
+                                             text="&lt;p style=&#34;text-align: right;&#34;&gt;&lt;strong&gt;&amp;copy; 2002 - 2014 ACME Space Corp&amp;nbsp;- All rights reserved.&lt;/strong&gt;&lt;/p&gt;&#xA;"/>
                                         <j:translation_fr jcr:language="fr"
                                              jcr:primaryType="jnt:translation"
-                                             text="&lt;h2&gt;&amp;copy; 2002 - 2014 ACME Space Corp&amp;nbsp;- All rights reserved.&lt;/h2&gt;&#xA;"/>
+                                             text="&lt;p style=&#34;text-align: right;&#34;&gt;&lt;strong&gt;&amp;copy; 2002 - 2014 ACME Space Corp&amp;nbsp;- tous droits r&amp;eacute;serv&amp;eacute;s.&lt;/strong&gt;&lt;/p&gt;&#xA;"/>
                                         <j:translation_es jcr:language="es"
                                              jcr:primaryType="jnt:translation"
-                                             text="&lt;h2&gt;&amp;copy; 2002 - 2014 ACME Space Corp&amp;nbsp;- All rights reserved.&lt;/h2&gt;&#xA;"/>
+                                             text="&lt;p style=&#34;text-align: right;&#34;&gt;&lt;strong&gt;&amp;copy; 2002 - 2014 ACME Space Corp&amp;nbsp;- All rights reserved.&lt;/strong&gt;&lt;/p&gt;&#xA;"/>
                                     </rich-text>
                                 </footer-container>
                             </footer-container>
@@ -372,211 +576,7 @@
                     </base>
                 </templates>
                 
-                <portlets jcr:primaryType="jnt:portletFolder"/>
-                <files jcr:primaryType="jnt:folder">
-                    <bootstrap jcr:primaryType="jnt:folder">
-                        <css jcr:primaryType="jnt:folder">
-                            <bootstrap.css jcr:primaryType="jnt:file">
-                                <jcr:content jcr:mimeType="text/css" jcr:primaryType="jnt:resource"/>
-                            </bootstrap.css>
-                        </css>
-                        <img jcr:primaryType="jnt:folder">
-                            <glyphicons-halflings.png j:height="159"
-                                            j:width="469"
-                                            jcr:mixinTypes="jmix:image"
-                                            jcr:primaryType="jnt:file">
-                                <jcr:content jcr:mimeType="image/png" jcr:primaryType="jnt:resource"/>
-                                <thumbnail jcr:mimeType="image/png" jcr:primaryType="jnt:resource"/>
-                                <thumbnail2 jcr:mimeType="image/png" jcr:primaryType="jnt:resource"/>
-                            </glyphicons-halflings.png>
-                            <body-bg.png j:height="178"
-                               j:width="188"
-                               jcr:mixinTypes="jmix:image"
-                               jcr:primaryType="jnt:file">
-                                <jcr:content jcr:mimeType="image/png" jcr:primaryType="jnt:resource"/>
-                                <thumbnail jcr:mimeType="image/png" jcr:primaryType="jnt:resource"/>
-                                <thumbnail2 jcr:mimeType="image/png" jcr:primaryType="jnt:resource"/>
-                            </body-bg.png>
-                            <glyphicons-halflings-white.png j:height="159"
-                                                  j:width="469"
-                                                  jcr:mixinTypes="jmix:image"
-                                                  jcr:primaryType="jnt:file">
-                                <jcr:content jcr:mimeType="image/png" jcr:primaryType="jnt:resource"/>
-                                <thumbnail jcr:mimeType="image/png" jcr:primaryType="jnt:resource"/>
-                                <thumbnail2 jcr:mimeType="image/png" jcr:primaryType="jnt:resource"/>
-                            </glyphicons-halflings-white.png>
-                            <logo.png j:height="100"
-                            j:width="200"
-                            jcr:mixinTypes="jmix:image"
-                            jcr:primaryType="jnt:file">
-                                <jcr:content jcr:mimeType="image/png" jcr:primaryType="jnt:resource"/>
-                                <thumbnail jcr:mimeType="image/png" jcr:primaryType="jnt:resource"/>
-                                <thumbnail2 jcr:mimeType="image/png" jcr:primaryType="jnt:resource"/>
-                            </logo.png>
-                            <logo-small.png j:height="50"
-                                  j:width="168"
-                                  jcr:mixinTypes="jmix:image"
-                                  jcr:primaryType="jnt:file">
-                                <jcr:content jcr:mimeType="image/png" jcr:primaryType="jnt:resource"/>
-                                <thumbnail jcr:mimeType="image/png" jcr:primaryType="jnt:resource"/>
-                                <thumbnail2 jcr:mimeType="image/png" jcr:primaryType="jnt:resource"/>
-                            </logo-small.png>
-                            <body-bg.jpg j:dateTime="2014-02-18T10:46:31+01:00"
-                               j:exifVersion="2.20"
-                               j:height="1440"
-                               j:keywords="japan"
-                               j:orientation="Top, left side (Horizontal / normal)"
-                               j:resolutionUnit="(No unit)"
-                               j:software="Adobe Photoshop CC (Macintosh)"
-                               j:subject="japan"
-                               j:width="1920"
-                               j:xresolution="36/5000 dots per (no unit)"
-                               j:yresolution="36/5000 dots per (no unit)"
-                               jcr:description="Japan city lights. Elements of this image furnished by NASA"
-                               jcr:mixinTypes="jmix:document jmix:exif jmix:image jmix:keywords"
-                               jcr:primaryType="jnt:file"
-                               jcr:title="Japan city lights">
-                                <jcr:content jcr:mimeType="image/jpeg" jcr:primaryType="jnt:resource"/>
-                                <thumbnail jcr:mimeType="image/jpeg" jcr:primaryType="jnt:resource"/>
-                                <thumbnail2 jcr:mimeType="image/jpeg" jcr:primaryType="jnt:resource"/>
-                                <j:translation_en jcr:description="Japan city lights. Elements of this image furnished by NASA"
-                                       jcr:language="en"
-                                       jcr:mixinTypes="mix:title"
-                                       jcr:primaryType="jnt:translation"
-                                       jcr:title="Japan city lights"/>
-                            </body-bg.jpg>
-                        </img>
-                    </bootstrap>
-                    <less jcr:primaryType="jnt:folder">
-                        <dropdowns.less jcr:primaryType="jnt:file">
-                            <jcr:content jcr:mimeType="application/binary" jcr:primaryType="jnt:resource"/>
-                        </dropdowns.less>
-                        <forms.less jcr:primaryType="jnt:file">
-                            <jcr:content jcr:mimeType="application/binary" jcr:primaryType="jnt:resource"/>
-                        </forms.less>
-                        <grid.less jcr:primaryType="jnt:file">
-                            <jcr:content jcr:mimeType="application/binary" jcr:primaryType="jnt:resource"/>
-                        </grid.less>
-                        <hero-unit.less jcr:primaryType="jnt:file">
-                            <jcr:content jcr:mimeType="application/binary" jcr:primaryType="jnt:resource"/>
-                        </hero-unit.less>
-                        <labels-badges.less jcr:primaryType="jnt:file">
-                            <jcr:content jcr:mimeType="application/binary" jcr:primaryType="jnt:resource"/>
-                        </labels-badges.less>
-                        <layouts.less jcr:primaryType="jnt:file">
-                            <jcr:content jcr:mimeType="application/binary" jcr:primaryType="jnt:resource"/>
-                        </layouts.less>
-                        <media.less jcr:primaryType="jnt:file">
-                            <jcr:content jcr:mimeType="application/binary" jcr:primaryType="jnt:resource"/>
-                        </media.less>
-                        <mixins.less jcr:primaryType="jnt:file">
-                            <jcr:content jcr:mimeType="application/binary" jcr:primaryType="jnt:resource"/>
-                        </mixins.less>
-                        <modals.less jcr:primaryType="jnt:file">
-                            <jcr:content jcr:mimeType="application/binary" jcr:primaryType="jnt:resource"/>
-                        </modals.less>
-                        <navbar.less jcr:primaryType="jnt:file">
-                            <jcr:content jcr:mimeType="application/binary" jcr:primaryType="jnt:resource"/>
-                        </navbar.less>
-                        <navs.less jcr:primaryType="jnt:file">
-                            <jcr:content jcr:mimeType="application/binary" jcr:primaryType="jnt:resource"/>
-                        </navs.less>
-                        <pager.less jcr:primaryType="jnt:file">
-                            <jcr:content jcr:mimeType="application/binary" jcr:primaryType="jnt:resource"/>
-                        </pager.less>
-                        <pagination.less jcr:primaryType="jnt:file">
-                            <jcr:content jcr:mimeType="application/binary" jcr:primaryType="jnt:resource"/>
-                        </pagination.less>
-                        <popovers.less jcr:primaryType="jnt:file">
-                            <jcr:content jcr:mimeType="application/binary" jcr:primaryType="jnt:resource"/>
-                        </popovers.less>
-                        <progress-bars.less jcr:primaryType="jnt:file">
-                            <jcr:content jcr:mimeType="application/binary" jcr:primaryType="jnt:resource"/>
-                        </progress-bars.less>
-                        <reset.less jcr:primaryType="jnt:file">
-                            <jcr:content jcr:mimeType="application/binary" jcr:primaryType="jnt:resource"/>
-                        </reset.less>
-                        <responsive.less jcr:primaryType="jnt:file">
-                            <jcr:content jcr:mimeType="application/binary" jcr:primaryType="jnt:resource"/>
-                        </responsive.less>
-                        <responsive-767px-max.less jcr:primaryType="jnt:file">
-                            <jcr:content jcr:mimeType="application/binary" jcr:primaryType="jnt:resource"/>
-                        </responsive-767px-max.less>
-                        <responsive-768px-979px.less jcr:primaryType="jnt:file">
-                            <jcr:content jcr:mimeType="application/binary" jcr:primaryType="jnt:resource"/>
-                        </responsive-768px-979px.less>
-                        <responsive-1200px-min.less jcr:primaryType="jnt:file">
-                            <jcr:content jcr:mimeType="application/binary" jcr:primaryType="jnt:resource"/>
-                        </responsive-1200px-min.less>
-                        <responsive-navbar.less jcr:primaryType="jnt:file">
-                            <jcr:content jcr:mimeType="application/binary" jcr:primaryType="jnt:resource"/>
-                        </responsive-navbar.less>
-                        <responsive-utilities.less jcr:primaryType="jnt:file">
-                            <jcr:content jcr:mimeType="application/binary" jcr:primaryType="jnt:resource"/>
-                        </responsive-utilities.less>
-                        <scaffolding.less jcr:primaryType="jnt:file">
-                            <jcr:content jcr:mimeType="application/binary" jcr:primaryType="jnt:resource"/>
-                        </scaffolding.less>
-                        <sprites.less jcr:primaryType="jnt:file">
-                            <jcr:content jcr:mimeType="application/binary" jcr:primaryType="jnt:resource"/>
-                        </sprites.less>
-                        <tables.less jcr:primaryType="jnt:file">
-                            <jcr:content jcr:mimeType="application/binary" jcr:primaryType="jnt:resource"/>
-                        </tables.less>
-                        <thumbnails.less jcr:primaryType="jnt:file">
-                            <jcr:content jcr:mimeType="application/binary" jcr:primaryType="jnt:resource"/>
-                        </thumbnails.less>
-                        <tooltip.less jcr:primaryType="jnt:file">
-                            <jcr:content jcr:mimeType="application/binary" jcr:primaryType="jnt:resource"/>
-                        </tooltip.less>
-                        <type.less jcr:primaryType="jnt:file">
-                            <jcr:content jcr:mimeType="application/binary" jcr:primaryType="jnt:resource"/>
-                        </type.less>
-                        <utilities.less jcr:primaryType="jnt:file">
-                            <jcr:content jcr:mimeType="application/binary" jcr:primaryType="jnt:resource"/>
-                        </utilities.less>
-                        <variables.less jcr:primaryType="jnt:file">
-                            <jcr:content jcr:mimeType="application/binary" jcr:primaryType="jnt:resource"/>
-                        </variables.less>
-                        <wells.less jcr:primaryType="jnt:file">
-                            <jcr:content jcr:mimeType="application/binary" jcr:primaryType="jnt:resource"/>
-                        </wells.less>
-                        <accordion.less jcr:primaryType="jnt:file">
-                            <jcr:content jcr:mimeType="application/binary" jcr:primaryType="jnt:resource"/>
-                        </accordion.less>
-                        <alerts.less jcr:primaryType="jnt:file">
-                            <jcr:content jcr:mimeType="application/binary" jcr:primaryType="jnt:resource"/>
-                        </alerts.less>
-                        <bootstrap.less jcr:primaryType="jnt:file">
-                            <jcr:content jcr:mimeType="application/binary" jcr:primaryType="jnt:resource"/>
-                        </bootstrap.less>
-                        <breadcrumbs.less jcr:primaryType="jnt:file">
-                            <jcr:content jcr:mimeType="application/binary" jcr:primaryType="jnt:resource"/>
-                        </breadcrumbs.less>
-                        <button-groups.less jcr:primaryType="jnt:file">
-                            <jcr:content jcr:mimeType="application/binary" jcr:primaryType="jnt:resource"/>
-                        </button-groups.less>
-                        <buttons.less jcr:primaryType="jnt:file">
-                            <jcr:content jcr:mimeType="application/binary" jcr:primaryType="jnt:resource"/>
-                        </buttons.less>
-                        <carousel.less jcr:primaryType="jnt:file">
-                            <jcr:content jcr:mimeType="application/binary" jcr:primaryType="jnt:resource"/>
-                        </carousel.less>
-                        <close.less jcr:primaryType="jnt:file">
-                            <jcr:content jcr:mimeType="application/binary" jcr:primaryType="jnt:resource"/>
-                        </close.less>
-                        <code.less jcr:primaryType="jnt:file">
-                            <jcr:content jcr:mimeType="application/binary" jcr:primaryType="jnt:resource"/>
-                        </code.less>
-                        <component-animations.less jcr:primaryType="jnt:file">
-                            <jcr:content jcr:mimeType="application/binary" jcr:primaryType="jnt:resource"/>
-                        </component-animations.less>
-                        <jahia.less jcr:primaryType="jnt:file">
-                            <jcr:content jcr:mimeType="application/octet-stream" jcr:primaryType="jnt:resource"/>
-                        </jahia.less>
-                    </less>
-                </files>
-                <contents jcr:primaryType="jnt:contentFolder"/>
+                
             <home j:isHomePage="true"
                j:templateName="home"
                   jcr:primaryType="jnt:page">
