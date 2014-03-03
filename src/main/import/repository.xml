@@ -82,7 +82,6 @@
                             </body-bg.jpg>
                         </img>
                     </bootstrap>
-                    <less jcr:primaryType="jnt:folder"/>
                 </files>
                 <contents jcr:primaryType="jnt:contentFolder"/>
                 <templates j:defaultView="bootstrap" jcr:primaryType="jnt:templatesFolder">
