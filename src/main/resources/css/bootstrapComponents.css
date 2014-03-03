@@ -187,10 +187,17 @@ div.media-date .year {
     float: right;
     font-size: 12px;
     margin: 0 10px;
-    padding: 4px;
+    padding: 10px;
+    line-height: 20px;
+}
+.login a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-weight: bold;
 }
 .login i {
     margin-right: 0px;
+    margin-top: 0px;
     font-size: 16px;
     width: 16px;
     height: 16px;
@@ -198,8 +205,9 @@ div.media-date .year {
     text-align: center;
     position: relative;
     left: 0px;
-    top: 2px;
+    top: 0;
     text-decoration: none;
+    margin-left: 5px;
 }
 .user-box {
     float: right;
