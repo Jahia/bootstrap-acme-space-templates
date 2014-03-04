@@ -7,83 +7,7 @@
                              j:title="Bootstrap ACME Space Templates"
                                   jcr:mixinTypes="jmix:hasExternalProviderExtension"
                              jcr:primaryType="jnt:module">
-                <portlets jcr:primaryType="jnt:portletFolder"/>
-                <files jcr:primaryType="jnt:folder">
-                    <bootstrap jcr:primaryType="jnt:folder">
-                        <css jcr:primaryType="jnt:folder">
-                            <bootstrap.css jcr:primaryType="jnt:file">
-                                <jcr:content jcr:mimeType="text/css" jcr:primaryType="jnt:resource"/>
-                            </bootstrap.css>
-                        </css>
-                        <img jcr:primaryType="jnt:folder">
-                            <glyphicons-halflings.png j:height="159"
-                                            j:width="469"
-                                            jcr:mixinTypes="jmix:image"
-                                            jcr:primaryType="jnt:file">
-                                <jcr:content jcr:mimeType="image/png" jcr:primaryType="jnt:resource"/>
-                                <thumbnail jcr:mimeType="image/png" jcr:primaryType="jnt:resource"/>
-                                <thumbnail2 jcr:mimeType="image/png" jcr:primaryType="jnt:resource"/>
-                            </glyphicons-halflings.png>
-                            <body-bg.png j:height="178"
-                               j:width="188"
-                               jcr:mixinTypes="jmix:image"
-                               jcr:primaryType="jnt:file">
-                                <jcr:content jcr:mimeType="image/png" jcr:primaryType="jnt:resource"/>
-                                <thumbnail jcr:mimeType="image/png" jcr:primaryType="jnt:resource"/>
-                                <thumbnail2 jcr:mimeType="image/png" jcr:primaryType="jnt:resource"/>
-                            </body-bg.png>
-                            <glyphicons-halflings-white.png j:height="159"
-                                                  j:width="469"
-                                                  jcr:mixinTypes="jmix:image"
-                                                  jcr:primaryType="jnt:file">
-                                <jcr:content jcr:mimeType="image/png" jcr:primaryType="jnt:resource"/>
-                                <thumbnail jcr:mimeType="image/png" jcr:primaryType="jnt:resource"/>
-                                <thumbnail2 jcr:mimeType="image/png" jcr:primaryType="jnt:resource"/>
-                            </glyphicons-halflings-white.png>
-                            <logo.png j:height="100"
-                            j:width="200"
-                            jcr:mixinTypes="jmix:image"
-                            jcr:primaryType="jnt:file">
-                                <jcr:content jcr:mimeType="image/png" jcr:primaryType="jnt:resource"/>
-                                <thumbnail jcr:mimeType="image/png" jcr:primaryType="jnt:resource"/>
-                                <thumbnail2 jcr:mimeType="image/png" jcr:primaryType="jnt:resource"/>
-                            </logo.png>
-                            <logo-small.png j:height="50"
-                                  j:width="168"
-                                  jcr:mixinTypes="jmix:image"
-                                  jcr:primaryType="jnt:file">
-                                <jcr:content jcr:mimeType="image/png" jcr:primaryType="jnt:resource"/>
-                                <thumbnail jcr:mimeType="image/png" jcr:primaryType="jnt:resource"/>
-                                <thumbnail2 jcr:mimeType="image/png" jcr:primaryType="jnt:resource"/>
-                            </logo-small.png>
-                            <body-bg.jpg j:dateTime="2014-02-18T10:46:31+01:00"
-                               j:exifVersion="2.20"
-                               j:height="1440"
-                               j:keywords="japan"
-                               j:orientation="Top, left side (Horizontal / normal)"
-                               j:resolutionUnit="(No unit)"
-                               j:software="Adobe Photoshop CC (Macintosh)"
-                               j:subject="japan"
-                               j:width="1920"
-                               j:xresolution="36/5000 dots per (no unit)"
-                               j:yresolution="36/5000 dots per (no unit)"
-                               jcr:description="Japan city lights. Elements of this image furnished by NASA"
-                               jcr:mixinTypes="jmix:document jmix:exif jmix:image jmix:keywords"
-                               jcr:primaryType="jnt:file"
-                               jcr:title="Japan city lights">
-                                <jcr:content jcr:mimeType="image/jpeg" jcr:primaryType="jnt:resource"/>
-                                <thumbnail jcr:mimeType="image/jpeg" jcr:primaryType="jnt:resource"/>
-                                <thumbnail2 jcr:mimeType="image/jpeg" jcr:primaryType="jnt:resource"/>
-                                <j:translation_en jcr:description="Japan city lights. Elements of this image furnished by NASA"
-                                       jcr:language="en"
-                                       jcr:mixinTypes="mix:title"
-                                       jcr:primaryType="jnt:translation"
-                                       jcr:title="Japan city lights"/>
-                            </body-bg.jpg>
-                        </img>
-                    </bootstrap>
-                </files>
-                <contents jcr:primaryType="jnt:contentFolder"/>
+                
                 <templates j:defaultView="bootstrap" jcr:primaryType="jnt:templatesFolder">
                     <files jcr:primaryType="jnt:folder"/>
                     <contents jcr:primaryType="jnt:contentFolder"/>
@@ -448,7 +372,83 @@
                     </base>
                 </templates>
                 
-                
+                <files jcr:primaryType="jnt:folder">
+                    <bootstrap jcr:primaryType="jnt:folder">
+                        <css jcr:primaryType="jnt:folder">
+                            <bootstrap.css jcr:primaryType="jnt:file">
+                                <jcr:content jcr:mimeType="text/css" jcr:primaryType="jnt:resource"/>
+                            </bootstrap.css>
+                        </css>
+                        <img jcr:primaryType="jnt:folder">
+                            <glyphicons-halflings.png j:height="159"
+                                            j:width="469"
+                                            jcr:mixinTypes="jmix:image"
+                                            jcr:primaryType="jnt:file">
+                                <jcr:content jcr:mimeType="image/png" jcr:primaryType="jnt:resource"/>
+                                <thumbnail jcr:mimeType="image/png" jcr:primaryType="jnt:resource"/>
+                                <thumbnail2 jcr:mimeType="image/png" jcr:primaryType="jnt:resource"/>
+                            </glyphicons-halflings.png>
+                            <body-bg.png j:height="178"
+                               j:width="188"
+                               jcr:mixinTypes="jmix:image"
+                               jcr:primaryType="jnt:file">
+                                <jcr:content jcr:mimeType="image/png" jcr:primaryType="jnt:resource"/>
+                                <thumbnail jcr:mimeType="image/png" jcr:primaryType="jnt:resource"/>
+                                <thumbnail2 jcr:mimeType="image/png" jcr:primaryType="jnt:resource"/>
+                            </body-bg.png>
+                            <glyphicons-halflings-white.png j:height="159"
+                                                  j:width="469"
+                                                  jcr:mixinTypes="jmix:image"
+                                                  jcr:primaryType="jnt:file">
+                                <jcr:content jcr:mimeType="image/png" jcr:primaryType="jnt:resource"/>
+                                <thumbnail jcr:mimeType="image/png" jcr:primaryType="jnt:resource"/>
+                                <thumbnail2 jcr:mimeType="image/png" jcr:primaryType="jnt:resource"/>
+                            </glyphicons-halflings-white.png>
+                            <logo.png j:height="100"
+                            j:width="200"
+                            jcr:mixinTypes="jmix:image"
+                            jcr:primaryType="jnt:file">
+                                <jcr:content jcr:mimeType="image/png" jcr:primaryType="jnt:resource"/>
+                                <thumbnail jcr:mimeType="image/png" jcr:primaryType="jnt:resource"/>
+                                <thumbnail2 jcr:mimeType="image/png" jcr:primaryType="jnt:resource"/>
+                            </logo.png>
+                            <logo-small.png j:height="50"
+                                  j:width="168"
+                                  jcr:mixinTypes="jmix:image"
+                                  jcr:primaryType="jnt:file">
+                                <jcr:content jcr:mimeType="image/png" jcr:primaryType="jnt:resource"/>
+                                <thumbnail jcr:mimeType="image/png" jcr:primaryType="jnt:resource"/>
+                                <thumbnail2 jcr:mimeType="image/png" jcr:primaryType="jnt:resource"/>
+                            </logo-small.png>
+                            <body-bg.jpg j:dateTime="2014-02-18T10:46:31+01:00"
+                               j:exifVersion="2.20"
+                               j:height="1440"
+                               j:keywords="japan"
+                               j:orientation="Top, left side (Horizontal / normal)"
+                               j:resolutionUnit="(No unit)"
+                               j:software="Adobe Photoshop CC (Macintosh)"
+                               j:subject="japan"
+                               j:width="1920"
+                               j:xresolution="36/5000 dots per (no unit)"
+                               j:yresolution="36/5000 dots per (no unit)"
+                               jcr:description="Japan city lights. Elements of this image furnished by NASA"
+                               jcr:mixinTypes="jmix:document jmix:exif jmix:image jmix:keywords"
+                               jcr:primaryType="jnt:file"
+                               jcr:title="Japan city lights">
+                                <jcr:content jcr:mimeType="image/jpeg" jcr:primaryType="jnt:resource"/>
+                                <thumbnail jcr:mimeType="image/jpeg" jcr:primaryType="jnt:resource"/>
+                                <thumbnail2 jcr:mimeType="image/jpeg" jcr:primaryType="jnt:resource"/>
+                                <j:translation_en jcr:description="Japan city lights. Elements of this image furnished by NASA"
+                                       jcr:language="en"
+                                       jcr:mixinTypes="mix:title"
+                                       jcr:primaryType="jnt:translation"
+                                       jcr:title="Japan city lights"/>
+                            </body-bg.jpg>
+                        </img>
+                    </bootstrap>
+                </files>
+                <portlets jcr:primaryType="jnt:portletFolder"/>
+                <contents jcr:primaryType="jnt:contentFolder"/>
             <home j:isHomePage="true"
                j:templateName="home"
                   jcr:primaryType="jnt:page">
