@@ -369,6 +369,22 @@
                                 </content>
                             </pagecontent>
                         </events>
+                        <site-settings-base j:view="siteSettings"
+                                            jcr:mixinTypes="jmix:useUILocale"
+                                            jcr:primaryType="jnt:template">
+                            <bootstrapCustomization j:applyOn="jnt:virtualsite"
+                                                    j:defaultTemplate="false"
+                                                    j:hiddenTemplate="true"
+                                                    j:priority="101"
+                                                    j:requiredPermissionNames="adminBootstrapCustomization"
+                                                    j:titleKey="siteSettings.label.bootstrap"
+                                                    jcr:mixinTypes="jmix:rbTitle"
+                                                    jcr:primaryType="jnt:contentTemplate">
+                                <pagecontent jcr:primaryType="jnt:contentList">
+                                    <editLessVariables formview="acme-space" jcr:primaryType="jnt:editLessVariables"/>
+                                </pagecontent>
+                            </bootstrapCustomization>
+                        </site-settings-base>
                     </base>
                 </templates>
                 
