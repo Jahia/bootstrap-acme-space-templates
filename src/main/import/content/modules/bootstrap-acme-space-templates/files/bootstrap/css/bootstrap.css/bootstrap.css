@@ -4545,6 +4545,7 @@ input[type="submit"].btn.btn-mini {
   margin-bottom: 20px;
   *position: relative;
   *z-index: 2;
+  border-top: 4px solid #6600cc;
 }
 .navbar-inner {
   min-height: 40px;
@@ -4962,6 +4963,9 @@ input[type="submit"].btn.btn-mini {
 }
 .navbar-inverse .brand {
   color: #999999;
+}
+.navbar-inverse .brand span {
+  display: none;
 }
 .navbar-inverse .navbar-text {
   color: #999999;
@@ -6303,16 +6307,6 @@ a.badge:focus {
   min-width: 320px;
   margin-top: 84px;
 }
-/* = Navbar
--------------------------------------------------------------- */
-.navbar {
-  border-top: 4px solid #6600cc!important;
-}
-.navbar-inverse .brand span {
-  display: none;
-}
-/* = Separator
- -------------------------------------------------------------- */
 /* = Section
 -------------------------------------------------------------- */
 .section,
@@ -6385,7 +6379,7 @@ ul.sitemap li li li {
 }
 /* =Responsive: Less 979px
 -------------------------------------------------------------- */
-@media (max-width: 1199px) {
+@media (max-width: 1200px) {
   .wrapper,
   .illustration-section {
     margin-top: 0;
@@ -7899,7 +7893,7 @@ ul.sitemap li li li {
   textarea,
   .uneditable-input {
     margin-left: 0;
-}
+  }
   .controls-row [class*="span"] + [class*="span"] {
     margin-left: 20px;
   }
@@ -7963,7 +7957,7 @@ ul.sitemap li li li {
   .uneditable-input.span1 {
     width: 28px;
   }
-  }
+}
 @media (max-width: 767px) {
   .container-fluid {
     padding: 0 10px;
