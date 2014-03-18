@@ -5,7 +5,6 @@
 <%@ taglib prefix="template" uri="http://www.jahia.org/tags/templateLib" %>
 <%@ taglib prefix="ui" uri="http://www.jahia.org/tags/uiComponentsLib" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/functions" prefix="fn" %>
-<%@ taglib prefix="bootstrap" uri="http://www.jahia.org/tags/bootstrapLib" %>
 <%--@elvariable id="currentNode" type="org.jahia.services.content.JCRNodeWrapper"--%>
 <%--@elvariable id="out" type="java.io.PrintWriter"--%>
 <%--@elvariable id="script" type="org.jahia.services.render.scripting.Script"--%>
@@ -14,9 +13,14 @@
 <%--@elvariable id="renderContext" type="org.jahia.services.render.RenderContext"--%>
 <%--@elvariable id="currentResource" type="org.jahia.services.render.Resource"--%>
 <%--@elvariable id="url" type="org.jahia.services.render.URLGenerator"--%>
-<bootstrap:addCSS/>
+
+<jcr:nodeProperty node="${currentNode}" name="position" var="position"/>
+<c:set var="pullClass" value="" />
+<c:if test="${not empty position}">
+    <c:set var="pullClass" value=" pull-${position.string}" />
+</c:if>
+
 <template:addResources type="css" resources="languageSwitchingLinks.css"/>
-<template:addResources type="javascript" resources="bootstrap-dropdown.js"/>
 <c:set var="linkKind" value="${currentNode.properties.typeOfDisplay.string}"/>
 <c:choose>
     <c:when test="${linkKind eq 'flag'}">
@@ -31,36 +35,40 @@
 </c:choose>
 
 <ui:initLangBarAttributes activeLanguagesOnly="${renderContext.liveMode}"/>
-<div class="btn-group btn-mini">
-    <c:forEach items="${requestScope.languageCodes}" var="language">
-        <ui:displayLanguageSwitchLink languageCode="${language}" display="false" urlVar="switchUrl"
-                                      var="renderedLanguage"
-                                      linkKind="${currentNode.properties.typeOfDisplay.string}"/>
-        <c:if test="${language eq currentResource.locale}">
-            <c:if test="${not empty flag}">
-                <c:set var="renderedLanguage">
-                    <span class='flag flag_${language}${flag}_off'></span>
-                </c:set>
-            </c:if>
-            <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">${renderedLanguage}<span
-                    class="caret"></span></a>
-        </c:if>
-    </c:forEach>
-    <ul class="dropdown-menu">
-        <c:forEach items="${requestScope.languageCodes}" var="language">
-            <ui:displayLanguageSwitchLink languageCode="${language}" display="false" urlVar="switchUrl"
-                                          var="renderedLanguage"
-                                          linkKind="${currentNode.properties.typeOfDisplay.string}"/>
-            <c:if test="${ language ne currentResource.locale}">
-                <c:if test="${not empty flag}">
-                    <c:set var="renderedLanguage">
-                        <span class='flag flag_${language}${flag}_off'></span>
-                    </c:set>
+<c:if test="${not empty requestScope.languageCodes}">
+    <ul class="nav${pullClass}">
+        <li class="dropdown">
+            <c:forEach items="${requestScope.languageCodes}" var="language">
+                <ui:displayLanguageSwitchLink languageCode="${language}" display="false" urlVar="switchUrl"
+                                              var="renderedLanguage"
+                                              linkKind="${currentNode.properties.typeOfDisplay.string}"/>
+                <c:if test="${language eq currentResource.locale}">
+                    <c:if test="${not empty flag}">
+                        <c:set var="renderedLanguage">
+                            <span class='flag flag_${language}${flag}_off'></span>
+                        </c:set>
+                    </c:if>
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">${renderedLanguage}<span
+                            class="caret"></span></a>
                 </c:if>
-                <li><a title="<fmt:message key='switchTo'/>"
-                       href="<c:url context='/' value='${switchUrl}'/>">${renderedLanguage}</a>
-                </li>
-            </c:if>
-        </c:forEach>
+            </c:forEach>
+            <ul class="dropdown-menu">
+                <c:forEach items="${requestScope.languageCodes}" var="language">
+                    <ui:displayLanguageSwitchLink languageCode="${language}" display="false" urlVar="switchUrl"
+                                                  var="renderedLanguage"
+                                                  linkKind="${currentNode.properties.typeOfDisplay.string}"/>
+                    <c:if test="${ language ne currentResource.locale}">
+                        <c:if test="${not empty flag}">
+                            <c:set var="renderedLanguage">
+                                <span class='flag flag_${language}${flag}_off'></span>
+                            </c:set>
+                        </c:if>
+                        <li><a title="<fmt:message key='switchTo'/>"
+                               href="<c:url context='/' value='${switchUrl}'/>">${renderedLanguage}</a>
+                        </li>
+                    </c:if>
+                </c:forEach>
+            </ul>
+        </li>
     </ul>
-</div>
+</c:if>

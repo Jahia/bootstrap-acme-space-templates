@@ -36,8 +36,9 @@
 <fmt:formatDate value="${newsDate.time}" pattern="yyyy" var="newsYear"/>
 <jcr:nodeProperty var="image" node="${currentNode}" name="image"/>
 
-<!-- <a class="btn btn-primary" href="${action}" title="<fmt:message key="bootstrapComponents.news.back"/>">
-<i class="icon-chevron-left icon-white"></i> <fmt:message key="bootstrapComponents.news.back"/> </a> -->
+<a class="btn btn-primary" href="${action}" title="<fmt:message key="acmeBootstrapTemplate.back"/>">
+    <i class="icon-chevron-left icon-white"></i> <fmt:message key="acmeBootstrapTemplate.back"/> </a>
+
 <article class="news">
 
     <div class="media-body"><h1>${title.string}</h1> <span class="btn btn-default">${newsDate.time}</span></div>

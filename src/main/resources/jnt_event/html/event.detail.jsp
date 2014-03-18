@@ -38,8 +38,8 @@
     <c:set var="action">javascript:history.back()</c:set>
 </c:if>
 
-<a class="btn btn-primary" href="${action}" title="<fmt:message key="bootstrapComponents.events.back"/>">
-    <i class="icon-chevron-left icon-white"></i> <fmt:message key="bootstrapComponents.events.back"/> </a>
+<a class="btn btn-primary" href="${action}" title="<fmt:message key="acmeBootstrapTemplate.back"/>">
+    <i class="icon-chevron-left icon-white"></i> <fmt:message key="acmeBootstrapTemplate.back"/> </a>
 
 <article>
     <div class="media-date media-date-big media-date-big-nomarginright "><span class="month">${startDateMonth}</span><span
