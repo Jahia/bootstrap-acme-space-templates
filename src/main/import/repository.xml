@@ -8,6 +8,7 @@
                              j:title="Bootstrap ACME Space Templates"
                                   jcr:mixinTypes="jmix:hasExternalProviderExtension"
                              jcr:primaryType="jnt:module">
+                
                 <portlets jcr:primaryType="jnt:portletFolder"/>
                 <files jcr:primaryType="jnt:folder">
                     <bootstrap jcr:primaryType="jnt:folder">
@@ -457,6 +458,35 @@
                                 </content>
                             </pagecontent>
                         </events>
+                        <full j:hiddenTemplate="false" jcr:primaryType="jnt:pageTemplate">
+                            <j:translation_en jcr:language="en"
+                                    jcr:mixinTypes="mix:title"
+                                    jcr:primaryType="jnt:translation"
+                                    jcr:title="Full"/>
+                            <pagecontent jcr:primaryType="jnt:contentList">
+                                <content containerType="fluid"
+                              jcr:mixinTypes="jmix:bootstrapFullComponentAdvancedProps jmix:bootstrapFullComponentRowPredefined"
+                              jcr:primaryType="jnt:bootstrapFullComponent"
+                              layout="12"
+                              rowType="predefined"
+                              sectionCssClass="content-section"
+                              sectionElement="section">
+                                    <content jcr:primaryType="jnt:contentList">
+                                        <breadcrumb displayCurrentPage="true"
+                                       displayHome="true"
+                                       displayLinkOnCurrentPage="false"
+                                       displayOnFirstLevel="false"
+                                       jcr:primaryType="jnt:bootstrapBreadcrumb"/>
+                                        <page-title jcr:primaryType="jnt:fullTitle"/>
+                                        <main j:allowedTypes=""
+                                 j:contributeTypes="jnt:bigText jnt:fileI18nReference jnt:fileReference jnt:imageI18nReference jnt:imageReferenceLink jnt:mainContent jnt:text"
+                                 j:editableInContribution="true"
+                                 jcr:mixinTypes="jmix:contributeMode"
+                                 jcr:primaryType="jnt:area"/>
+                                    </content>
+                                </content>
+                            </pagecontent>
+                        </full>
                     </base>
                     <site-settings-base j:view="siteSettings"
                                 jcr:mixinTypes="jmix:useUILocale"
@@ -476,7 +506,6 @@
                             </bootstrapCustomization>
                         </site-settings-base>
                 </templates>
-                
                 
             <home j:isHomePage="true"
                j:templateName="home"
