@@ -353,10 +353,6 @@
                                             </aside>
                                         </aside>
                                         <contextual-side jcr:primaryType="jnt:area"/>
-                                        <calendar endDateProperty="endDate"
-                                     j:bindedComponent="/modules/bootstrap-acme-space-templates/templates/base/events/pagecontent/content/content/events"
-                                     jcr:primaryType="jnt:calendar"
-                                     startDateProperty="startDate"/>
                                         <facets j:bindedComponent="/modules/bootstrap-acme-space-templates/templates/base/events/pagecontent/content/content/events"
                                    j:type="jnt:event"
                                    jcr:primaryType="jnt:facets">
