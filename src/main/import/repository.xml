@@ -280,7 +280,7 @@
                                        displayOnFirstLevel="false"
                                        jcr:primaryType="jnt:bootstrapBreadcrumb"/>
                                         <page-title jcr:primaryType="jnt:fullTitle"/>
-                                        <main j:contributeTypes="jnt:bigText jnt:fileI18nReference jnt:fileReference jnt:imageI18nReference jnt:imageReferenceLink jnt:mainContent jnt:text"
+                                        <main j:contributeTypes="jnt:acmeBigText jnt:imageReferenceLink jnt:text"
                                  j:editableInContribution="true"
                                  jcr:mixinTypes="jmix:contributeMode"
                                  jcr:primaryType="jnt:area"/>
@@ -322,7 +322,10 @@
                                        displayOnFirstLevel="false"
                                        jcr:primaryType="jnt:bootstrapBreadcrumb"/>
                                         <page-title-1 jcr:primaryType="jnt:fullTitle"/>
-                                        <main jcr:primaryType="jnt:area"/>
+                                        <main j:contributeTypes="jnt:acmeBigText jnt:imageReferenceLink jnt:text"
+                                 j:editableInContribution="true"
+                                 jcr:mixinTypes="jmix:contributeMode"
+                                 jcr:primaryType="jnt:area"/>
                                 </content>
                                 </content>
                             </pagecontent>
