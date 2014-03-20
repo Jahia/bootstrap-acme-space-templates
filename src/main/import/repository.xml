@@ -159,7 +159,7 @@
                                                     position="right"
                                                     typeOfDisplay="isoLocaleCountryCode"/>
                             </home>
-                            <topslider j:allowedTypes="" jcr:primaryType="jnt:area"/>
+                            <topslider jcr:primaryType="jnt:area"/>
                         </header>
                         <footer jcr:primaryType="jnt:contentList">
                             <footer-container jcr:mixinTypes="jmix:bootstrapFullComponentRowPredefined"
@@ -232,10 +232,10 @@
                               sectionCssClass="content-section"
                               sectionElement="section">
                                     <content-side1 jcr:primaryType="jnt:contentList">
-                                        <side j:allowedTypes="" jcr:primaryType="jnt:area"/>
+                                        <side jcr:primaryType="jnt:area"/>
                                     </content-side1>
                                     <content jcr:primaryType="jnt:contentList">
-                                        <main j:allowedTypes="" jcr:primaryType="jnt:area"/>
+                                        <main jcr:primaryType="jnt:area"/>
                                 </content>
                                 </content>
                                 <end-of-homepage-area jcr:mixinTypes="jmix:bootstrapFullComponentRowPredefined"
@@ -268,10 +268,10 @@
                                   jcr:primaryType="jnt:section"
                                   sectionElement="div">
                                             <aside jcr:primaryType="jnt:contentList">
-                                                <side j:allowedTypes="" j:level="1" jcr:primaryType="jnt:absoluteArea"/>
+                                                <side j:level="1" jcr:primaryType="jnt:absoluteArea"/>
                                         </aside>
                                         </aside>
-                                        <contextual-side j:allowedTypes="" jcr:primaryType="jnt:area"/>
+                                        <contextual-side jcr:primaryType="jnt:area"/>
                                     </content-side1>
                                     <content jcr:primaryType="jnt:contentList">
                                         <breadcrumb displayCurrentPage="true"
@@ -280,8 +280,7 @@
                                        displayOnFirstLevel="false"
                                        jcr:primaryType="jnt:bootstrapBreadcrumb"/>
                                         <page-title jcr:primaryType="jnt:fullTitle"/>
-                                        <main j:allowedTypes=""
-                                 j:contributeTypes="jnt:bigText jnt:fileI18nReference jnt:fileReference jnt:imageI18nReference jnt:imageReferenceLink jnt:mainContent jnt:text"
+                                        <main j:contributeTypes="jnt:bigText jnt:fileI18nReference jnt:fileReference jnt:imageI18nReference jnt:imageReferenceLink jnt:mainContent jnt:text"
                                  j:editableInContribution="true"
                                  jcr:mixinTypes="jmix:contributeMode"
                                  jcr:primaryType="jnt:area"/>
@@ -311,10 +310,10 @@
                                      jcr:primaryType="jnt:section"
                                      sectionElement="div">
                                                 <aside jcr:primaryType="jnt:contentList">
-                                                    <side j:allowedTypes="" j:level="1" jcr:primaryType="jnt:absoluteArea"/>
+                                                <side j:level="1" jcr:primaryType="jnt:absoluteArea"/>
                                                 </aside>
                                             </aside>
-                                            <contextual-side j:allowedTypes="" jcr:primaryType="jnt:area"/>
+                                        <contextual-side jcr:primaryType="jnt:area"/>
                                         </content-side1>
                                     <content jcr:primaryType="jnt:contentList">
                                         <breadcrumb displayCurrentPage="true"
@@ -323,7 +322,7 @@
                                        displayOnFirstLevel="false"
                                        jcr:primaryType="jnt:bootstrapBreadcrumb"/>
                                         <page-title-1 jcr:primaryType="jnt:fullTitle"/>
-                                        <main j:allowedTypes="" jcr:primaryType="jnt:area"/>
+                                        <main jcr:primaryType="jnt:area"/>
                                 </content>
                                 </content>
                             </pagecontent>
@@ -347,10 +346,10 @@
                                   jcr:primaryType="jnt:section"
                                   sectionElement="div">
                                             <aside jcr:primaryType="jnt:contentList">
-                                                <side j:allowedTypes="" j:level="1" jcr:primaryType="jnt:absoluteArea"/>
+                                                <side j:level="1" jcr:primaryType="jnt:absoluteArea"/>
                                             </aside>
                                         </aside>
-                                        <contextual-side j:allowedTypes="" jcr:primaryType="jnt:area"/>
+                                        <contextual-side jcr:primaryType="jnt:area"/>
                                         <calendar endDateProperty="endDate"
                                      j:bindedComponent="/modules/bootstrap-acme-space-templates/templates/base/events/pagecontent/content/content/events"
                                      jcr:primaryType="jnt:calendar"
@@ -445,7 +444,7 @@
                                        displayOnFirstLevel="false"
                                        jcr:primaryType="jnt:bootstrapBreadcrumb"/>
                                         <page-title jcr:primaryType="jnt:fullTitle"/>
-                                        <main j:allowedTypes="" jcr:primaryType="jnt:area"/>
+                                        <main jcr:primaryType="jnt:area"/>
                                         <events j:allowedTypes="jnt:event"
                                    j:areaView="bootsrapMediaNewsEvents"
                                    j:canDeleteInContribution="true"
@@ -478,8 +477,7 @@
                                        displayOnFirstLevel="false"
                                        jcr:primaryType="jnt:bootstrapBreadcrumb"/>
                                         <page-title jcr:primaryType="jnt:fullTitle"/>
-                                        <main j:allowedTypes=""
-                                 j:contributeTypes="jnt:bigText jnt:fileI18nReference jnt:fileReference jnt:imageI18nReference jnt:imageReferenceLink jnt:mainContent jnt:text"
+                                        <main j:contributeTypes="jnt:bigText jnt:fileI18nReference jnt:fileReference jnt:imageI18nReference jnt:imageReferenceLink jnt:mainContent jnt:text"
                                  j:editableInContribution="true"
                                  jcr:mixinTypes="jmix:contributeMode"
                                  jcr:primaryType="jnt:area"/>

@@ -50,10 +50,6 @@
  - bgimage (weakreference, picker[type='image']) internationalized < 'jnt:file'
  + * (jnt:spaceCarouselItem)
 
-[jnt:spaceCarouselItem] > jnt:content, mix:title, jmix:alink
- - lead (string) mandatory internationalized
- - image (weakreference, picker[type='image']) internationalized < 'jnt:file'
-
 [jnt:newNodeType] > mix:referenceable
 
 [jmix:imageOptions] mixin
@@ -65,6 +61,9 @@
 [jmix:acmestyle] > jmix:templateMixin mixin
  extends = jmix:droppableContent
  itemtype = layout
- - j:style (string, choicelist) = 'white' nofulltext < 'white','grey','blue','mushroom','orange','black','red','green','purple','yellow'
+ - j:style (string, choicelist) = 'white' nofulltext < 'white', 'grey', 'blue', 'mushroom', 'orange', 'black', 'red', 'green', 'purple', 'yellow'
 
+[jnt:spaceCarouselItem] > jnt:content, mix:title, jmix:alink
+ - lead (string) mandatory internationalized
+ - image (weakreference, picker[type='image']) internationalized < 'jnt:file'
 
