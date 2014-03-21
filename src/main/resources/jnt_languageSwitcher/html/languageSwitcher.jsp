@@ -22,17 +22,7 @@
 
 <template:addResources type="css" resources="languageSwitchingLinks.css"/>
 <c:set var="linkKind" value="${currentNode.properties.typeOfDisplay.string}"/>
-<c:choose>
-    <c:when test="${linkKind eq 'flag'}">
-        <c:set var="flag"/>
-    </c:when>
-    <c:when test="${linkKind eq 'flagPlain'}">
-        <c:set var="flag" value="_plain"/>
-    </c:when>
-    <c:when test="${linkKind eq 'flagShadow'}">
-        <c:set var="flag" value="_shadow"/>
-    </c:when>
-</c:choose>
+<c:set var="flag" value="${linkKind eq 'flag'}"/>
 
 <ui:initLangBarAttributes activeLanguagesOnly="${renderContext.liveMode}"/>
 <c:if test="${not empty requestScope.languageCodes}">
@@ -43,9 +33,9 @@
                                               var="renderedLanguage"
                                               linkKind="${currentNode.properties.typeOfDisplay.string}"/>
                 <c:if test="${language eq currentResource.locale}">
-                    <c:if test="${not empty flag}">
+                    <c:if test="${flag}">
                         <c:set var="renderedLanguage">
-                            <span class='flag flag_${language}${flag}_off'></span>
+                            <span class='flag ${functions:getLanguageFlagCSSClass(functions:toLocale(language))}'></span>
                         </c:set>
                     </c:if>
                     <a class="dropdown-toggle" data-toggle="dropdown" href="#">${renderedLanguage}<span
@@ -54,13 +44,13 @@
             </c:forEach>
             <ul class="dropdown-menu">
                 <c:forEach items="${requestScope.languageCodes}" var="language">
-                    <ui:displayLanguageSwitchLink languageCode="${language}" display="false" urlVar="switchUrl"
-                                                  var="renderedLanguage"
-                                                  linkKind="${currentNode.properties.typeOfDisplay.string}"/>
                     <c:if test="${ language ne currentResource.locale}">
-                        <c:if test="${not empty flag}">
+                        <ui:displayLanguageSwitchLink languageCode="${language}" display="false" urlVar="switchUrl"
+                                                      var="renderedLanguage"
+                                                      linkKind="${currentNode.properties.typeOfDisplay.string}"/>
+                        <c:if test="${flag}">
                             <c:set var="renderedLanguage">
-                                <span class='flag flag_${language}${flag}_off'></span>
+                                <span class='flag ${functions:getLanguageFlagCSSClass(functions:toLocale(language))}'></span>
                             </c:set>
                         </c:if>
                         <li><a title="<fmt:message key='switchTo'/>"
