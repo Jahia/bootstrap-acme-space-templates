@@ -383,7 +383,7 @@
                                             <queryFacet facet="nextEvents"
                                           jcr:primaryType="jnt:queryFacet"
                                           mincount="1"
-                                          query="0\:FACET\:startDate:[NOW/DAY TO NOW/MONTH+1MONTH] OR 0\:FACET\:endDate:[NOW/DAY TO NOW/MONTH+1MONTH]">
+                                          query="0\:FACET\:startDate:[NOW/DAY TO NOW/MONTH+1MONTH-1SECOND] OR 0\:FACET\:endDate:[NOW/DAY TO NOW/MONTH+1MONTH-1SECOND]">
                                                 <j:translation_en jcr:language="en"
                                                    jcr:primaryType="jnt:translation"
                                                    label="Next events per month"
@@ -396,7 +396,7 @@
                                             <queryFacet-1 facet="nextEvents"
                                             jcr:primaryType="jnt:queryFacet"
                                             mincount="1"
-                                            query="0\:FACET\:startDate:[NOW/MONTH+1MONTH TO NOW/MONTH+2MONTH] OR 0\:FACET\:endDate:[NOW/MONTH+1MONTH TO NOW/MONTH+2MONTH]">
+                                            query="0\:FACET\:startDate:[NOW/MONTH+1MONTH TO NOW/MONTH+2MONTH-1SECOND] OR 0\:FACET\:endDate:[NOW/MONTH+1MONTH TO NOW/MONTH+2MONTH-1SECOND]">
                                                 <j:translation_en jcr:language="en"
                                                    jcr:primaryType="jnt:translation"
                                                    label="Next events per month"
@@ -409,7 +409,7 @@
                                             <queryFacet-2 facet="nextEvents"
                                             jcr:primaryType="jnt:queryFacet"
                                             mincount="1"
-                                            query="0\:FACET\:startDate:[NOW/MONTH+2MONTH TO NOW/MONTH+3MONTH] OR 0\:FACET\:endDate:[NOW/MONTH+2MONTH TO NOW/MONTH+3MONTH]">
+                                            query="0\:FACET\:startDate:[NOW/MONTH+2MONTH TO NOW/MONTH+3MONTH-1SECOND] OR 0\:FACET\:endDate:[NOW/MONTH+2MONTH TO NOW/MONTH+3MONTH-1SECOND]">
                                                 <j:translation_en jcr:language="en"
                                                    jcr:primaryType="jnt:translation"
                                                    label="Next events per month"
@@ -422,7 +422,7 @@
                                             <queryFacet-3 facet="nextEvents"
                                             jcr:primaryType="jnt:queryFacet"
                                             mincount="1"
-                                            query="0\:FACET\:startDate:[NOW/MONTH+3MONTH TO NOW/MONTH+4MONTH] OR 0\:FACET\:endDate:[NOW/MONTH+3MONTH TO NOW/MONTH+4MONTH]">
+                                            query="0\:FACET\:startDate:[NOW/MONTH+3MONTH TO NOW/MONTH+4MONTH-1SECOND] OR 0\:FACET\:endDate:[NOW/MONTH+3MONTH TO NOW/MONTH+4MONTH-1SECOND]">
                                                 <j:translation_en jcr:language="en"
                                                    jcr:primaryType="jnt:translation"
                                                    label="Next events per month"
