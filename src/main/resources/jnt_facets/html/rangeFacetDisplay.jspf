@@ -12,12 +12,12 @@
 <%--@elvariable id="currentResource" type="org.jahia.services.render.Resource"--%>
 <%--@elvariable id="url" type="org.jahia.services.render.URLGenerator"--%>
 <%--@elvariable id="acl" type="java.lang.String"--%>
-<c:if test="${facet:isUnappliedFacetValueExisting(currentFacet, activeFacetsVars[activeFacetMapVarName])}">
+<c:if test="${facet:isUnappliedRangeFacetValueExisting(currentFacet, activeFacetsVars[activeFacetMapVarName])}">
     <h6><facet:facetLabel currentFacetFieldName="${currentFacet.name}" facetLabels="${facetLabels}"/></h6>
 </c:if>
-<c:if test="${not empty currentFacet.values}">
+<c:if test="${not empty currentFacet.counts}">
 <ul class="nav nav-pills nav-stacked">
-    <c:forEach items="${currentFacet.values}" var="facetValue">
+    <c:forEach items="${currentFacet.counts}" var="facetValue">
         <c:if test="${not facet:isFacetValueApplied(facetValue, activeFacetsVars[activeFacetMapVarName])}">
             <c:url var="facetUrl" value="${url.mainResource}">
                 <c:param name="${facetParamVarName}"
