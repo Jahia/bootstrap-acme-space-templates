@@ -86,7 +86,7 @@
                     </bootstrap>
                 </files>
                 <contents jcr:primaryType="jnt:contentFolder"/>
-                <templates j:defaultView="bootstrap" jcr:primaryType="jnt:templatesFolder">
+                <templates jcr:primaryType="jnt:templatesFolder">
                     <files jcr:primaryType="jnt:folder">
                         <bootstrap.png j:height="16"
                               j:width="16"
