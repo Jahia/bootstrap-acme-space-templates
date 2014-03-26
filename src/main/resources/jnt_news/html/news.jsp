@@ -43,10 +43,10 @@
     <c:if test="${!empty image}">
         <c:choose>
             <c:when test="${jcr:isNodeType(image.node, 'jmix:thumbnail')}">
-                <a class="media-photo media-photo-medium media-photo-margintop-medium" href="#"><img src="${image.node.thumbnailUrls['thumbnail']}" alt="alt"></a>
+                <a class="media-photo media-photo-medium media-photo-margintop-medium" href="${linkUrl}"><img src="${image.node.thumbnailUrls['thumbnail']}" alt="alt"></a>
             </c:when>
             <c:otherwise>
-                <a class="media-photo media-photo-medium media-photo-margintop-medium" href="#"><img src="${image.node.url}" alt="${image.node.displayableName}" /></a>
+                <a class="media-photo media-photo-medium media-photo-margintop-medium" href="${linkUrl}"><img src="${image.node.url}" alt="${image.node.displayableName}" /></a>
             </c:otherwise>
         </c:choose>
     </c:if>

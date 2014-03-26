@@ -3,7 +3,7 @@
 <mix = 'http://www.jcp.org/jcr/mix/1.0'>
 
 [jmix:alink] mixin
- - linkType (string, choicelist[linkInitializer,resourceBundle]) = 'internal' autocreated < 'internal', 'external'
+ - j:linkType (string, choicelist[linkTypeInitializer,resourceBundle]) = 'internal' autocreated mandatory
 
 [jnt:acmeBigText] > jnt:bigText
  - text (string, richtext[ckeditor.customConfig='$context/modules/bootstrap-acme-space-templates/javascript/ckconfig.js']) internationalized
@@ -35,16 +35,6 @@
  - text (string, richtext[ckeditor.customConfig='$context/modules/bootstrap-acme-space-templates/javascript/ckconfig.js']) internationalized
  - image (weakreference, picker[type='image']) mandatory internationalized < 'jnt:file'
  - bgimage (weakreference, picker[type='image']) mandatory internationalized < 'jnt:file'
-
-[jmix:externalLink] > jmix:templateMixin mixin
- extends = jmix:alink
- - linkTitle (string) internationalized
- - externalLink (string) = 'http://' internationalized
-
-[jmix:internalLink] > jmix:templateMixin mixin
- extends = jmix:alink
- - linkTitle (string) internationalized
- - internalLink (weakreference, picker[type='page']) < 'jnt:page'
 
 [jnt:spaceCarousel] > jnt:content, jmix:multimediaContent
  - bgimage (weakreference, picker[type='image']) internationalized < 'jnt:file'
