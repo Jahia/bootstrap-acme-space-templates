@@ -28,7 +28,7 @@
 <jcr:nodeProperty node="${currentNode}" name="jcr:title" var="title"/>
 <jcr:nodeProperty node="${currentNode}" name="intro" var="body"/>
 
-<c:url value='${url.base}${currentNode.path}.detail.html' var="linkUrl" />
+<c:url value='${url.base}${currentNode.path}.article-detail.html' var="linkUrl" />
 
 <article class="clearfix">
     <div class="media-body media-body-border-left media-body-marginleft150">

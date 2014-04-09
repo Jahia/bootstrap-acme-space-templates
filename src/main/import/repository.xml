@@ -439,28 +439,73 @@
                                 </content>
                             </pagecontent>
                         </full>
-                        <detail j:applyOn="jnt:article jnt:event jnt:news"
+                        <detailed-views j:applyOn="jnt:article jnt:event jnt:news"
                        j:defaultTemplate="false"
                        j:hiddenTemplate="false"
                        jcr:primaryType="jnt:contentTemplate">
                             <j:translation_en jcr:language="en"
                                     jcr:mixinTypes="mix:title"
                                     jcr:primaryType="jnt:translation"
-                                    jcr:title="Detailed view (Event, News and Article)"/>
-                            <pagecontent jcr:primaryType="jnt:contentList">
-                                <content containerType="fluid"
-                              jcr:mixinTypes="jmix:bootstrapFullComponentAdvancedProps jmix:bootstrapFullComponentRowPredefined"
-                              jcr:primaryType="jnt:bootstrapFullComponent"
-                              layout="12"
-                              rowType="predefined"
-                              sectionCssClass="content-section"
-                              sectionElement="section">
+                                    jcr:title="Detailed views"/>
+                            <news-detail j:applyOn="jnt:news"
+                               j:defaultTemplate="false"
+                               j:hiddenTemplate="false"
+                               jcr:primaryType="jnt:contentTemplate">
+                                <j:translation_en jcr:language="en"
+                                       jcr:mixinTypes="mix:title"
+                                       jcr:primaryType="jnt:translation"
+                                       jcr:title="News detail"/>
+                                <pagecontent jcr:primaryType="jnt:contentList">
                                     <content jcr:primaryType="jnt:contentList">
                                         <main-resource-display j:mainResourceView="detail" jcr:primaryType="jnt:mainResourceDisplay"/>
-                                </content>
-                                </content>
-                            </pagecontent>
-                        </detail>
+                                    </content>
+                                </pagecontent>
+                            </news-detail>
+                            <article-detail j:applyOn="jnt:article"
+                                  j:defaultTemplate="false"
+                                  j:hiddenTemplate="false"
+                                  jcr:primaryType="jnt:contentTemplate">
+                                <j:translation_en jcr:language="en"
+                                       jcr:mixinTypes="mix:title"
+                                       jcr:primaryType="jnt:translation"
+                                       jcr:title="Article detail"/>
+                                <pagecontent jcr:primaryType="jnt:contentList">
+                                    <content containerType="fluid"
+                                   jcr:mixinTypes="jmix:bootstrapFullComponentAdvancedProps jmix:bootstrapFullComponentRowPredefined"
+                                   jcr:primaryType="jnt:bootstrapFullComponent"
+                                   layout="12"
+                                   rowType="predefined"
+                                   sectionCssClass="content-section"
+                                   sectionElement="section">
+                                        <content jcr:primaryType="jnt:contentList">
+                                            <main-resource-display j:mainResourceView="detail" jcr:primaryType="jnt:mainResourceDisplay"/>
+                                        </content>
+                                    </content>
+                                </pagecontent>
+                            </article-detail>
+                            <event-detail j:applyOn="jnt:event"
+                                j:defaultTemplate="false"
+                                j:hiddenTemplate="false"
+                                jcr:primaryType="jnt:contentTemplate">
+                                <j:translation_en jcr:language="en"
+                                       jcr:mixinTypes="mix:title"
+                                       jcr:primaryType="jnt:translation"
+                                       jcr:title="Event detail"/>
+                                <pagecontent jcr:primaryType="jnt:contentList">
+                                    <content containerType="fluid"
+                                 jcr:mixinTypes="jmix:bootstrapFullComponentAdvancedProps jmix:bootstrapFullComponentRowPredefined"
+                                 jcr:primaryType="jnt:bootstrapFullComponent"
+                                 layout="12"
+                                 rowType="predefined"
+                                 sectionCssClass="content-section"
+                                 sectionElement="section">
+                                        <content jcr:primaryType="jnt:contentList">
+                                            <main-resource-display j:mainResourceView="detail" jcr:primaryType="jnt:mainResourceDisplay"/>
+                                        </content>
+                                    </content>
+                                </pagecontent>
+                            </event-detail>
+                        </detailed-views>
                     </base>
                     <site-settings-base j:view="siteSettings"
                                 jcr:mixinTypes="jmix:useUILocale"

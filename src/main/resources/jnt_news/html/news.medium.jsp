@@ -22,7 +22,7 @@
     <jahia:addCacheDependency node="${newsImage.node}" />
 
     <div class="newsSummaryImg"><img src="${imageUrl}" alt="${newsTitleEscaped}"/></div>
-    <h4><a href="<c:url value='${url.base}${currentNode.path}.detail.html'/>">${newsTitleEscaped}</a></h4>
+    <h4><a href="<c:url value='${url.base}${currentNode.path}.news-detail.html'/>">${newsTitleEscaped}</a></h4>
     <p class="newsSummaryresume"> ${fn:substring(functions:removeHtmlTags(newsDesc.string),0,120)}</p>
     <div class="clear"> </div>
 </div>
