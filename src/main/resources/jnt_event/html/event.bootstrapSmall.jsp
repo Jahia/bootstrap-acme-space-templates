@@ -30,7 +30,7 @@
 
 <jcr:nodeProperty node="${currentNode}" name="startDate" var="startDate"/>
 
-<c:url value='${url.base}${currentNode.path}.event-detail.html' var="linkUrl" />
+<c:url value='${url.base}${currentNode.path}.html' var="linkUrl" />
 
 <article class="clearfix">
     <div class="media-body">

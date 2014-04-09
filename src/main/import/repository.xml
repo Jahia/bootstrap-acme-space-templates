@@ -448,22 +448,32 @@
                                     jcr:primaryType="jnt:translation"
                                     jcr:title="Detailed views"/>
                             <news-detail j:applyOn="jnt:news"
-                               j:defaultTemplate="false"
+                               j:defaultTemplate="true"
                                j:hiddenTemplate="false"
+                               j:priority="150"
                                jcr:primaryType="jnt:contentTemplate">
                                 <j:translation_en jcr:language="en"
                                        jcr:mixinTypes="mix:title"
                                        jcr:primaryType="jnt:translation"
                                        jcr:title="News detail"/>
                                 <pagecontent jcr:primaryType="jnt:contentList">
-                                    <content jcr:primaryType="jnt:contentList">
-                                        <main-resource-display j:mainResourceView="detail" jcr:primaryType="jnt:mainResourceDisplay"/>
+                                    <content containerType="fluid"
+                                 jcr:mixinTypes="jmix:bootstrapFullComponentAdvancedProps jmix:bootstrapFullComponentRowPredefined"
+                                 jcr:primaryType="jnt:bootstrapFullComponent"
+                                 layout="12"
+                                 rowType="predefined"
+                                 sectionCssClass="content-section"
+                                 sectionElement="section">
+                                        <content jcr:primaryType="jnt:contentList">
+                                            <main-resource-display j:mainResourceView="detail" jcr:primaryType="jnt:mainResourceDisplay"/>
+                                        </content>
                                     </content>
                                 </pagecontent>
                             </news-detail>
                             <article-detail j:applyOn="jnt:article"
-                                  j:defaultTemplate="false"
+                                  j:defaultTemplate="true"
                                   j:hiddenTemplate="false"
+                                  j:priority="150"
                                   jcr:primaryType="jnt:contentTemplate">
                                 <j:translation_en jcr:language="en"
                                        jcr:mixinTypes="mix:title"
@@ -484,8 +494,9 @@
                                 </pagecontent>
                             </article-detail>
                             <event-detail j:applyOn="jnt:event"
-                                j:defaultTemplate="false"
+                                j:defaultTemplate="true"
                                 j:hiddenTemplate="false"
+                                j:priority="150"
                                 jcr:primaryType="jnt:contentTemplate">
                                 <j:translation_en jcr:language="en"
                                        jcr:mixinTypes="mix:title"

@@ -35,7 +35,7 @@
 <fmt:formatDate value="${newsDate.time}" pattern="yyyy" var="newsYear"/>
 
 <jcr:nodeProperty var="image" node="${currentNode}" name="image"/>
-<c:url value='${url.base}${currentNode.path}.news-detail.html' var="linkUrl" />
+<c:url value='${url.base}${currentNode.path}.html' var="linkUrl" />
 
 <article class="clearfix">
     <div class="media-date media-date-big media-date-big-nomarginright "><span class="month">${newsMonth}</span><span

@@ -33,7 +33,7 @@
 <fmt:formatDate value="${startDate.time}" pattern="d" var="startDateDay"/>
 <fmt:formatDate value="${startDate.time}" pattern="yyyy" var="startDateYear"/>
 
-<c:url value='${url.base}${currentNode.path}.event-detail.html' var="linkUrl" />
+<c:url value='${url.base}${currentNode.path}.html' var="linkUrl" />
 
 <article class="clearfix">
     <div class="media-date media-date-big media-date-big-nomarginright "><span class="month">${startDateMonth}</span><span
