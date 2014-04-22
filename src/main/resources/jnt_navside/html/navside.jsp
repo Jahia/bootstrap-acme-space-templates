@@ -50,6 +50,7 @@
                     <c:set var="activeClass">active</c:set>
                 </c:if>
                 <c:set var="children" value="${jcr:getChildrenOfType(menuElement, 'jnt:page,jnt:nodeLink,jnt:externalLink')}"/>
+                <template:addCacheDependency path="${menuElement.canonicalPath}"/>
                 <c:choose>
                     <c:when test="${jcr:isNodeType(menuElement, 'jnt:navMenuText')}">
                         <li class="divider"></li>
