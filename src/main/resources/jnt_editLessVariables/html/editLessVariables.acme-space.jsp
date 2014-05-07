@@ -56,7 +56,7 @@
     <c:otherwise><c:set var="baseLineHeight" value="${baseLineHeight.string}" /></c:otherwise>
 </c:choose>
 <c:choose>
-    <c:when test="${empty headingsFontFamily}"><c:set var="headingsFontFamily" value="'Audiowide',@sansFontFamily" /></c:when>
+    <c:when test="${empty headingsFontFamily}"><c:set var="headingsFontFamily" value="'Orbitron Medium',@sansFontFamily" /></c:when>
     <c:otherwise><c:set var="headingsFontFamily" value="${headingsFontFamily.string}" /></c:otherwise>
 </c:choose>
 <c:choose>
@@ -117,7 +117,7 @@
         <div class="span3">headingsFontFamily</div>
         <div class="span9">
             <select name="headingsFontFamily">
-                <option value="'Audiowide',@sansFontFamily" <c:if test="${headingsFontFamily eq '\\\'Audiowide\\\',@sansFontFamily'}">selected="selected" </c:if>>Audiowide + Sans-Serif Fonts</option>
+                <option value="'Orbitron Medium',@sansFontFamily" <c:if test="${headingsFontFamily eq '\\\'Orbitron Medium\\\',@sansFontFamily'}">selected="selected" </c:if>>Orbitron Medium + Sans-Serif Fonts</option>
                 <option value="@sansFontFamily" <c:if test="${headingsFontFamily eq '@sansFontFamily'}">selected="selected" </c:if>>Sans-Serif Fonts</option>
                 <option value="@serifFontFamily" <c:if test="${headingsFontFamily eq '@serifFontFamily'}">selected="selected" </c:if>>Serif Fonts</option>
                 <option value="@monoFontFamily" <c:if test="${headingsFontFamily eq '@monoFontFamily'}">selected="selected" </c:if>>Monospace Fonts</option>

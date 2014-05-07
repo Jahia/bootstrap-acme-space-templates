@@ -54,9 +54,9 @@
     <meta name="apple-mobile-web-app-capable" content="yes"/>
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 
-    <%-- Google fonts--%>
-    <c:set var="s" value="${renderContext.request.scheme=='https'?'s':''}"/>
-    <link href='http://fonts.googleapis.com/css?family=Audiowide' rel='stylesheet' type='text/css'>
+    <!-- leaguegothic Type-->
+    <template:addResources type="css" resources="orbitron.css"/>
+
 </head>
 <body>
 
