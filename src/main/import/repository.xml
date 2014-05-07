@@ -16,6 +16,16 @@
                             <bootstrap.css jcr:primaryType="jnt:file">
                                 <jcr:content jcr:mimeType="text/css" jcr:primaryType="jnt:resource"/>
                             </bootstrap.css>
+                            <font jcr:primaryType="jnt:folder">
+                                <Audiowide-Regular.license.txt jcr:primaryType="jnt:file">
+                                    <jcr:content j:lastExtractionDate="2014-05-07T10:25:40.838+02:00"
+                                     jcr:mimeType="text/plain"
+                                     jcr:primaryType="jnt:resource"/>
+                                </Audiowide-Regular.license.txt>
+                                <Audiowide-Regular.ttf jcr:primaryType="jnt:file">
+                                    <jcr:content jcr:mimeType="application/octet-stream" jcr:primaryType="jnt:resource"/>
+                                </Audiowide-Regular.ttf>
+                            </font>
                         </css>
                         <img jcr:primaryType="jnt:folder">
                             <glyphicons-halflings.png j:height="159"

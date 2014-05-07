@@ -973,6 +973,10 @@ a.text-success:focus {
 .text-center {
   text-align: center;
 }
+@font-face {
+  font-family: Audiowide;
+  src: url(font/Audiowide-Regular.ttf);
+}
 h1,
 h2,
 h3,
