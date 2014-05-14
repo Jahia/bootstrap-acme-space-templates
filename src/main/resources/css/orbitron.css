@@ -1,4 +1,4 @@
-/* Black */
+/* Black
 @font-face {
     font-family: 'Orbitron Black';
     src: url('webfonts/orbitron-black-webfont.eot');
@@ -9,9 +9,9 @@
     font-weight: normal;
     font-style: normal;
 
-}
+}*/
 
-/* Light */
+/* Light
 @font-face {
     font-family: 'Orbitron Light';
     src: url('webfonts/orbitron-light-webfont.eot');
@@ -22,7 +22,7 @@
     font-weight: normal;
     font-style: normal;
 
-}	
+}*/
 
 /* Medium */
 @font-face {
@@ -37,7 +37,7 @@
 
 }
 
-/* Bold */
+/* Bold
 @font-face {
     font-family: 'Orbitron Bold';
     src: url('webfonts/orbitron-bold-webfont.eot');
@@ -47,4 +47,4 @@
          url('webfonts/orbitron-bold-webfont.svg#Orbitron-Bold') format('svg');
     font-weight: normal;
     font-style: normal;
-}
+}*/
