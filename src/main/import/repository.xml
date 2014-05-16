@@ -563,6 +563,13 @@
                         <advanced-search-form j:view="bootstrap"
                                      jcr:mixinTypes="jmix:renderable"
                                      jcr:primaryType="jnt:advancedSearchForm"/>
+                        <bootstrap-pagination displayNbOfItemsPerPage="true"
+                                     displayNbOfItemsPerPageValues="5,10,25,50,100"
+                                     displayPager="true"
+                                     j:bindedComponent="/modules/bootstrap-acme-space-templates/search-results/main/search-results"
+                                     jcr:primaryType="jnt:bootstrapPager"
+                                     nbOfPages="10"
+                                     pageSize="10"/>
                         <search-results autoSuggest="true"
                                autoSuggestHitCount="2"
                                autoSuggestMaxTermCount="1"
