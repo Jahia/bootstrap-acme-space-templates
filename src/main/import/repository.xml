@@ -551,14 +551,6 @@
                               jcr:mixinTypes="mix:title"
                               jcr:primaryType="jnt:translation"
                               jcr:title="Search results"/>
-                    <pagecontent jcr:primaryType="jnt:contentList">
-                        <advanced-search-form jcr:primaryType="jnt:advancedSearchForm"/>
-                        <search-results autoSuggest="true"
-                               autoSuggestHitCount="2"
-                               autoSuggestMaxTermCount="1"
-                               autoSuggestMinimumHitCount="2"
-                               jcr:primaryType="jnt:searchResults"/>
-                    </pagecontent>
                     <main jcr:primaryType="jnt:contentList">
                         <advanced-search-form j:view="bootstrap"
                                      jcr:mixinTypes="jmix:renderable"
