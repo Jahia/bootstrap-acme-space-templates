@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <content xmlns:j="http://www.jahia.org/jahia/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0">
     <modules jcr:primaryType="jnt:modules">
-        <bootstrap-acme-space-templates j:dependencies="bootstrap bootstrap-components contact default event facets search teasers"
+        <bootstrap-acme-space-templates j:dependencies="bootstrap bootstrap-components calendar contact default event facets search teasers"
                              j:installedModules="bootstrap-acme-space-templates"
                                       j:modulePriority="0"
                              j:moduleType="templatesSet"
@@ -309,6 +309,10 @@
                                             </aside>
                                         </aside>
                                         <contextual-side jcr:primaryType="jnt:area"/>
+                                        <calendar endDateProperty="endDate"
+                                     j:bindedComponent="/modules/bootstrap-acme-space-templates/templates/base/events/pagecontent/content/content/events"
+                                     jcr:primaryType="jnt:calendar"
+                                     startDateProperty="startDate"/>
                                         <facets j:bindedComponent="/modules/bootstrap-acme-space-templates/templates/base/events/pagecontent/content/content/events"
                                    j:type="jnt:event"
                                    jcr:primaryType="jnt:facets">

@@ -120,7 +120,7 @@
         <configuration>
           <instructions>
             <Jahia-Module-Type>templatesSet</Jahia-Module-Type>
-            <Jahia-Depends>bootstrap,bootstrap-components,contact,default,event,facets,search,teasers</Jahia-Depends>
+            <Jahia-Depends>default,bootstrap,bootstrap-components,calendar,contact,event,facets,search,teasers</Jahia-Depends>
           </instructions>
         </configuration>
       </plugin>
