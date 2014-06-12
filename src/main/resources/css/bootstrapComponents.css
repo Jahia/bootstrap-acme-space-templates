@@ -241,3 +241,7 @@ div.media-date .year {
         float: none;
     }
 }
+
+.dropdown-backdrop{
+    position: static;
+}
