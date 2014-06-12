@@ -236,4 +236,8 @@ div.media-date .year {
     .navbar .user-box {
        float: none;
     }
+
+    .navbar .login {
+        float: none;
+    }
 }
