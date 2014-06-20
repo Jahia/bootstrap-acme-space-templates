@@ -204,12 +204,14 @@ textarea {
   }
 }
 body {
-  margin: 0;
+  margin: 1;
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
   font-size: 14px;
   line-height: 20px;
   color: #555555;
-  background-color: #ffffff;
+}
+body.body-bg {
+  background-color: #000000;
   background-image: url("../img/body-bg.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -2428,7 +2430,7 @@ table {
   border-top: 2px solid #dddddd;
 }
 .table .table {
-  background-color: #ffffff;
+  background-color: #000000;
 }
 .table-condensed th,
 .table-condensed td {
@@ -4301,7 +4303,7 @@ input[type="submit"].btn.btn-mini {
 .nav-tabs > .active > a:hover,
 .nav-tabs > .active > a:focus {
   color: #555555;
-  background-color: #ffffff;
+  background-color: #000000;
   border: 1px solid #ddd;
   border-bottom-color: transparent;
   cursor: default;
@@ -8254,3 +8256,5 @@ ul.sitemap li li li {
     overflow: visible !important;
   }
 }
+
+/* sources hash b57fb88c7115992ad6bf901837b7d0a2 */

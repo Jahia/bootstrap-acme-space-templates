@@ -58,7 +58,7 @@
     <template:addResources type="css" resources="orbitron.css"/>
 
 </head>
-<body>
+<body class="body-bg">
 
 <%-- Les styles old--%>
 <template:addResources type="css" resources="jahia-old-responsive.css,jahia-old.css"/>
