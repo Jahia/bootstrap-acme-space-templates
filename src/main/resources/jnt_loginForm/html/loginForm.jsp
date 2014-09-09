@@ -42,7 +42,7 @@
         <input class="input-small" type="text" value="" tabindex="1" maxlength="250" name="username" id="username"
                placeholder="<fmt:message key="label.username"/>"/>
         <input class="input-small" type="password" tabindex="2" maxlength="250" name="password" id="password"
-               placeholder="<fmt:message key="label.password"/>"/>
+               placeholder="<fmt:message key="label.password"/>" autocomplete="off"/>
 
         <label class="checkbox">
             <input type="checkbox" id="rememberme" name="useCookie"/><fmt:message key="loginForm.rememberMe.label"/>
