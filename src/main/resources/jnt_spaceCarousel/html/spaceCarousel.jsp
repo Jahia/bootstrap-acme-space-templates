@@ -10,38 +10,47 @@
 <%--@elvariable id="renderContext" type="org.jahia.services.render.RenderContext"--%>
 <%--@elvariable id="currentResource" type="org.jahia.services.render.Resource"--%>
 <%--@elvariable id="url" type="org.jahia.services.render.URLGenerator"--%>
+<template:addResources type="css" resources="slider.css"/>
+
 <jcr:nodeProperty var="bgimage" node="${currentNode}" name="bgimage"/>
 <c:set var="bgimageUrl" value="${bgimage.node.url}"/>
-<section class="illustration-section" <c:if test="${! empty bgimageUrl}"> style="background: url('${bgimageUrl}') no-repeat 50% 50%"</c:if>>
+<section class="slider-container illustration-section " <c:if test="${! empty bgimageUrl}"> style="background: url('${bgimageUrl}') no-repeat 50% 50%"</c:if>>
     <div class="container-fluid ">
-        <div class="flexslider carousel">
-            <ul class="${renderContext.editMode?'':'slides'}">
-                <c:forEach items="${jcr:getChildrenOfType(currentNode, 'jnt:spaceCarouselItem')}" var="item">
-                    <li>
-                        <template:module node="${item}" nodeTypes="jnt:spaceCarouselItem" editable="true"/>
-                    </li>
-                </c:forEach>
-            </ul>
+<c:choose>
+    <c:when test="${renderContext.editMode}">
+    <ul>
+        <c:forEach items="${jcr:getChildrenOfType(currentNode, 'jnt:spaceCarouselItem')}" var="item" varStatus="status">
+            <li>
+                <template:module node="${item}" editable="true"/>
+            </li>
+        </c:forEach>
+    </ul>
+        <template:module path="*" nodeTypes="jnt:spaceCarouselItem"/>
+    </c:when>
+    <c:otherwise>
+    <div id="carousel${currentNode.identifier}" class="carousel slide slider">
+        <ol class="carousel-indicators">
+            <c:forEach items="${jcr:getChildrenOfType(currentNode, 'jnt:spaceCarouselItem')}" var="item" varStatus="status">
+                <li data-target="#carousel${currentNode.identifier}" data-slide-to="${status.index}" class="${status.index eq 0?'active':''}"></li>
+                <c:set var="carouselInner">${carouselInner}
+                    <c:set var="classItem" value="${status.index eq 0?'active':''} item"/>
+                    <div class="${classItem}">
+                    <template:module node="${item}"/>
+                </div>
+                </c:set>
+            </c:forEach>
+        </ol>
+        <div class="carousel-inner">
+            ${carouselInner}
         </div>
+        <a class="carousel-control left" href="#carousel${currentNode.identifier}" data-slide="prev">&lsaquo;</a>
+        <a class="carousel-control right" href="#carousel${currentNode.identifier}" data-slide="next">&rsaquo;</a>
+
+    </c:otherwise>
+    </c:choose>
     </div>
     <c:if test="${renderContext.editMode}">
-        <template:module path="*" nodeTypes="jnt:spaceCarouselItem"/>
     </c:if>
 </section>
-<template:addResources type="css" resources="flexslider.css" media="screen"/>
 
-<%-- FlexSlider --%>
-<template:addResources type="javascript" resources="jquery.min.js,jquery.flexslider.js"/>
-<c:if test="${! renderContext.editMode}">
-    <template:addResources type="inline">
-        <script>
-            // Can also be used with $(window).load
-            $(document).ready(function () {
-                $('.flexslider').flexslider({
-                    animation: "slide",
-                    smoothHeight: true
-                });
-            });
-        </script>
-    </template:addResources>
-</c:if>
+<template:addResources type="javascript" resources="jquery.min.js,bootstrap-carousel.js"/>
