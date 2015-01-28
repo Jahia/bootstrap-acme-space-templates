@@ -1,0 +1,168 @@
+.slider {
+    margin-bottom: 0px;
+
+}
+.slider-section .container-fluid {
+//padding-left: 0;
+//padding-right: 0;
+//margin-top: -15px;
+    overflow: hidden;
+}
+
+.slider .container {
+    position: relative;
+    z-index: 9;
+    text-align: left;
+    height: auto;
+}
+.slider .container .carousel-caption {
+    -webkit-transition: all 500ms linear;
+    -moz-transition: all 500ms linear;
+    -o-transition: all 500ms linear;
+    transition: all 500ms linear;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    width: 39%;
+    background: none;
+    padding: 5px 5% 5px 5%;
+    float: left;
+}
+.slider .container .carousel-caption h2 {
+    display: block;
+    margin: 0 0 0.5em 0;
+    line-height: 1em;
+    color: #fff;
+    font-size: 50px;
+    font-weight: 300;
+
+}
+
+.slider .container .carousel-caption .lead {
+    display: block;
+    margin: 0;
+    line-height: 1.25;
+    color: #ccc;
+    font-size: 22px;
+    font-weight: 300;
+}
+
+.slider .container .carousel-caption .btn {
+    margin-top: 15px;
+}
+.slider .container .carousel-img {
+    -webkit-transition: all 500ms linear;
+    -moz-transition: all 500ms linear;
+    -o-transition: all 500ms linear;
+    transition: all 500ms linear;
+    position: relative;
+    margin: 0;
+    padding: 5px 5% 5px 5%;
+    width: 39%;
+    float:right;
+}
+.slider .container .carousel-img img {
+    -webkit-transition: all 500ms linear;
+    -moz-transition: all 500ms linear;
+    -o-transition: all 500ms linear;
+    transition: all 500ms linear;
+    width: auto;
+    display: block;
+}
+
+.slider a.carousel-control {
+    height: 80px;
+    margin-top: 0;
+    font-size: 120px;
+    text-shadow: 0 1px 1px rgba(255, 255, 255, 0.4);
+    background-color: transparent;
+    border: 0;
+    z-index: 90;
+}
+.slider .item {
+    width: 100%;
+}
+.carousel-inner .item {
+    -webkit-transition: all 500ms linear;
+    -moz-transition: all 500ms linear;
+    -o-transition: all 500ms linear;
+    transition: all 500ms linear;
+}
+
+.carousel-indicators {
+    bottom: 15px;
+    list-style: outside none none;
+    margin: 0;
+    position: absolute;
+    text-align: center;
+    right: auto;
+    top: auto;
+    width: 100%;
+    z-index: 90;
+}
+.carousel-indicators li {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.3) inset;
+    cursor: pointer;
+    border-radius: 5px;
+    display: inline-block;
+    float: none;
+    height: 10px;
+    margin-left: 5px;
+    text-indent: -999px;
+    width: 10px;
+}
+
+.carousel-indicators li:hover {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0.7);
+}
+.carousel-indicators li.active {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0.9);
+    cursor: default;
+}
+
+
+/* =Responsive: Desktop
+-------------------------------------------------------------- */
+@media (min-width: 980px) and (max-width: 1199px) {
+
+
+}
+/* =Responsive: Tablet to desktop
+-------------------------------------------------------------- */
+@media (max-width: 1023px) {
+    .slider .container .carousel-caption {
+        width: 90%;
+        padding: 5px 5% 5px 5%;
+        float: none;
+        text-align: center;
+    }
+    .slider .container .carousel-img {
+        padding: 5px 5% 5px 5%;
+        width: auto;
+        float:none;
+
+    }
+    .slider .container .carousel-img img {
+        width: auto;
+        margin: 0 auto;
+    }
+}
+
+/* =Responsive: Tablet to desktop
+-------------------------------------------------------------- */
+@media (min-width: 768px) and (max-width: 979px) {
+
+}
+/* =Responsive: Landscape Phone to Tablet
+-------------------------------------------------------------- */
+@media only screen and (max-width: 767px) {
+
+}
+/* =Responsive: Portrait Phone
+-------------------------------------------------------------- */
+@media only screen and (max-width: 479px) {
+
+
+
+}
