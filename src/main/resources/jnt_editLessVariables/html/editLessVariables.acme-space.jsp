@@ -32,7 +32,7 @@
     <jcr:nodeProperty node="${bootstrapVariables}" name="navbarTopBorder" var="navbarTopBorder" />
 </c:if>
 <c:choose>
-    <c:when test="${empty bodyBackground}"><c:set var="bodyBackground" value="@white" /></c:when>
+    <c:when test="${empty bodyBackground}"><c:set var="bodyBackground" value="@black" /></c:when>
     <c:otherwise><c:set var="bodyBackground" value="${bodyBackground.string}" /></c:otherwise>
 </c:choose>
 <c:choose>
