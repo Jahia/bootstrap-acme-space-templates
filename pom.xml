@@ -86,9 +86,9 @@
     <name>Bootstrap ACME Space Templates</name>
     <description>Template Set using Bootstrap.</description>
     <scm>
-        <connection>scm:git:https://github.com/Jahia/bootstrap-acme-space-templates.git</connection>
-        <developerConnection>scm:git:https://github.com/Jahia/bootstrap-acme-space-templates.git</developerConnection>
-        <url>https://github.com/Jahia/bootstrap-acme-space-templates</url>
+        <connection>scm:git:git@github.com:Jahia/bootstrap-acme-space-templates.git</connection>
+        <developerConnection>scm:git:git@github.com:Jahia/bootstrap-acme-space-templates.git</developerConnection>
+        <url>scm:git:git@github.com:Jahia/bootstrap-acme-space-templates</url>
     </scm>
 
     <properties>
