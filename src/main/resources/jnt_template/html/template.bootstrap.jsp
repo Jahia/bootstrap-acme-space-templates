@@ -37,14 +37,14 @@
     <template:addResources type="css" resources="font-awesome.css"/>
 
     <%-- Fav and touch icons --%>
-    <link rel="shortcut icon" href="<c:url value='${url.currentModule}/icon/favicon.ico'/>" type="image/x-icon">
-    <link rel="icon" href="<c:url value='${url.currentModule}/icon/favicon.ico'/>" type="image/ico">
-    <link rel="icon" type="image/png" href="<c:url value='${url.currentModule}/icon/favicon.png'/>"/>
+    <link rel="shortcut icon" href="<c:url value='${url.currentModule}/img/icon/favicon.ico'/>" type="image/x-icon">
+    <link rel="icon" href="<c:url value='${url.currentModule}/img/icon/favicon.ico'/>" type="image/ico">
+    <link rel="icon" type="image/png" href="<c:url value='${url.currentModule}/img/icon/favicon.png'/>"/>
 
-    <link rel="apple-touch-icon" href="<c:url value='${url.currentModule}/icon/icon-iphone.png'/>"/>
-    <link rel="apple-touch-icon" sizes="72x72" href="<c:url value='${url.currentModule}/icon/icon-ipad.png'/>"/>
+    <link rel="apple-touch-icon" href="<c:url value='${url.currentModule}/img/icon/icon-iphone.png'/>"/>
+    <link rel="apple-touch-icon" sizes="72x72" href="<c:url value='${url.currentModule}/img/icon/icon-ipad.png'/>"/>
     <link rel="apple-touch-icon" sizes="114x114"
-          href="<c:url value='${url.currentModule}/icon/jahia-icon-iphone4.png'/>"/>
+          href="<c:url value='${url.currentModule}/img/icon/jahia-icon-iphone4.png'/>"/>
 
 
     <%--tablet and iphone meta--%>
