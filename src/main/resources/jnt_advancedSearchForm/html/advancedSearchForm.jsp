@@ -4,6 +4,7 @@
 <%@ taglib prefix="jcr" uri="http://www.jahia.org/tags/jcr" %>
 <%@ taglib prefix="s" uri="http://www.jahia.org/tags/search" %>
 <%@ taglib prefix="template" uri="http://www.jahia.org/tags/templateLib" %>
+<%@ taglib prefix="functions" uri="http://www.jahia.org/tags/functions"%>
 <template:addResources type="javascript" resources="jquery.min.js"/>
 <template:addResources type="css" resources="advancedsearchform.css"/>
 
@@ -81,7 +82,7 @@
                 </label>
 
                 <div class="controls">
-                    <s:createdBy id="searchCreatedBy"/>
+                    <s:findUser fieldId="searchCreatedBy" fieldName="src_createdBy" fieldValue="${param['src_createdBy']}" selectedValue="username" />
                 </div>
                 <label class="control-label" for="searchCreated">
                     <fmt:message key="search.advancedSearch.criteria.authorAndDate.created"/>
@@ -95,7 +96,7 @@
                 </label>
 
                 <div class="controls">
-                    <s:lastModifiedBy id="searchLastModifiedBy"/>
+                    <s:findUser fieldId="searchLastModifiedBy" fieldName="src_lastModifiedBy" selectedValue="username" fieldValue="${param['src_lastModifiedBy']}" />
                 </div>
                 <label class="control-label" for="searchLastModified">
                     <fmt:message key="search.advancedSearch.criteria.authorAndDate.modified"/>
