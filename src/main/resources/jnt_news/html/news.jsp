@@ -40,7 +40,7 @@
 <article class="clearfix">
     <div class="media-date media-date-big media-date-big-nomarginright "><span class="month">${newsMonth}</span><span
             class="day">${newsDay}</span> <span class="year">${newsYear}</span></div>
-    <c:if test="${!empty image}">
+    <c:if test="${!empty image && !empty image.node}">
         <c:choose>
             <c:when test="${jcr:isNodeType(image.node, 'jmix:thumbnail')}">
                 <a class="media-photo media-photo-medium media-photo-margintop-medium" href="${linkUrl}"><img src="${image.node.thumbnailUrls['thumbnail']}" alt="alt"></a>
