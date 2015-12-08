@@ -88,7 +88,7 @@
         <connection>scm:git:git@github.com:Jahia/bootstrap-acme-space-templates.git</connection>
         <developerConnection>scm:git:git@github.com:Jahia/bootstrap-acme-space-templates.git</developerConnection>
         <url>scm:git:git@github.com:Jahia/bootstrap-acme-space-templates</url>
-      <tag>HEAD</tag>
+        <tag>3_x</tag>
   </scm>
 
     <properties>
