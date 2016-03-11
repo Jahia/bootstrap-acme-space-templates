@@ -31,9 +31,6 @@
 <jcr:nodeProperty node="${currentNode}" name="desc" var="newsDesc"/>
 
 <jcr:nodeProperty node="${currentNode}" name="date" var="newsDate"/>
-<fmt:formatDate value="${newsDate.time}" pattern="MMMM" var="newsMonth"/>
-<fmt:formatDate value="${newsDate.time}" pattern="d" var="newsDay"/>
-<fmt:formatDate value="${newsDate.time}" pattern="yyyy" var="newsYear"/>
 <jcr:nodeProperty var="image" node="${currentNode}" name="image"/>
 
 <a class="btn btn-primary" href="${action}" title="<fmt:message key="acmeBootstrapTemplate.back"/>">
@@ -41,7 +38,8 @@
 
 <article class="news">
 
-    <div class="media-body"><h1>${title.string}</h1> <span class="btn btn-default">${newsDate.time}</span></div>
+    <div class="media-body"><h1>${title.string}</h1> <span class="btn btn-default"><fmt:formatDate
+            value="${newsDate.time}" type="both" dateStyle="full" timeStyle="long" /></span></div>
 
     <div class="media-text-big">
         ${newsDesc.string}
