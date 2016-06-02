@@ -165,6 +165,15 @@
                     <s:itemsPerPage id="searchResultsPerPage"/>
                 </div>
             </div>
+            <div class="control-group">
+                <label class="control-label" for="searchOrderBy">
+                    <fmt:message key="search.advancedSearch.criteria.miscellanea.sortBy"/>
+                </label>
+
+                <div class="controls">
+                    <s:orderBy id="searchOrderBy"/>
+                </div>
+            </div>            
         </fieldset>
         <div class="controls">
             <input type="submit" name="search" class="btn btn-primary btn-small"
