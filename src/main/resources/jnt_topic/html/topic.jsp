@@ -28,6 +28,8 @@
              sql="select * from [jnt:post] as post  where isdescendantnode(post, ['${functions:sqlencode(currentNode.path)}']) order by post.[jcr:lastModified] desc"/>
     <c:set target="${moduleMap}" property="commentsList" value="${numberOfPostsQuery.nodes}"/>
     <c:set target="${moduleMap}" property="listTotalSize" value="${numberOfPostsQuery.nodes.size}"/>
+    <c:set target="${moduleMap}" property="begin" value="0"/>
+    <c:set target="${moduleMap}" property="end" value="${numberOfPostsQuery.nodes.size}"/>
     <c:forEach items="${moduleMap.commentsList}" var="subchild" varStatus="status" begin="${moduleMap.begin}"
                end="${moduleMap.end}">
         <li class="media"><template:module node="${subchild}"/></li>
