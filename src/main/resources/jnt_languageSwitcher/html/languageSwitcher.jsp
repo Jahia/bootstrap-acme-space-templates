@@ -39,7 +39,7 @@
                             <span class='flag ${functions:getLanguageFlagCSSClass(functions:toLocale(language))}'></span>
                         </c:set>
                     </c:if>
-                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">${renderedLanguage}<span
+                    <a class="dropdown-hover" data-hover="dropdown" href="#">${renderedLanguage}<span
                             class="caret"></span></a>
                 </c:if>
             </c:forEach>
