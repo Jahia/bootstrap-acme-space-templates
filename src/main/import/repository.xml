@@ -236,10 +236,7 @@
                                        displayOnFirstLevel="false"
                                        jcr:primaryType="jnt:bootstrapBreadcrumb"/>
                                         <page-title jcr:primaryType="jnt:fullTitle"/>
-                                        <main j:contributeTypes="jnt:acmeBigText jnt:imageReferenceLink jnt:text"
-                                 j:editableInContribution="true"
-                                 jcr:mixinTypes="jmix:contributeMode"
-                                 jcr:primaryType="jnt:area"/>
+                                        <main jcr:primaryType="jnt:area"/>
                                 </content>
                                 </content>
                             </pagecontent>
@@ -278,10 +275,7 @@
                                        displayOnFirstLevel="false"
                                        jcr:primaryType="jnt:bootstrapBreadcrumb"/>
                                         <page-title-1 jcr:primaryType="jnt:fullTitle"/>
-                                        <main j:contributeTypes="jnt:acmeBigText jnt:imageReferenceLink jnt:text"
-                                 j:editableInContribution="true"
-                                 jcr:mixinTypes="jmix:contributeMode"
-                                 jcr:primaryType="jnt:area"/>
+                                        <main jcr:primaryType="jnt:area"/>
                                 </content>
                                 </content>
                             </pagecontent>
@@ -406,11 +400,6 @@
                                         <main jcr:primaryType="jnt:area"/>
                                         <events j:allowedTypes="jnt:event"
                                    j:areaView="bootsrapMediaNewsEvents"
-                                   j:canDeleteInContribution="true"
-                                   j:canOrderInContribution="true"
-                                   j:contributeTypes="jnt:event"
-                                   j:editableInContribution="true"
-                                   jcr:mixinTypes="jmix:contributeMode"
                                    jcr:primaryType="jnt:area"/>
                                     </content>
                                 </content>
@@ -436,10 +425,7 @@
                                        displayOnFirstLevel="false"
                                        jcr:primaryType="jnt:bootstrapBreadcrumb"/>
                                         <page-title jcr:primaryType="jnt:fullTitle"/>
-                                        <main j:contributeTypes="jnt:bigText jnt:fileI18nReference jnt:fileReference jnt:imageI18nReference jnt:imageReferenceLink jnt:mainContent jnt:text"
-                                 j:editableInContribution="true"
-                                 jcr:mixinTypes="jmix:contributeMode"
-                                 jcr:primaryType="jnt:area"/>
+                                        <main jcr:primaryType="jnt:area"/>
                                     </content>
                                 </content>
                             </pagecontent>
