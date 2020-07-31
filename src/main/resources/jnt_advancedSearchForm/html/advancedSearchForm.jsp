@@ -53,7 +53,7 @@
 
 <div id="advancedSearch">
     <c:url value='${url.base}${renderContext.mainResource.node.path}.html' var="searchUrl"/>
-    <s:form name="advancedSearchForm" class="form-horizontal" method="post" action="${searchUrl}">
+    <s:form id="advancedSearchForm" name="advancedSearchForm" class="form-horizontal" method="post" action="${searchUrl}">
 
         <fieldset>
             <legend><fmt:message key="search.advancedSearch.criteria.text.title"/></legend>
