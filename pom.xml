@@ -52,7 +52,7 @@
         <version>8.0.0.0</version>
     </parent>
     <artifactId>bootstrap-acme-space-templates</artifactId>
-    <version>4.0.0-SNAPSHOT</version>
+    <version>4.0.0</version>
     <packaging>bundle</packaging>
     <name>Bootstrap ACME Space Templates</name>
     <description>Template Set using Bootstrap.</description>
@@ -60,7 +60,7 @@
         <connection>scm:git:git@github.com:Jahia/bootstrap-acme-space-templates.git</connection>
         <developerConnection>scm:git:git@github.com:Jahia/bootstrap-acme-space-templates.git</developerConnection>
         <url>scm:git:git@github.com:Jahia/bootstrap-acme-space-templates</url>
-        <tag>HEAD</tag>
+        <tag>4_0_0</tag>
   </scm>
 
     <properties>
@@ -73,7 +73,7 @@
         <dependency>
             <groupId>org.jahia.modules</groupId>
             <artifactId>bootstrap</artifactId>
-            <version>3.0.0-SNAPSHOT</version>
+            <version>3.0.0</version>
             <scope>provided</scope>
         </dependency>
     </dependencies>
