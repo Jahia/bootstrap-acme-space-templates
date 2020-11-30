@@ -66,7 +66,7 @@
     <properties>
         <jahia-module-type>templatesSet</jahia-module-type>
         <jahia-depends>default,bootstrap,bootstrap-components,calendar,contact,event,facets,search,teasers</jahia-depends>
-        <jahia-module-signature>MC0CFQCC0bhpGi8uKAqbsBr66wavsk2gkQIUZvhUjq3nkjuqJAawJ6X1XK/ImtQ=</jahia-module-signature>
+        <jahia-module-signature>MCwCFE7jKl4UaqdLkG9ZnoPrUX10tVn9AhRzO5u7z9VlvGDWs7k6mubmAx0pCQ==</jahia-module-signature>
     </properties>
 
     <dependencies>
